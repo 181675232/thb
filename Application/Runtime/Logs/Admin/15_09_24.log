@@ -1,0 +1,256 @@
+[ 2015-09-24T15:35:10+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+
+[ 2015-09-24T15:35:11+08:00 ] 127.0.0.1 /Admin/Public/admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053764s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053856s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.017339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.017398s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.022125s ]
+INFO: [ app_end ] --END-- [ RunTime:0.022183s ]
+
+[ 2015-09-24T15:35:11+08:00 ] 127.0.0.1 /Admin/Public/scode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000910s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001022s ]
+
+[ 2015-09-24T15:35:11+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+
+[ 2015-09-24T15:35:11+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+
+[ 2015-09-24T15:35:21+08:00 ] 127.0.0.1 /admin/public/scode/0.945898496403114
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000884s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000970s ]
+
+[ 2015-09-24T15:35:22+08:00 ] 127.0.0.1 /admin/public/scode/0.8643289539835345
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001185s ]
+
+[ 2015-09-24T15:35:28+08:00 ] 127.0.0.1 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001545s ]
+
+[ 2015-09-24T15:35:28+08:00 ] 127.0.0.1 /admin/public/scode/0.9892444217984782
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000802s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000867s ]
+
+[ 2015-09-24T15:35:29+08:00 ] 127.0.0.1 /admin/public/scode/0.4585628280471119
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000950s ]
+
+[ 2015-09-24T15:35:30+08:00 ] 127.0.0.1 /admin/public/scode/0.7858806776078203
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000817s ]
+
+[ 2015-09-24T15:35:31+08:00 ] 127.0.0.1 /admin/public/scode/0.4446846358418314
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000807s ]
+
+[ 2015-09-24T15:35:36+08:00 ] 127.0.0.1 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.1254s ]
+SQL: SELECT `password` FROM `t_admin` WHERE `name` = 'admin' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2015-09-24T15:35:36+08:00 ] 127.0.0.1 /Admin/Public/admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0087s ]
+SQL: SELECT `password`,`name` FROM `t_admin` WHERE `name` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_admin` WHERE `password` = '1c63129ae9db9c60c3e8aa94d3e00495' AND `name` = 'admin' LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `t_admin` SET `ip`='127.0.0.1',`addtime`='1443080136' WHERE `id` = 3 [ RunTime:0.0140s ]
+
+[ 2015-09-24T15:35:36+08:00 ] 127.0.0.1 /Admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033340s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2015-09-24T15:35:37+08:00 ] 127.0.0.1 /Public/admin/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+
+[ 2015-09-24T15:35:37+08:00 ] 127.0.0.1 /Admin/Nav/nav
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0745s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 0 AND `state` = 1 ORDER BY id asc  [ RunTime:0.0131s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 1 AND `state` = 1 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 2 AND `state` = 1 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 158 AND `state` = 1 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 159 AND `state` = 1 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 167 AND `state` = 1 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 169 AND `state` = 1 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 204 AND `state` = 1 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 205 AND `state` = 1 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 207 AND `state` = 1 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 208 AND `state` = 1 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 3 AND `state` = 1 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 4 AND `state` = 1 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 173 AND `state` = 1 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 174 AND `state` = 1 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 206 AND `state` = 1 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 175 AND `state` = 1 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 199 AND `state` = 1 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 200 AND `state` = 1 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 5 AND `state` = 1 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 6 AND `state` = 1 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 187 AND `state` = 1 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 188 AND `state` = 1 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 7 AND `state` = 1 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 8 AND `state` = 1 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 209 AND `state` = 1 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 210 AND `state` = 1 ORDER BY id asc  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000820s ]
+
+[ 2015-09-24T15:35:37+08:00 ] 127.0.0.1 /Admin/Index/center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `t_base` [ RunTime:0.0280s ]
+SQL: SELECT * FROM `t_admin` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027993s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000556s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000599s ]
+
+[ 2015-09-24T15:35:41+08:00 ] 127.0.0.1 /Admin/Base
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `t_base` [ RunTime:0.0186s ]
+SQL: SELECT * FROM `t_base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017835s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017963s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000891s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000943s ]
+

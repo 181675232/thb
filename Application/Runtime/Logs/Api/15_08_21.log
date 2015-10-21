@@ -1,0 +1,38 @@
+[ 2015-08-21T14:29:26+08:00 ] 183.60.35.94 /Api/Index/vehicleinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+
+[ 2015-08-21T19:35:47+08:00 ] 221.221.252.16 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-21T19:35:48+08:00 ] 221.221.252.16 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-21T19:35:48+08:00 ] 221.221.252.16 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='' ) LIMIT 1   [ RunTime:0.0002s ]
+

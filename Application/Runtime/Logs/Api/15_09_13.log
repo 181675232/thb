@@ -1,0 +1,1603 @@
+[ 2015-09-13T02:55:04+08:00 ] 114.244.79.73 /Api/Index/completeserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0007s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 4 or service_request.REQUEST_STATUS_ID = 5) ) ORDER BY service_request.DATE_CREATED desc LIMIT 15,15   [ RunTime:0.0004s ]
+
+[ 2015-09-13T02:55:04+08:00 ] 114.244.79.73 /Api/Index/completeserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 4 or service_request.REQUEST_STATUS_ID = 5) ) ORDER BY service_request.DATE_CREATED desc LIMIT 15,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T02:55:14+08:00 ] 114.244.79.73 /Api/Index/completeserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 4 or service_request.REQUEST_STATUS_ID = 5) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` IN ('2','6','7','13')  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `owner_feedback` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `owner_feedback` WHERE ( REQUEST_ID = '30' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 7  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `owner_feedback` WHERE ( REQUEST_ID = '29' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T08:46:48+08:00 ] 114.244.79.73 /Api/Index/completeserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 4 or service_request.REQUEST_STATUS_ID = 5) ) ORDER BY service_request.DATE_CREATED desc LIMIT 15,15   [ RunTime:0.0004s ]
+
+[ 2015-09-13T08:46:48+08:00 ] 114.244.79.73 /Api/Index/completeserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 4 or service_request.REQUEST_STATUS_ID = 5) ) ORDER BY service_request.DATE_CREATED desc LIMIT 15,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T08:46:48+08:00 ] 114.244.79.73 /Api/Index/completeserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 4 or service_request.REQUEST_STATUS_ID = 5) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` IN ('2','6','7','13')  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `owner_feedback` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `owner_feedback` WHERE ( REQUEST_ID = '30' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 7  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `owner_feedback` WHERE ( REQUEST_ID = '29' ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-09-13T12:08:52+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T12:41:59+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T12:41:59+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T12:41:59+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0005s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-09-13T12:44:35+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0008s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T12:44:35+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T12:56:26+08:00 ] 114.244.79.73 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=15233333331 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `owner` WHERE `PHONE` = '15233333331' AND `PASSWORD` = 'cd87cd5ef753a06ee79fc75dc7cfe66c' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `owner` SET `JPUSHID`='ff9fe86c764d1608' WHERE `ID` = 17 [ RunTime:0.0002s ]
+
+[ 2015-09-13T13:02:56+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0003s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T13:04:27+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T13:14:55+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0003s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T13:14:55+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T13:14:56+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T13:19:36+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T13:19:36+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T13:19:36+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0003s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T13:21:05+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T13:21:05+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0005s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T13:21:05+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T13:22:22+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0004s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T13:22:22+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T13:22:22+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T13:28:33+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0005s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T13:28:33+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0003s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T13:28:33+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T13:53:31+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0007s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T13:53:31+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T13:53:31+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0003s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T13:55:01+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T13:55:01+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0003s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T13:55:01+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:02:15+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:02:15+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:02:15+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0003s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T14:06:23+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:06:23+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:06:23+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0003s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T14:12:30+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:12:30+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:12:30+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0003s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T14:14:18+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0005s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:14:18+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0003s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T14:14:18+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:15:23+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:15:23+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0003s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T14:15:23+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005812s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:16:34+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0003s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T14:16:34+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:16:34+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:29:14+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:29:14+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:29:14+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0003s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T14:31:14+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0003s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T14:31:14+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0005s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:31:14+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:35:38+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:35:38+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0005s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:35:38+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0003s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T14:38:03+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:38:03+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:38:03+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0003s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T14:39:39+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0003s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T14:39:39+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:39:39+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0005s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:43:58+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0007s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:43:58+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:43:58+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0003s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T14:45:52+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:45:52+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0003s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T14:45:52+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:47:26+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:47:26+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0003s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T14:47:26+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:58:30+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:58:30+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T14:58:30+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0003s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T21:18:18+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0003s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T21:18:18+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0008s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-09-13T21:18:18+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0004s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0002s ]
+
+[ 2015-09-13T21:21:26+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0003s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T21:21:26+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0005s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T21:21:26+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T21:21:26+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0003s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T21:22:17+08:00 ] 114.244.79.73 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 17  [ RunTime:0.0002s ]
+
+[ 2015-09-13T21:22:20+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0003s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T21:22:20+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0005s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T21:22:20+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0005s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T21:22:20+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0003s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T22:17:06+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0004s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+
+[ 2015-09-13T22:17:06+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-09-13T22:17:06+08:00 ] 114.244.79.73 /Api/Index/myserver
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010364s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.OWNER_ID = 17 and (service_request.REQUEST_STATUS_ID = 2 or service_request.REQUEST_STATUS_ID = 3) ) ORDER BY service_request.DATE_CREATED desc LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request_bid` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '73' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 11  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '72' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` = 12  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `service_request_bid` WHERE ( REQUEST_ID = '31' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-13T22:17:06+08:00 ] 114.244.79.73 /Api/Index/ownerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 17 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 1215 行.
+SQL: SELECT `id` FROM `owner_vehicle` WHERE ( OWNER_ID = 17 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vehicle_maintenance_log` [ RunTime:0.0003s ]
+SQL: SELECT vehicle_maintenance_log.ID,vehicle_maintenance_log.SERVICE_DATE,vehicle_maintenance_log.SERVICE_TYPE_ID,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `vehicle_maintenance_log` left join owner_vehicle on owner_vehicle.ID = vehicle_maintenance_log.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE vehicle_maintenance_log.VEHICLE_ID IN ('24248','24249','24250','24251','24252','24253','24254','24255','24256','24258','24262','24263','24264','24267','24270','24272','24273') ORDER BY vehicle_maintenance_log.SERVICE_DATE desc LIMIT 0,15   [ RunTime:0.0003s ]
+

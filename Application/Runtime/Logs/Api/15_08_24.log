@@ -1,0 +1,2735 @@
+[ 2015-08-24T02:16:51+08:00 ] 123.119.224.203 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-24T02:17:38+08:00 ] 123.119.224.203 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-24T02:19:12+08:00 ] 123.119.224.203 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-24T02:34:23+08:00 ] 123.119.224.203 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-24T02:35:07+08:00 ] 123.119.224.203 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-24T02:37:41+08:00 ] 123.119.224.203 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-24T02:38:53+08:00 ] 123.119.224.203 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-24T02:50:37+08:00 ] 123.119.224.203 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T02:52:09+08:00 ] 123.119.224.203 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T02:54:45+08:00 ] 123.119.224.203 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T02:55:36+08:00 ] 123.119.224.203 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T02:59:28+08:00 ] 123.119.224.203 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-24T02:59:39+08:00 ] 123.119.224.203 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-24T02:59:41+08:00 ] 123.119.224.203 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T09:30:46+08:00 ] 223.104.3.242 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0007s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T09:31:52+08:00 ] 223.104.3.242 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T09:34:46+08:00 ] 223.104.3.242 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-24T09:36:46+08:00 ] 223.104.3.242 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-24T10:21:04+08:00 ] 106.2.202.226 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '14' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-24T10:21:06+08:00 ] 106.2.202.226 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-24T10:21:07+08:00 ] 106.2.202.226 /Api/Index/addvehicle2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `vehicle_model` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model` WHERE `MFG_ID` = 1 ORDER BY ID asc  [ RunTime:0.0049s ]
+
+[ 2015-08-24T10:21:08+08:00 ] 106.2.202.226 /Api/Index/addvehicle3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_year` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_year` WHERE `MODEL_ID` = 1 ORDER BY ID asc  [ RunTime:0.0012s ]
+
+[ 2015-08-24T10:21:08+08:00 ] 106.2.202.226 /Api/Index/addvehicle4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_type` WHERE `MODEL_YEAR_ID` = 4748 ORDER BY ID asc  [ RunTime:0.0043s ]
+
+[ 2015-08-24T10:21:57+08:00 ] 106.2.202.226 /Api/Index/addvehicle5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `OWNER_ID` = 0 AND `IS_DEFAULT` = 'Y' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 0 AND `IS_DEFAULT` = 'Y' [ RunTime:0.0002s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '10642' for key 'PRIMARY'
+
+[ 2015-08-24T10:21:59+08:00 ] 106.2.202.226 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '14' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-24T10:26:17+08:00 ] 106.2.202.226 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T10:27:43+08:00 ] 106.2.202.226 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=15233333333 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T10:27:43+08:00 ] 106.2.202.226 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=15233333355 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T10:27:43+08:00 ] 106.2.202.226 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=15233333355 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-24T10:27:44+08:00 ] 106.2.202.226 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=15233333355 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T10:27:45+08:00 ] 106.2.202.226 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=15233333355 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-24T10:27:46+08:00 ] 106.2.202.226 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=15233333355 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-24T10:27:46+08:00 ] 106.2.202.226 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=15233333333 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T10:27:47+08:00 ] 106.2.202.226 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=15233333355 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T10:27:49+08:00 ] 106.2.202.226 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=15233333355 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T10:27:49+08:00 ] 106.2.202.226 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=15233333355 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-24T10:27:51+08:00 ] 106.2.202.226 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=15233333355 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T10:56:07+08:00 ] 106.2.202.226 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=15233333314 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T11:11:44+08:00 ] 106.2.202.226 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T11:12:01+08:00 ] 106.2.202.226 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=15233333111 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T11:12:02+08:00 ] 106.2.202.226 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=15233333111 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-24T11:12:04+08:00 ] 106.2.202.226 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=15233333111 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T11:12:05+08:00 ] 106.2.202.226 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=15233333111 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-24T11:13:27+08:00 ] 106.2.202.226 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0007s ]
+SQL: INSERT INTO `owner` (`PASSWORD`,`PHONE`,`ADDTIME`) VALUES ('7694f4a66316e53c8cdd9d9954bd611d','15233333111','1440386007') [ RunTime:0.0002s ]
+
+[ 2015-08-24T11:13:53+08:00 ] 106.2.202.226 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T11:14:11+08:00 ] 106.2.202.226 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='15233333111' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: PASSWORD /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT `ID` FROM `owner` WHERE `PHONE` = '15233333111' AND `PASSWORD` = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-24T11:14:18+08:00 ] 106.2.202.226 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='15233333311' ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-24T11:14:33+08:00 ] 106.2.202.226 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=15211111122 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-24T11:15:34+08:00 ] 106.2.202.226 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: INSERT INTO `owner` (`PASSWORD`,`PHONE`,`ADDTIME`) VALUES ('7694f4a66316e53c8cdd9d9954bd611d','15211111122','1440386134') [ RunTime:0.0002s ]
+
+[ 2015-08-24T11:15:43+08:00 ] 106.2.202.226 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T11:15:53+08:00 ] 106.2.202.226 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='15211111122' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: PASSWORD /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT `ID` FROM `owner` WHERE `PHONE` = '15211111122' AND `PASSWORD` = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T11:15:59+08:00 ] 106.2.202.226 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='15211111133' ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-24T11:16:03+08:00 ] 106.2.202.226 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='15211111111' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: PASSWORD /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT `ID` FROM `owner` WHERE `PHONE` = '15211111111' AND `PASSWORD` = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T11:16:06+08:00 ] 106.2.202.226 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='15211111122' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: PASSWORD /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT `ID` FROM `owner` WHERE `PHONE` = '15211111122' AND `PASSWORD` = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-24T11:16:09+08:00 ] 106.2.202.226 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='15211111144' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T11:16:12+08:00 ] 106.2.202.226 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='15211111133' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T11:16:15+08:00 ] 106.2.202.226 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='15211111122' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: PASSWORD /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 88 行.
+SQL: SELECT `ID` FROM `owner` WHERE `PHONE` = '15211111122' AND `PASSWORD` = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-24T11:16:58+08:00 ] 106.2.202.226 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T11:17:17+08:00 ] 106.2.202.226 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='15211111122' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = '7694f4a66316e53c8cdd9d9954bd611d' AND `PHONE` = '15211111122' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-24T11:17:25+08:00 ] 106.2.202.226 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-24T11:19:04+08:00 ] 106.2.202.226 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T11:19:11+08:00 ] 106.2.202.226 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='15211111122' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = '7694f4a66316e53c8cdd9d9954bd611d' AND `PHONE` = '15211111122' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T11:20:15+08:00 ] 106.2.202.226 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T11:20:21+08:00 ] 106.2.202.226 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='15211111122' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = '7694f4a66316e53c8cdd9d9954bd611d' AND `PHONE` = '15211111122' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-24T11:20:58+08:00 ] 106.2.202.226 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T11:21:07+08:00 ] 106.2.202.226 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T11:21:09+08:00 ] 106.2.202.226 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T11:21:10+08:00 ] 106.2.202.226 /Api/Index/addvehicle2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `vehicle_model` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model` WHERE `MFG_ID` = 1 ORDER BY ID asc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T11:21:11+08:00 ] 106.2.202.226 /Api/Index/addvehicle3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_year` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_year` WHERE `MODEL_ID` = 1 ORDER BY ID asc  [ RunTime:0.0012s ]
+
+[ 2015-08-24T11:21:11+08:00 ] 106.2.202.226 /Api/Index/addvehicle4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_type` WHERE `MODEL_YEAR_ID` = 4748 ORDER BY ID asc  [ RunTime:0.0042s ]
+
+[ 2015-08-24T11:22:47+08:00 ] 106.2.202.226 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T11:22:54+08:00 ] 106.2.202.226 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-24T11:22:57+08:00 ] 106.2.202.226 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-24T11:22:57+08:00 ] 106.2.202.226 /Api/Index/addvehicle2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `vehicle_model` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model` WHERE `MFG_ID` = 1 ORDER BY ID asc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T11:22:58+08:00 ] 106.2.202.226 /Api/Index/addvehicle3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_year` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_year` WHERE `MODEL_ID` = 1 ORDER BY ID asc  [ RunTime:0.0012s ]
+
+[ 2015-08-24T11:23:00+08:00 ] 106.2.202.226 /Api/Index/addvehicle4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_type` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vehicle_model_type` WHERE `MODEL_YEAR_ID` = 5196 ORDER BY ID asc  [ RunTime:0.0060s ]
+
+[ 2015-08-24T11:24:47+08:00 ] 106.2.202.226 /Api/Index/addvehicle5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `OWNER_ID` = 16 AND `IS_DEFAULT` = 'Y' LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `owner_vehicle` (`DATE_PURCHASE`,`MILEAGE`,`OWNER_ID`,`VEHICLE_MODEL_TYPE_ID`) VALUES ('1439913600','55','16','13112') [ RunTime:0.0002s ]
+
+[ 2015-08-24T11:24:47+08:00 ] 106.2.202.226 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-24T11:27:12+08:00 ] 106.2.202.226 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T11:27:22+08:00 ] 106.2.202.226 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='15211111122' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = '7694f4a66316e53c8cdd9d9954bd611d' AND `PHONE` = '15211111122' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-24T11:27:37+08:00 ] 106.2.202.226 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='15211111122' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = '7694f4a66316e53c8cdd9d9954bd611d' AND `PHONE` = '15211111122' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-24T11:27:38+08:00 ] 106.2.202.226 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='15211111122' ) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = '7694f4a66316e53c8cdd9d9954bd611d' AND `PHONE` = '15211111122' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-24T11:28:07+08:00 ] 106.2.202.226 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T11:28:33+08:00 ] 106.2.202.226 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0007s ]
+
+[ 2015-08-24T11:28:34+08:00 ] 106.2.202.226 /Api/Index/addvehicle2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `vehicle_model` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model` WHERE `MFG_ID` = 1 ORDER BY ID asc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T11:28:36+08:00 ] 106.2.202.226 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T11:28:40+08:00 ] 106.2.202.226 /Api/Index/addvehicle2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `vehicle_model` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model` WHERE `MFG_ID` = 5 ORDER BY ID asc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T11:28:40+08:00 ] 106.2.202.226 /Api/Index/addvehicle3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_year` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_year` WHERE `MODEL_ID` = 30 ORDER BY ID asc  [ RunTime:0.0012s ]
+
+[ 2015-08-24T11:28:41+08:00 ] 106.2.202.226 /Api/Index/addvehicle4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_type` WHERE `MODEL_YEAR_ID` = 4835 ORDER BY ID asc  [ RunTime:0.0043s ]
+
+[ 2015-08-24T11:30:08+08:00 ] 106.2.202.226 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T11:30:22+08:00 ] 106.2.202.226 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T11:30:30+08:00 ] 106.2.202.226 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-24T11:30:31+08:00 ] 106.2.202.226 /Api/Index/addvehicle2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `vehicle_model` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vehicle_model` WHERE `MFG_ID` = 5 ORDER BY ID asc  [ RunTime:0.0007s ]
+
+[ 2015-08-24T11:30:32+08:00 ] 106.2.202.226 /Api/Index/addvehicle3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_year` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_year` WHERE `MODEL_ID` = 30 ORDER BY ID asc  [ RunTime:0.0012s ]
+
+[ 2015-08-24T11:30:32+08:00 ] 106.2.202.226 /Api/Index/addvehicle4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_type` WHERE `MODEL_YEAR_ID` = 4835 ORDER BY ID asc  [ RunTime:0.0043s ]
+
+[ 2015-08-24T11:33:17+08:00 ] 106.2.202.226 /Api/Index/addvehicle5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `OWNER_ID` = 16 AND `IS_DEFAULT` = 'Y' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 16 AND `IS_DEFAULT` = 'Y' [ RunTime:0.0002s ]
+SQL: INSERT INTO `owner_vehicle` (`DATE_PURCHASE`,`MILEAGE`,`OWNER_ID`,`VEHICLE_MODEL_TYPE_ID`) VALUES ('1345737600','22','16','11033') [ RunTime:0.0002s ]
+
+[ 2015-08-24T11:33:17+08:00 ] 106.2.202.226 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0003s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-24T11:42:49+08:00 ] 106.2.202.226 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T11:42:52+08:00 ] 106.2.202.226 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-24T11:45:41+08:00 ] 106.2.202.226 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T11:46:57+08:00 ] 106.2.202.226 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-24T11:49:02+08:00 ] 106.2.202.226 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T11:49:12+08:00 ] 106.2.202.226 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T11:55:07+08:00 ] 106.2.202.226 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T11:55:16+08:00 ] 106.2.202.226 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T11:56:07+08:00 ] 106.2.202.226 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T11:59:35+08:00 ] 106.2.202.226 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:01:52+08:00 ] 106.2.202.226 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:02:08+08:00 ] 106.2.202.226 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-24T12:02:59+08:00 ] 106.2.202.226 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0007s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-24T12:04:01+08:00 ] 106.2.202.226 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:04:29+08:00 ] 106.2.202.226 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:05:10+08:00 ] 106.2.202.226 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:05:50+08:00 ] 106.2.202.226 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-24T12:06:05+08:00 ] 106.2.202.226 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:06:11+08:00 ] 106.2.202.226 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-24T12:06:30+08:00 ] 106.2.202.226 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T12:06:57+08:00 ] 106.2.202.226 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-24T12:07:09+08:00 ] 106.2.202.226 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-24T12:07:51+08:00 ] 106.2.202.226 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:07:59+08:00 ] 106.2.202.226 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0007s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T12:08:00+08:00 ] 106.2.202.226 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-24T12:08:35+08:00 ] 106.2.202.226 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-24T12:09:08+08:00 ] 106.2.202.226 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:09:10+08:00 ] 106.2.202.226 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:09:13+08:00 ] 106.2.202.226 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-24T12:09:14+08:00 ] 106.2.202.226 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-24T12:09:15+08:00 ] 106.2.202.226 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:22:40+08:00 ] 1.202.47.246 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:22:48+08:00 ] 1.202.47.246 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:22:58+08:00 ] 1.202.47.246 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='15211111122' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = '7694f4a66316e53c8cdd9d9954bd611d' AND `PHONE` = '15211111122' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-24T12:22:59+08:00 ] 1.202.47.246 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:23:00+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:23:01+08:00 ] 1.202.47.246 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-24T12:23:02+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:23:31+08:00 ] 117.136.0.172 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:23:32+08:00 ] 117.136.0.172 /Api/Index/vehicleinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.ID = '17' ORDER BY owner_vehicle.IS_DEFAULT desc LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:23:34+08:00 ] 117.136.0.172 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T12:23:40+08:00 ] 117.136.0.172 /Api/Index/def
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `ID` = 18 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='Y' WHERE `ID` = 18 AND `OWNER_ID` = 7 [ RunTime:0.0002s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='N' WHERE `ID` <> '18' AND `OWNER_ID` = 7 [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:23:40+08:00 ] 117.136.0.172 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T12:23:44+08:00 ] 117.136.0.172 /Api/Index/def
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `ID` = 19 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='Y' WHERE `ID` = 19 AND `OWNER_ID` = 7 [ RunTime:0.0002s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='N' WHERE `ID` <> '19' AND `OWNER_ID` = 7 [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:23:44+08:00 ] 117.136.0.172 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T12:24:00+08:00 ] 117.136.0.172 /Api/Index/state
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: UPDATE `owner_vehicle` SET `IS_ACTIVE`='N' WHERE `ID` = 13642 [ RunTime:0.0003s ]
+
+[ 2015-08-24T12:24:00+08:00 ] 117.136.0.172 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:24:11+08:00 ] 117.136.0.172 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T12:24:15+08:00 ] 1.202.47.246 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-24T12:24:27+08:00 ] 117.136.0.172 /Api/Index/addvehicle2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `vehicle_model` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model` WHERE `MFG_ID` = 5 ORDER BY ID asc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T12:24:29+08:00 ] 1.202.47.246 /Api/Index/addvehicle2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `vehicle_model` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model` WHERE `MFG_ID` = 222 ORDER BY ID asc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:24:32+08:00 ] 1.202.47.246 /Api/Index/addvehicle3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_year` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_year` WHERE `MODEL_ID` = 1478 ORDER BY ID asc  [ RunTime:0.0069s ]
+
+[ 2015-08-24T12:24:34+08:00 ] 1.202.47.246 /Api/Index/addvehicle4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_type` WHERE `MODEL_YEAR_ID` = 9420 ORDER BY ID asc  [ RunTime:0.0043s ]
+
+[ 2015-08-24T12:25:07+08:00 ] 117.136.0.172 /Api/Index/addvehicle2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `vehicle_model` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model` WHERE `MFG_ID` = 5 ORDER BY ID asc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:25:13+08:00 ] 1.202.47.246 /Api/Index/addvehicle5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `OWNER_ID` = 16 AND `IS_DEFAULT` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 16 AND `IS_DEFAULT` = 'Y' [ RunTime:0.0002s ]
+SQL: INSERT INTO `owner_vehicle` (`DATE_PURCHASE`,`MILEAGE`,`OWNER_ID`,`VEHICLE_MODEL_TYPE_ID`) VALUES ('1448294400','33','16','23839') [ RunTime:0.0001s ]
+
+[ 2015-08-24T12:25:13+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0003s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '23839' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-24T12:25:15+08:00 ] 1.202.47.246 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-24T12:25:16+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '23839' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-24T12:25:19+08:00 ] 1.202.47.246 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T12:25:21+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '23839' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:25:24+08:00 ] 1.202.47.246 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-24T12:25:25+08:00 ] 1.202.47.246 /Api/Index/addvehicle2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `vehicle_model` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model` WHERE `MFG_ID` = 4 ORDER BY ID asc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T12:25:27+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '23839' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-24T12:25:29+08:00 ] 1.202.47.246 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-24T12:25:30+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '23839' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0034s ]
+
+[ 2015-08-24T12:25:38+08:00 ] 1.202.47.246 /Api/Index/addvehicle5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `OWNER_ID` = 16 AND `IS_DEFAULT` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 16 AND `IS_DEFAULT` = 'Y' [ RunTime:0.0002s ]
+SQL: INSERT INTO `owner_vehicle` (`DATE_PURCHASE`,`MILEAGE`,`OWNER_ID`,`VEHICLE_MODEL_TYPE_ID`) VALUES ('1445616000','22','16','23839') [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:25:38+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '23839' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:25:50+08:00 ] 117.136.0.172 /Api/Index/addvehicle2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `vehicle_model` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model` WHERE `MFG_ID` = 5 ORDER BY ID asc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T12:25:51+08:00 ] 117.136.0.172 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-24T12:25:52+08:00 ] 117.136.0.172 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0007s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T12:26:15+08:00 ] 1.202.47.246 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-24T12:26:21+08:00 ] 117.136.0.172 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-24T12:26:34+08:00 ] 117.136.0.172 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 13 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 7 [ RunTime:0.0002s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='Y' WHERE `ID` = 13 AND `OWNER_ID` = 7 [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:26:34+08:00 ] 117.136.0.172 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-24T12:26:36+08:00 ] 117.136.0.172 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 12 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 7 [ RunTime:0.0002s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='Y' WHERE `ID` = 12 AND `OWNER_ID` = 7 [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:26:36+08:00 ] 117.136.0.172 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-24T12:26:40+08:00 ] 117.136.0.172 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 4 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 7 [ RunTime:0.0002s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='Y' WHERE `ID` = 4 AND `OWNER_ID` = 7 [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:26:40+08:00 ] 117.136.0.172 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-24T12:26:57+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0007s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '23839' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:27:02+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:27:06+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:27:10+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:27:21+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0007s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:27:31+08:00 ] 1.202.47.246 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:27:32+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:27:33+08:00 ] 1.202.47.246 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-24T12:27:34+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0007s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T12:27:58+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:28:17+08:00 ] 117.136.0.172 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-24T12:29:46+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:29:48+08:00 ] 1.202.47.246 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-24T12:29:49+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:30:37+08:00 ] 117.136.0.172 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:31:37+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:31:40+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:31:40+08:00 ] 1.202.47.246 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-24T12:31:41+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:32:05+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:32:06+08:00 ] 1.202.47.246 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T12:32:07+08:00 ] 1.202.47.246 /Api/Index/addvehicle2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `vehicle_model` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vehicle_model` WHERE `MFG_ID` = 4 ORDER BY ID asc  [ RunTime:0.0007s ]
+
+[ 2015-08-24T12:32:08+08:00 ] 1.202.47.246 /Api/Index/addvehicle3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_year` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vehicle_model_year` WHERE `MODEL_ID` = 27 ORDER BY ID asc  [ RunTime:0.0012s ]
+
+[ 2015-08-24T12:32:09+08:00 ] 1.202.47.246 /Api/Index/addvehicle4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_type` WHERE `MODEL_YEAR_ID` = 4832 ORDER BY ID asc  [ RunTime:0.0045s ]
+
+[ 2015-08-24T12:32:20+08:00 ] 1.202.47.246 /Api/Index/addvehicle5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `OWNER_ID` = 16 AND `IS_DEFAULT` = 'Y' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 16 AND `IS_DEFAULT` = 'Y' [ RunTime:0.0002s ]
+SQL: INSERT INTO `owner_vehicle` (`DATE_PURCHASE`,`MILEAGE`,`OWNER_ID`,`VEHICLE_MODEL_TYPE_ID`) VALUES ('1377273600','22','16','11030') [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:32:20+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '11030' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-24T12:32:34+08:00 ] 1.202.47.246 /Api/Index/addvehicle5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `OWNER_ID` = 16 AND `IS_DEFAULT` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 16 AND `IS_DEFAULT` = 'Y' [ RunTime:0.0002s ]
+SQL: INSERT INTO `owner_vehicle` (`DATE_PURCHASE`,`MILEAGE`,`OWNER_ID`,`VEHICLE_MODEL_TYPE_ID`) VALUES ('1403539200','22','16','11030') [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:32:34+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0004s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '11030' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-24T12:32:34+08:00 ] 117.136.0.172 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0006s ]
+
+[ 2015-08-24T12:32:36+08:00 ] 117.136.0.172 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0009s ]
+
+[ 2015-08-24T12:32:37+08:00 ] 117.136.0.172 /Api/Index/addvehicle2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `vehicle_model` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model` WHERE `MFG_ID` = 206 ORDER BY ID asc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T12:32:38+08:00 ] 117.136.0.172 /Api/Index/addvehicle3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_year` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_year` WHERE `MODEL_ID` = 1285 ORDER BY ID asc  [ RunTime:0.0012s ]
+
+[ 2015-08-24T12:32:39+08:00 ] 117.136.0.172 /Api/Index/addvehicle4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_type` WHERE `MODEL_YEAR_ID` = 9229 ORDER BY ID asc  [ RunTime:0.0084s ]
+
+[ 2015-08-24T12:32:45+08:00 ] 117.136.0.172 /Api/Index/addvehicle5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `OWNER_ID` = 7 AND `IS_DEFAULT` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 7 AND `IS_DEFAULT` = 'Y' [ RunTime:0.0002s ]
+SQL: INSERT INTO `owner_vehicle` (`OWNER_ID`,`VEHICLE_MODEL_TYPE_ID`,`DATE_PURCHASE`,`MILEAGE`) VALUES ('7','21836','1440345600','2555') [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:32:45+08:00 ] 117.136.0.172 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T12:32:54+08:00 ] 1.202.47.246 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-24T12:32:55+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0007s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '11030' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-24T12:32:59+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T12:33:01+08:00 ] 117.136.0.172 /Api/Index/vehicleinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.ID = '15' ORDER BY owner_vehicle.IS_DEFAULT desc LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:33:03+08:00 ] 117.136.0.172 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0008s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T12:34:10+08:00 ] 117.136.0.172 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T12:34:25+08:00 ] 117.136.0.172 /Api/Index/vehicleinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.ID = '24235' ORDER BY owner_vehicle.IS_DEFAULT desc LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:34:27+08:00 ] 117.136.0.172 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T12:41:00+08:00 ] 117.136.0.172 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000599s ]
+
+[ 2015-08-24T12:41:18+08:00 ] 1.202.47.246 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=15211122233 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:41:19+08:00 ] 1.202.47.246 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=15211122233 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-24T12:41:21+08:00 ] 117.136.0.172 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:41:30+08:00 ] 117.136.0.172 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:41:56+08:00 ] 1.202.47.246 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='15211111122' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = '7694f4a66316e53c8cdd9d9954bd611d' AND `PHONE` = '15211111122' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:41:59+08:00 ] 117.136.0.172 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PHONE` = '18301034592' AND `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-24T12:42:06+08:00 ] 1.202.47.246 /Api/Index/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `base` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:43:33+08:00 ] 117.136.0.172 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:43:51+08:00 ] 117.136.0.172 /Api/Index/addaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `owner_address` (`OWNER_ID`,`LATITUDE`,`LONGITUDE`,`IS_DEFAULT`) VALUES ('7','39.914033','116.530661','N') [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:43:51+08:00 ] 117.136.0.172 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:44:14+08:00 ] 117.136.0.172 /Api/Index/addaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `owner_address` (`OWNER_ID`,`LATITUDE`,`LONGITUDE`,`DISTRICT`,`CITY`,`POSTAL_CODE`,`PROVINCE`,`COUNTRY`,`IS_DEFAULT`) VALUES ('7','40.003692','116.48667','朝阳区','北京市','0','北京市','中国','N') [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:44:14+08:00 ] 117.136.0.172 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-24T12:45:32+08:00 ] 117.136.0.172 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:50:49+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:52:25+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '16' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:52:26+08:00 ] 1.202.47.246 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-24T12:52:29+08:00 ] 1.202.47.246 /Api/Index/addvehicle2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `vehicle_model` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model` WHERE `MFG_ID` = 35 ORDER BY ID asc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T12:52:31+08:00 ] 1.202.47.246 /Api/Index/addvehicle3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_year` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_year` WHERE `MODEL_ID` = 269 ORDER BY ID asc  [ RunTime:0.0012s ]
+
+[ 2015-08-24T12:52:32+08:00 ] 1.202.47.246 /Api/Index/addvehicle4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_type` WHERE `MODEL_YEAR_ID` = 5768 ORDER BY ID asc  [ RunTime:0.0044s ]
+
+[ 2015-08-24T12:52:40+08:00 ] 1.202.47.246 /Api/Index/addvehicle5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `OWNER_ID` = 16 AND `IS_DEFAULT` = 'Y' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 16 AND `IS_DEFAULT` = 'Y' [ RunTime:0.0002s ]
+SQL: INSERT INTO `owner_vehicle` (`DATE_PURCHASE`,`MILEAGE`,`OWNER_ID`,`VEHICLE_MODEL_TYPE_ID`) VALUES ('1440604800','22','16','9406') [ RunTime:0.0003s ]
+
+[ 2015-08-24T12:52:40+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '9406' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-24T12:52:43+08:00 ] 1.202.47.246 /Api/Index/addvehicle5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `OWNER_ID` = 16 AND `IS_DEFAULT` = 'Y' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 16 AND `IS_DEFAULT` = 'Y' [ RunTime:0.0002s ]
+SQL: INSERT INTO `owner_vehicle` (`DATE_PURCHASE`,`MILEAGE`,`OWNER_ID`,`VEHICLE_MODEL_TYPE_ID`) VALUES ('1440604800','22','16','9406') [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:52:43+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '9406' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-24T12:52:44+08:00 ] 1.202.47.246 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-24T12:52:45+08:00 ] 1.202.47.246 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '9406' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-24T12:53:02+08:00 ] 117.136.0.172 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:53:32+08:00 ] 117.136.0.172 /Api/Index/vehicleinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0007s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.ID = '13642' ORDER BY owner_vehicle.IS_DEFAULT desc LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:53:33+08:00 ] 117.136.0.172 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T12:53:37+08:00 ] 117.136.0.172 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0036s ]
+
+[ 2015-08-24T12:53:43+08:00 ] 117.136.0.172 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-24T12:53:46+08:00 ] 117.136.0.172 /Api/Index/addvehicle2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `vehicle_model` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model` WHERE `MFG_ID` = 1 ORDER BY ID asc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:53:48+08:00 ] 117.136.0.172 /Api/Index/addvehicle3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_year` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_year` WHERE `MODEL_ID` = 1 ORDER BY ID asc  [ RunTime:0.0012s ]
+
+[ 2015-08-24T12:53:50+08:00 ] 117.136.0.172 /Api/Index/addvehicle4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_type` WHERE `MODEL_YEAR_ID` = 5196 ORDER BY ID asc  [ RunTime:0.0044s ]
+
+[ 2015-08-24T12:53:51+08:00 ] 1.202.47.246 /Api/Index/addvehicle2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `vehicle_model` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model` WHERE `MFG_ID` = 1 ORDER BY ID asc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T12:53:52+08:00 ] 1.202.47.246 /Api/Index/addvehicle2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `vehicle_model` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model` WHERE `MFG_ID` = 1 ORDER BY ID asc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T12:53:53+08:00 ] 1.202.47.246 /Api/Index/addvehicle3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_year` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_year` WHERE `MODEL_ID` = 1 ORDER BY ID asc  [ RunTime:0.0012s ]
+
+[ 2015-08-24T12:53:55+08:00 ] 1.202.47.246 /Api/Index/addvehicle4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_type` WHERE `MODEL_YEAR_ID` = 4748 ORDER BY ID asc  [ RunTime:0.0043s ]
+
+[ 2015-08-24T12:54:03+08:00 ] 117.136.0.172 /Api/Index/addvehicle5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `OWNER_ID` = 7 AND `IS_DEFAULT` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 7 AND `IS_DEFAULT` = 'Y' [ RunTime:0.0002s ]
+SQL: INSERT INTO `owner_vehicle` (`OWNER_ID`,`VEHICLE_MODEL_TYPE_ID`,`DATE_PURCHASE`,`MILEAGE`) VALUES ('7','13110','1440345600','555') [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:54:03+08:00 ] 117.136.0.172 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T12:54:42+08:00 ] 117.136.0.172 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-24T12:54:43+08:00 ] 117.136.0.172 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T12:54:47+08:00 ] 117.136.0.172 /Api/Index/addvehicle2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `vehicle_model` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model` WHERE `MFG_ID` = 2 ORDER BY ID asc  [ RunTime:0.0039s ]
+
+[ 2015-08-24T12:54:49+08:00 ] 117.136.0.172 /Api/Index/addvehicle3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_year` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_year` WHERE `MODEL_ID` = 20 ORDER BY ID asc  [ RunTime:0.0012s ]
+
+[ 2015-08-24T12:54:49+08:00 ] 117.136.0.172 /Api/Index/addvehicle4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_type` WHERE `MODEL_YEAR_ID` = 4814 ORDER BY ID asc  [ RunTime:0.0044s ]
+
+[ 2015-08-24T12:54:54+08:00 ] 1.202.47.246 /Api/Index/addvehicle2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `vehicle_model` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model` WHERE `MFG_ID` = 1 ORDER BY ID asc  [ RunTime:0.0005s ]
+
+[ 2015-08-24T12:54:54+08:00 ] 1.202.47.246 /Api/Index/addvehicle3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_year` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_year` WHERE `MODEL_ID` = 1 ORDER BY ID asc  [ RunTime:0.0012s ]
+
+[ 2015-08-24T12:54:55+08:00 ] 1.202.47.246 /Api/Index/addvehicle4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_type` WHERE `MODEL_YEAR_ID` = 5196 ORDER BY ID asc  [ RunTime:0.0044s ]
+
+[ 2015-08-24T12:55:30+08:00 ] 117.136.0.172 /Api/Index/addvehicle5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `OWNER_ID` = 7 AND `IS_DEFAULT` = 'Y' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 7 AND `IS_DEFAULT` = 'Y' [ RunTime:0.0002s ]
+SQL: INSERT INTO `owner_vehicle` (`OWNER_ID`,`VEHICLE_MODEL_TYPE_ID`,`DATE_PURCHASE`,`MILEAGE`) VALUES ('7','10943','1440345600','25889') [ RunTime:0.0002s ]
+
+[ 2015-08-24T12:55:30+08:00 ] 117.136.0.172 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0005s ]
+

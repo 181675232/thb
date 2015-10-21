@@ -1,0 +1,2720 @@
+[ 2015-08-22T13:40:52+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-22T13:41:23+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-22T13:41:37+08:00 ] 123.119.224.203 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000420s ]
+
+[ 2015-08-22T14:19:27+08:00 ] 221.221.252.16 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PHONE` = '18301034592' AND `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-22T14:19:31+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-22T14:35:57+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-22T15:09:38+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PHONE` = '18301034592' AND `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-22T15:09:54+08:00 ] 123.119.224.203 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-22T15:10:17+08:00 ] 123.119.224.203 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0005s ]
+
+[ 2015-08-22T15:12:02+08:00 ] 123.119.224.203 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-22T15:14:28+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-22T15:14:37+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-22T15:15:02+08:00 ] 221.221.252.16 /Api/Index/addaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `owner_address` (`OWNER_ID`,`LATITUDE`,`LONGITUDE`,`DISTRICT`,`CITY`,`POSTAL_CODE`,`PROVINCE`,`COUNTRY`,`IS_DEFAULT`) VALUES ('7','39.929132','116.485781','null','北京市','null','北京市','中国','N') [ RunTime:0.0002s ]
+
+[ 2015-08-22T15:46:51+08:00 ] 221.221.252.16 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PHONE` = '18301034592' AND `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-22T15:46:56+08:00 ] 221.221.252.16 /Api/Index/addaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001559s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `owner_address` (`OWNER_ID`,`IS_DEFAULT`) VALUES ('7','N') [ RunTime:0.0002s ]
+
+[ 2015-08-22T15:47:41+08:00 ] 221.221.252.16 /Api/Index/addaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `owner_address` (`OWNER_ID`,`IS_DEFAULT`) VALUES ('7','N') [ RunTime:0.0002s ]
+
+[ 2015-08-22T15:49:11+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-22T15:51:27+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-22T15:59:05+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-22T16:01:28+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-22T16:02:35+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-22T16:03:08+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-22T16:04:27+08:00 ] 221.221.252.16 /Api/Index/addaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `owner_address` (`OWNER_ID`,`LATITUDE`,`LONGITUDE`,`DISTRICT`,`CITY`,`POSTAL_CODE`,`PROVINCE`,`COUNTRY`,`IS_DEFAULT`) VALUES ('7','39.914081','116.417618','朝阳区','北京市','0','北京市','中国','N') [ RunTime:0.0002s ]
+
+[ 2015-08-22T16:04:28+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-22T16:04:36+08:00 ] 221.221.252.16 /Api/Index/addaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `owner_address` (`OWNER_ID`,`LATITUDE`,`LONGITUDE`,`IS_DEFAULT`) VALUES ('7','39.876286','116.476322','N') [ RunTime:0.0002s ]
+
+[ 2015-08-22T16:04:38+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0057s ]
+
+[ 2015-08-22T16:34:58+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-22T16:35:38+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-22T16:40:35+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+NOTIC: [2] require_once(/vendor/autoload.php): failed to open stream: No such file or directory /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 6 行.
+
+[ 2015-08-22T16:40:46+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+NOTIC: [2] require_once(/vendor/autoload.php): failed to open stream: No such file or directory /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 6 行.
+
+[ 2015-08-22T16:40:57+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+NOTIC: [2] require_once(/vendor/autoload.php): failed to open stream: No such file or directory /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 6 行.
+
+[ 2015-08-22T16:41:34+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-22T16:44:04+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-22T16:46:36+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-22T16:48:47+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+NOTIC: [2] require_once(/vendor/autoload.php): failed to open stream: No such file or directory /alidata/www/default/ThinkPHP/Library/Org/Util/Jpush.class.php 第 8 行.
+
+[ 2015-08-22T16:49:29+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+NOTIC: [2] require_once(/vendor/autoload.php): failed to open stream: No such file or directory /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 6 行.
+
+[ 2015-08-22T16:49:42+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+NOTIC: [2] require_once(/vendor/autoload.php): failed to open stream: No such file or directory /alidata/www/default/ThinkPHP/Library/Org/Util/Jpush.class.php 第 8 行.
+
+[ 2015-08-22T16:49:43+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+NOTIC: [2] require_once(/vendor/autoload.php): failed to open stream: No such file or directory /alidata/www/default/ThinkPHP/Library/Org/Util/Jpush.class.php 第 8 行.
+
+[ 2015-08-22T16:49:44+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+NOTIC: [2] require_once(/vendor/autoload.php): failed to open stream: No such file or directory /alidata/www/default/ThinkPHP/Library/Org/Util/Jpush.class.php 第 8 行.
+
+[ 2015-08-22T16:49:44+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+NOTIC: [2] require_once(/vendor/autoload.php): failed to open stream: No such file or directory /alidata/www/default/ThinkPHP/Library/Org/Util/Jpush.class.php 第 8 行.
+
+[ 2015-08-22T16:49:45+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+NOTIC: [2] require_once(/vendor/autoload.php): failed to open stream: No such file or directory /alidata/www/default/ThinkPHP/Library/Org/Util/Jpush.class.php 第 8 行.
+
+[ 2015-08-22T16:49:45+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+NOTIC: [2] require_once(/vendor/autoload.php): failed to open stream: No such file or directory /alidata/www/default/ThinkPHP/Library/Org/Util/Jpush.class.php 第 8 行.
+
+[ 2015-08-22T16:49:45+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+NOTIC: [2] require_once(/vendor/autoload.php): failed to open stream: No such file or directory /alidata/www/default/ThinkPHP/Library/Org/Util/Jpush.class.php 第 8 行.
+
+[ 2015-08-22T16:49:45+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+NOTIC: [2] require_once(/vendor/autoload.php): failed to open stream: No such file or directory /alidata/www/default/ThinkPHP/Library/Org/Util/Jpush.class.php 第 8 行.
+
+[ 2015-08-22T16:49:46+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+NOTIC: [2] require_once(/vendor/autoload.php): failed to open stream: No such file or directory /alidata/www/default/ThinkPHP/Library/Org/Util/Jpush.class.php 第 8 行.
+
+[ 2015-08-22T16:49:46+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+NOTIC: [2] require_once(/vendor/autoload.php): failed to open stream: No such file or directory /alidata/www/default/ThinkPHP/Library/Org/Util/Jpush.class.php 第 8 行.
+
+[ 2015-08-22T16:49:46+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+NOTIC: [2] require_once(/vendor/autoload.php): failed to open stream: No such file or directory /alidata/www/default/ThinkPHP/Library/Org/Util/Jpush.class.php 第 8 行.
+
+[ 2015-08-22T16:49:46+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+NOTIC: [2] require_once(/vendor/autoload.php): failed to open stream: No such file or directory /alidata/www/default/ThinkPHP/Library/Org/Util/Jpush.class.php 第 8 行.
+
+[ 2015-08-22T16:49:46+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+NOTIC: [2] require_once(/vendor/autoload.php): failed to open stream: No such file or directory /alidata/www/default/ThinkPHP/Library/Org/Util/Jpush.class.php 第 8 行.
+
+[ 2015-08-22T16:49:56+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+
+[ 2015-08-22T16:50:10+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+ERR: Invalid android.alert string
+
+[ 2015-08-22T16:51:05+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+ERR: Invalid android.alert string
+
+[ 2015-08-22T16:51:06+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+ERR: Invalid android.alert string
+
+[ 2015-08-22T16:51:08+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+ERR: Invalid android.alert string
+
+[ 2015-08-22T16:51:55+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+NOTIC: [2] require_once(/vendor/autoload.php): failed to open stream: No such file or directory /alidata/www/default/ThinkPHP/Library/Org/Util/Jpush.class.php 第 8 行.
+
+[ 2015-08-22T16:52:03+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+ERR: Invalid android.alert string
+
+[ 2015-08-22T16:53:10+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+
+[ 2015-08-22T16:54:09+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+ERR: Invalid notification
+
+[ 2015-08-22T16:54:10+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+ERR: Invalid notification
+
+[ 2015-08-22T16:54:11+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+ERR: Invalid notification
+
+[ 2015-08-22T16:54:11+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+ERR: Invalid notification
+
+[ 2015-08-22T16:54:11+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+ERR: Invalid notification
+
+[ 2015-08-22T16:55:07+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+ERR: Invalid android.alert string
+
+[ 2015-08-22T16:56:08+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+ERR: Invalid android.alert string
+
+[ 2015-08-22T16:56:08+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+ERR: Invalid android.alert string
+
+[ 2015-08-22T16:56:09+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+ERR: Invalid android.alert string
+
+[ 2015-08-22T16:56:10+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+ERR: Invalid android.alert string
+
+[ 2015-08-22T17:02:47+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+ERR: Invalid android.alert string
+
+[ 2015-08-22T17:02:47+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+ERR: Invalid android.alert string
+
+[ 2015-08-22T17:02:48+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+ERR: Invalid android.alert string
+
+[ 2015-08-22T17:02:48+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+ERR: Invalid android.alert string
+
+[ 2015-08-22T17:04:36+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-22T17:04:41+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 361 行.
+NOTIC: [8] Undefined variable: set /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+NOTIC: [2] implode(): Invalid arguments passed /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `ID` = 2' at line 1
+
+[ 2015-08-22T17:04:43+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 361 行.
+NOTIC: [8] Undefined variable: set /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+NOTIC: [2] implode(): Invalid arguments passed /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `ID` = 2' at line 1
+
+[ 2015-08-22T17:05:09+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+ERR: Invalid android.alert string
+
+[ 2015-08-22T17:05:52+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000456s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2015-08-22T17:05:52+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000554s ]
+
+[ 2015-08-22T17:05:53+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2015-08-22T17:05:53+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000557s ]
+
+[ 2015-08-22T17:08:16+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-22T17:08:19+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 361 行.
+NOTIC: [8] Undefined variable: set /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+NOTIC: [2] implode(): Invalid arguments passed /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `ID` = 2' at line 1
+
+[ 2015-08-22T17:09:30+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+ERR: Invalid appKey or masterSecret
+
+[ 2015-08-22T17:15:18+08:00 ] 221.221.252.16 /Api/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2015-08-22T17:17:45+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = '5d11e7d14465a708351327f2503ca022' AND `PHONE` = '18301034592' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-22T17:23:05+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = '5d11e7d14465a708351327f2503ca022' AND `PHONE` = '18301034592' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-22T17:24:47+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='15233333333' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-22T17:27:20+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='15233333336' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-22T17:28:10+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PHONE` = '18301034592' AND `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-22T17:29:43+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-22T17:30:14+08:00 ] 221.221.252.16 /Api/Index/def
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `ID` = 14 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 361 行.
+NOTIC: [8] Undefined variable: set /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+NOTIC: [2] implode(): Invalid arguments passed /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `ID` = 14' at line 1
+
+[ 2015-08-22T17:31:21+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0006s ]
+
+[ 2015-08-22T17:31:23+08:00 ] 221.221.252.16 /Api/Index/state
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: UPDATE `owner_vehicle` SET `IS_ACTIVE`='N' WHERE `ID` = 14 [ RunTime:0.0031s ]
+
+[ 2015-08-22T17:31:28+08:00 ] 221.221.252.16 /Api/Index/state
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: UPDATE `owner_vehicle` SET `IS_ACTIVE`='N' WHERE `ID` = 14 [ RunTime:0.0003s ]
+
+[ 2015-08-22T17:31:33+08:00 ] 221.221.252.16 /Api/Index/state
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: UPDATE `owner_vehicle` SET `IS_ACTIVE`='N' WHERE `ID` = 15 [ RunTime:0.0003s ]
+
+[ 2015-08-22T17:31:44+08:00 ] 221.221.252.16 /Api/Index/state
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: UPDATE `owner_vehicle` SET `IS_ACTIVE`='N' WHERE `ID` = 14 [ RunTime:0.0003s ]
+
+[ 2015-08-22T17:31:46+08:00 ] 221.221.252.16 /Api/Index/def
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `ID` = 14 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 361 行.
+NOTIC: [8] Undefined variable: set /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+NOTIC: [2] implode(): Invalid arguments passed /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `ID` = 14' at line 1
+
+[ 2015-08-22T17:31:49+08:00 ] 221.221.252.16 /Api/Index/def
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `ID` = 14 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 361 行.
+NOTIC: [8] Undefined variable: set /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+NOTIC: [2] implode(): Invalid arguments passed /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `ID` = 14' at line 1
+
+[ 2015-08-22T17:31:49+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = '5d11e7d14465a708351327f2503ca022' AND `PHONE` = '18301034592' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-22T17:31:51+08:00 ] 221.221.252.16 /Api/Index/def
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `ID` = 15 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 361 行.
+NOTIC: [8] Undefined variable: set /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+NOTIC: [2] implode(): Invalid arguments passed /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `ID` = 15' at line 1
+
+[ 2015-08-22T17:31:53+08:00 ] 221.221.252.16 /Api/Index/def
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `ID` = 14 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 361 行.
+NOTIC: [8] Undefined variable: set /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+NOTIC: [2] implode(): Invalid arguments passed /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `ID` = 14' at line 1
+
+[ 2015-08-22T17:31:55+08:00 ] 221.221.252.16 /Api/Index/state
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: UPDATE `owner_vehicle` SET `IS_ACTIVE`='N' WHERE `ID` = 14 [ RunTime:0.0003s ]
+
+[ 2015-08-22T17:33:48+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' AND `PHONE` = '18301034592' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-22T17:34:10+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' AND `PHONE` = '18301034592' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-22T17:35:52+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-22T17:36:44+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = '5d11e7d14465a708351327f2503ca022' AND `PHONE` = '18301034592' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-22T17:36:46+08:00 ] 221.221.252.16 /Api/Index/def
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `ID` = 14 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 361 行.
+NOTIC: [8] Undefined variable: set /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+NOTIC: [2] implode(): Invalid arguments passed /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `ID` = 14' at line 1
+
+[ 2015-08-22T17:37:01+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-22T17:38:03+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' AND `PHONE` = '18301034592' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-22T17:38:13+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-22T17:38:42+08:00 ] 221.221.252.16 /Api/Index/def
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `ID` = 14 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 361 行.
+NOTIC: [8] Undefined variable: set /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+NOTIC: [2] implode(): Invalid arguments passed /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `ID` = 14' at line 1
+
+[ 2015-08-22T17:38:44+08:00 ] 221.221.252.16 /Api/Index/def
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `ID` = 14 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 361 行.
+NOTIC: [8] Undefined variable: set /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+NOTIC: [2] implode(): Invalid arguments passed /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `ID` = 14' at line 1
+
+[ 2015-08-22T17:39:28+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' AND `PHONE` = '18301034592' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-22T17:40:02+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' AND `PHONE` = '18301034592' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-22T17:40:03+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' AND `PHONE` = '18301034592' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-22T17:40:04+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' AND `PHONE` = '18301034592' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-22T17:40:04+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' AND `PHONE` = '18301034592' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-22T17:41:37+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' AND `PHONE` = '18301034592' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-22T17:41:49+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' AND `PHONE` = '18301034592' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-22T17:41:52+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' AND `PHONE` = '18301034592' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-22T17:41:52+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' AND `PHONE` = '18301034592' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-22T17:41:52+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' AND `PHONE` = '18301034592' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-22T17:41:52+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' AND `PHONE` = '18301034592' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-22T17:41:53+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' AND `PHONE` = '18301034592' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-22T17:42:21+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-22T17:42:23+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 361 行.
+NOTIC: [8] Undefined variable: set /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+NOTIC: [2] implode(): Invalid arguments passed /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `ID` = 1' at line 1
+
+[ 2015-08-22T17:42:29+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 361 行.
+NOTIC: [8] Undefined variable: set /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+NOTIC: [2] implode(): Invalid arguments passed /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `ID` = 1' at line 1
+
+[ 2015-08-22T17:42:30+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 361 行.
+NOTIC: [8] Undefined variable: set /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+NOTIC: [2] implode(): Invalid arguments passed /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `ID` = 2' at line 1
+
+[ 2015-08-22T17:42:38+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 4 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 361 行.
+NOTIC: [8] Undefined variable: set /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+NOTIC: [2] implode(): Invalid arguments passed /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `ID` = 4' at line 1
+
+[ 2015-08-22T17:43:33+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+
+[ 2015-08-22T17:43:49+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+
+[ 2015-08-22T17:44:07+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 3 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-22T17:45:10+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' AND `PHONE` = '18301034592' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-22T17:47:04+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' AND `PHONE` = '18301034592' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-22T17:47:31+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' AND `PHONE` = '18301034592' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-22T17:48:14+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' AND `PHONE` = '18301034592' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-22T17:48:21+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-22T17:48:23+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 2 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 361 行.
+NOTIC: [8] Undefined variable: set /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+NOTIC: [2] implode(): Invalid arguments passed /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `ID` = 2 AND `OWNER_ID` = 7' at line 1
+
+[ 2015-08-22T17:48:33+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 3 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 361 行.
+NOTIC: [8] Undefined variable: set /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+NOTIC: [2] implode(): Invalid arguments passed /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `ID` = 3 AND `OWNER_ID` = 7' at line 1
+
+[ 2015-08-22T17:48:40+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-22T17:48:48+08:00 ] 221.221.252.16 /Api/Index/def
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `ID` = 14 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 361 行.
+NOTIC: [8] Undefined variable: set /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+NOTIC: [2] implode(): Invalid arguments passed /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `ID` = 14 AND `OWNER_ID` = 7' at line 1
+
+[ 2015-08-22T17:49:16+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' AND `PHONE` = '18301034592' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-22T17:49:39+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: PHONE /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 74 行.
+SQL: SELECT * FROM `owner` WHERE ( PHONE='' ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-22T17:49:55+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' AND `PHONE` = '18301034592' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-22T17:50:37+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-22T17:50:39+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 4 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 361 行.
+NOTIC: [8] Undefined variable: set /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+NOTIC: [2] implode(): Invalid arguments passed /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `ID` = 4 AND `OWNER_ID` = 7' at line 1
+
+[ 2015-08-22T17:50:49+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 4 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 361 行.
+NOTIC: [8] Undefined variable: set /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+NOTIC: [2] implode(): Invalid arguments passed /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `ID` = 4 AND `OWNER_ID` = 7' at line 1
+
+[ 2015-08-22T17:51:34+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-22T17:51:36+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0048s ]
+
+[ 2015-08-22T17:55:59+08:00 ] 221.221.252.16 /Api/Index/def
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `ID` = 14 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 361 行.
+NOTIC: [8] Undefined variable: set /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+NOTIC: [2] implode(): Invalid arguments passed /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `ID` = 14 AND `OWNER_ID` = 7' at line 1
+
+[ 2015-08-22T17:56:06+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-22T17:56:07+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-22T17:56:11+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 2 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0034s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Illegal string offset 'table' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 633 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 645 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Illegal string offset 'table' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 633 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 645 行.
+
+[ 2015-08-22T17:56:26+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 2 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Illegal string offset 'table' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 633 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 645 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Illegal string offset 'table' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 633 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 645 行.
+
+[ 2015-08-22T17:56:31+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 6 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Illegal string offset 'table' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 633 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 645 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Illegal string offset 'table' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 633 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 645 行.
+
+[ 2015-08-22T17:56:36+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 4 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Illegal string offset 'table' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 633 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 645 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Illegal string offset 'table' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 633 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 645 行.
+
+[ 2015-08-22T17:56:38+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 3 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Illegal string offset 'table' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 633 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 645 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Illegal string offset 'table' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 633 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 645 行.
+
+[ 2015-08-22T17:57:16+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 6 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Illegal string offset 'table' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 633 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 645 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Illegal string offset 'table' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 633 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 645 行.
+
+[ 2015-08-22T17:57:20+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 4 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Illegal string offset 'table' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 633 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 645 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Illegal string offset 'table' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 633 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 645 行.
+
+[ 2015-08-22T17:58:24+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 6 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Illegal string offset 'table' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 633 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 645 行.
+
+[ 2015-08-22T17:58:28+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 4 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Illegal string offset 'table' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 633 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 645 行.
+
+[ 2015-08-22T17:58:31+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 3 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Illegal string offset 'table' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 633 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 645 行.
+
+[ 2015-08-22T17:59:29+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 3 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Illegal string offset 'table' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 633 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 645 行.
+
+[ 2015-08-22T17:59:59+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-22T18:00:15+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-22T18:00:18+08:00 ] 221.221.252.16 /Api/Index/def
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `ID` = 14 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 361 行.
+NOTIC: [8] Undefined variable: set /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+NOTIC: [2] implode(): Invalid arguments passed /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `ID` = 14 AND `OWNER_ID` = 7' at line 1
+
+[ 2015-08-22T18:00:47+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-22T18:00:57+08:00 ] 221.221.252.16 /Api/Index/def
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `ID` = 15 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 361 行.
+NOTIC: [8] Undefined variable: set /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+NOTIC: [2] implode(): Invalid arguments passed /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `ID` = 15 AND `OWNER_ID` = 7' at line 1
+
+[ 2015-08-22T18:01:06+08:00 ] 221.221.252.16 /Api/Index/def
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `ID` = 15 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Model.class.php 第 267 行.
+NOTIC: [2] Invalid argument supplied for foreach() /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 361 行.
+NOTIC: [8] Undefined variable: set /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+NOTIC: [2] implode(): Invalid arguments passed /alidata/www/default/ThinkPHP/Library/Think/Db/Driver.class.php 第 376 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `ID` = 15 AND `OWNER_ID` = 7' at line 1
+
+[ 2015-08-22T18:01:16+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-22T18:01:19+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-22T18:01:20+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 6 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 7 [ RunTime:0.0002s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='Y' WHERE `ID` = 6 AND `OWNER_ID` = 7 [ RunTime:0.0002s ]
+
+[ 2015-08-22T18:01:30+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 4 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 7 [ RunTime:0.0002s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='Y' WHERE `ID` = 4 AND `OWNER_ID` = 7 [ RunTime:0.0002s ]
+
+[ 2015-08-22T18:01:34+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 3 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 7 [ RunTime:0.0002s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='Y' WHERE `ID` = 3 AND `OWNER_ID` = 7 [ RunTime:0.0002s ]
+
+[ 2015-08-22T18:01:47+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-22T18:01:54+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 2 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 7 [ RunTime:0.0002s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='Y' WHERE `ID` = 2 AND `OWNER_ID` = 7 [ RunTime:0.0002s ]
+
+[ 2015-08-22T18:15:03+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-22T18:15:10+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-22T18:43:03+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-22T18:43:07+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-22T18:43:08+08:00 ] 221.221.252.16 /Api/Index/vehicleinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.ID = '14' ORDER BY owner_vehicle.IS_DEFAULT desc LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-08-22T18:43:17+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-22T18:43:19+08:00 ] 221.221.252.16 /Api/Index/vehicleinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.ID = '14' ORDER BY owner_vehicle.IS_DEFAULT desc LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-08-22T18:55:17+08:00 ] 221.221.252.16 /Api/Index/vehicleinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.ID = '14' ORDER BY owner_vehicle.IS_DEFAULT desc LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-22T18:56:58+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-22T18:56:59+08:00 ] 221.221.252.16 /Api/Index/vehicleinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.ID = '14' ORDER BY owner_vehicle.IS_DEFAULT desc LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-08-22T19:00:20+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0008s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-22T19:00:21+08:00 ] 221.221.252.16 /Api/Index/vehicleinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.ID = '14' ORDER BY owner_vehicle.IS_DEFAULT desc LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-08-22T19:00:25+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0007s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0032s ]
+
+[ 2015-08-22T19:00:26+08:00 ] 221.221.252.16 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-22T19:00:28+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-22T19:00:29+08:00 ] 221.221.252.16 /Api/Index/vehicleinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.ID = '14' ORDER BY owner_vehicle.IS_DEFAULT desc LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-08-22T19:00:31+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0034s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-22T19:00:33+08:00 ] 221.221.252.16 /Api/Index/vehicleinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.ID = '14' ORDER BY owner_vehicle.IS_DEFAULT desc LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-08-22T19:00:34+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-22T19:00:51+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PHONE` = '18301034592' AND `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-22T19:01:49+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-22T19:02:04+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-22T19:03:20+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-22T19:03:22+08:00 ] 221.221.252.16 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-22T19:03:26+08:00 ] 221.221.252.16 /Api/Index/addvehicle2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `vehicle_model` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model` WHERE `MFG_ID` = 15 ORDER BY ID asc  [ RunTime:0.0005s ]
+
+[ 2015-08-22T19:03:27+08:00 ] 221.221.252.16 /Api/Index/addvehicle3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_year` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_year` WHERE `MODEL_ID` = 125 ORDER BY ID asc  [ RunTime:0.0013s ]
+
+[ 2015-08-22T19:03:28+08:00 ] 221.221.252.16 /Api/Index/addvehicle4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_type` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vehicle_model_type` WHERE `MODEL_YEAR_ID` = 5143 ORDER BY ID asc  [ RunTime:0.0128s ]
+
+[ 2015-08-22T19:03:40+08:00 ] 221.221.252.16 /Api/Index/addvehicle5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `OWNER_ID` = 7 AND `IS_DEFAULT` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 7 AND `IS_DEFAULT` = 'Y' [ RunTime:0.0002s ]
+SQL: INSERT INTO `owner_vehicle` (`OWNER_ID`,`VEHICLE_MODEL_TYPE_ID`,`DATE_PURCHASE`,`MILEAGE`) VALUES ('7','12071','1440172800','223') [ RunTime:0.0002s ]
+
+[ 2015-08-22T19:03:40+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-22T19:04:36+08:00 ] 221.221.252.16 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0005s ]
+
+[ 2015-08-22T19:04:39+08:00 ] 221.221.252.16 /Api/Index/addvehicle2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `vehicle_model` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model` WHERE `MFG_ID` = 21 ORDER BY ID asc  [ RunTime:0.0005s ]
+
+[ 2015-08-22T19:04:41+08:00 ] 221.221.252.16 /Api/Index/addvehicle3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_year` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_year` WHERE `MODEL_ID` = 167 ORDER BY ID asc  [ RunTime:0.0012s ]
+
+[ 2015-08-22T19:04:42+08:00 ] 221.221.252.16 /Api/Index/addvehicle4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_type` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vehicle_model_type` WHERE `MODEL_YEAR_ID` = 5452 ORDER BY ID asc  [ RunTime:0.0064s ]
+
+[ 2015-08-22T19:04:50+08:00 ] 221.221.252.16 /Api/Index/addvehicle5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `OWNER_ID` = 7 AND `IS_DEFAULT` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 7 AND `IS_DEFAULT` = 'Y' [ RunTime:0.0002s ]
+SQL: INSERT INTO `owner_vehicle` (`OWNER_ID`,`VEHICLE_MODEL_TYPE_ID`,`DATE_PURCHASE`,`MILEAGE`) VALUES ('7','5918','1440172800','222') [ RunTime:0.0002s ]
+
+[ 2015-08-22T19:04:50+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0007s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0047s ]
+
+[ 2015-08-22T19:04:53+08:00 ] 221.221.252.16 /Api/Index/def
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `ID` = 17 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='Y' WHERE `ID` = 17 AND `OWNER_ID` = 7 [ RunTime:0.0002s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='N' WHERE `ID` <> '17' AND `OWNER_ID` = 7 [ RunTime:0.0002s ]
+
+[ 2015-08-22T19:04:53+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-22T19:05:05+08:00 ] 221.221.252.16 /Api/Index/def
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `ID` = 18 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='Y' WHERE `ID` = 18 AND `OWNER_ID` = 7 [ RunTime:0.0002s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='N' WHERE `ID` <> '18' AND `OWNER_ID` = 7 [ RunTime:0.0002s ]
+
+[ 2015-08-22T19:05:05+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-22T19:05:13+08:00 ] 221.221.252.16 /Api/Index/state
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: UPDATE `owner_vehicle` SET `IS_ACTIVE`='N' WHERE `ID` = 17 [ RunTime:0.0002s ]
+
+[ 2015-08-22T19:05:13+08:00 ] 221.221.252.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0004s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-22T19:05:22+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0004s ]
+
+[ 2015-08-22T19:05:23+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 4 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 7 [ RunTime:0.0002s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='Y' WHERE `ID` = 4 AND `OWNER_ID` = 7 [ RunTime:0.0002s ]
+
+[ 2015-08-22T19:05:23+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0004s ]
+
+[ 2015-08-22T19:05:25+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 3 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 7 [ RunTime:0.0002s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='Y' WHERE `ID` = 3 AND `OWNER_ID` = 7 [ RunTime:0.0002s ]
+
+[ 2015-08-22T19:05:25+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-22T19:05:27+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 2 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 7 [ RunTime:0.0002s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='Y' WHERE `ID` = 2 AND `OWNER_ID` = 7 [ RunTime:0.0002s ]
+
+[ 2015-08-22T19:05:27+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-22T19:05:29+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 6 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 7 [ RunTime:0.0002s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='Y' WHERE `ID` = 6 AND `OWNER_ID` = 7 [ RunTime:0.0002s ]
+
+[ 2015-08-22T19:05:29+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-22T19:06:05+08:00 ] 221.221.252.16 /Api/Index/addaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `owner_address` (`OWNER_ID`,`LATITUDE`,`LONGITUDE`,`DISTRICT`,`CITY`,`POSTAL_CODE`,`PROVINCE`,`COUNTRY`,`IS_DEFAULT`) VALUES ('7','39.881865','116.485673','null','北京市','null','北京市','中国','N') [ RunTime:0.0002s ]
+
+[ 2015-08-22T19:06:07+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-22T19:15:34+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PHONE` = '18301034592' AND `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-22T19:19:12+08:00 ] 123.119.224.203 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-22T19:19:32+08:00 ] 123.119.224.203 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-22T19:19:48+08:00 ] 123.119.224.203 /Api/Index/addaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `owner_address` (`OWNER_ID`,`LATITUDE`,`LONGITUDE`,`DISTRICT`,`CITY`,`POSTAL_CODE`,`PROVINCE`,`COUNTRY`,`IS_DEFAULT`) VALUES ('7','40.022101','116.508724','朝阳区','北京市','0','北京市','中国','N') [ RunTime:0.0002s ]
+
+[ 2015-08-22T19:19:48+08:00 ] 123.119.224.203 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-22T19:19:55+08:00 ] 123.119.224.203 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-22T19:19:57+08:00 ] 123.119.224.203 /Api/Index/vehicleinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.ID = '14' ORDER BY owner_vehicle.IS_DEFAULT desc LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-08-22T19:19:59+08:00 ] 123.119.224.203 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0007s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0045s ]
+
+[ 2015-08-22T19:20:02+08:00 ] 123.119.224.203 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-22T19:20:04+08:00 ] 123.119.224.203 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-22T19:21:01+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-22T19:22:28+08:00 ] 221.221.252.16 /Api/Index/addaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `owner_address` (`OWNER_ID`,`LATITUDE`,`LONGITUDE`,`DISTRICT`,`CITY`,`POSTAL_CODE`,`PROVINCE`,`COUNTRY`,`IS_DEFAULT`) VALUES ('7','39.917865','116.521767','平房地区乐乐红烧肉刀削面','北京市','null','北京市','中国','N') [ RunTime:0.0002s ]
+
+[ 2015-08-22T19:22:28+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-22T19:22:45+08:00 ] 221.221.252.16 /Api/Index/addaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `owner_address` (`OWNER_ID`,`LATITUDE`,`LONGITUDE`,`DISTRICT`,`CITY`,`POSTAL_CODE`,`PROVINCE`,`COUNTRY`,`IS_DEFAULT`) VALUES ('7','39.88783','116.535592','王四营地区北京胜高酒店(润坤店)','北京市','null','北京市','中国','N') [ RunTime:0.0002s ]
+
+[ 2015-08-22T19:22:45+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-22T19:23:11+08:00 ] 221.221.252.16 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 13 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 7 [ RunTime:0.0002s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='Y' WHERE `ID` = 13 AND `OWNER_ID` = 7 [ RunTime:0.0002s ]
+
+[ 2015-08-22T19:23:11+08:00 ] 221.221.252.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-22T19:51:15+08:00 ] 123.119.224.203 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=15233333333 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-22T19:52:38+08:00 ] 123.119.224.203 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=15233333333 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-22T19:55:11+08:00 ] 123.119.224.203 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=15233333333 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-22T19:58:34+08:00 ] 123.119.224.203 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=15233333333 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-22T20:03:37+08:00 ] 123.119.224.203 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ID` FROM `owner` WHERE `PHONE` = '18301034592' AND `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-22T20:03:41+08:00 ] 123.119.224.203 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=15233333333 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-22T20:05:45+08:00 ] 123.119.224.203 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0007s ]
+SQL: INSERT INTO `owner` (`PASSWORD`,`PHONE`,`ADDTIME`) VALUES ('7694f4a66316e53c8cdd9d9954bd611d','15233333333','1440245145') [ RunTime:0.0002s ]
+
+[ 2015-08-22T20:07:51+08:00 ] 123.119.224.203 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=15233333333 ) LIMIT 1   [ RunTime:0.0002s ]
+

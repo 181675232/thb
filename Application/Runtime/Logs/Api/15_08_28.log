@@ -1,0 +1,1504 @@
+[ 2015-08-28T07:47:54+08:00 ] 117.114.147.93 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-28T09:37:56+08:00 ] 114.243.214.8 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0005s ]
+
+[ 2015-08-28T14:52:52+08:00 ] 114.243.214.8 /Api/Index/offerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'ID' in where clause is ambiguous
+
+[ 2015-08-28T15:28:11+08:00 ] 114.243.214.8 /Api/Index/offerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.ID = 1 )  [ RunTime:0.0003s ]
+
+[ 2015-08-28T15:28:18+08:00 ] 114.243.214.8 /Api/Index/offerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.ID = 1 )  [ RunTime:0.0004s ]
+
+[ 2015-08-28T15:28:35+08:00 ] 114.243.214.8 /Api/Index/offerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.ID = 1 )  [ RunTime:0.0004s ]
+
+[ 2015-08-28T15:28:39+08:00 ] 114.243.214.8 /Api/Index/offerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.ID = 1 )  [ RunTime:0.0004s ]
+
+[ 2015-08-28T15:29:08+08:00 ] 114.243.214.8 /Api/Index/offerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `service_request` left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.ID = 1 )  [ RunTime:0.0003s ]
+
+[ 2015-08-28T15:51:10+08:00 ] 114.243.214.8 /Api/Index/offerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.SERVICE_DATE,owner.PHONE,service_request.ID,service_request.NOTE,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `service_request` left join owner on owner.ID = service_request.OWNER_ID left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.ID = 1 )  [ RunTime:0.0003s ]
+
+[ 2015-08-28T15:58:01+08:00 ] 114.243.214.8 /Api/Index/offerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.SERVICE_DATE,owner.PHONE,service_request.ID,service_request.NOTE,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `service_request` left join owner on owner.ID = service_request.OWNER_ID left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.ID = 1 )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: PHONE /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` IN ('1','2')  [ RunTime:0.0002s ]
+
+[ 2015-08-28T15:58:40+08:00 ] 114.243.214.8 /Api/Index/offerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.SERVICE_DATE,owner.PHONE,service_request.ID,service_request.NOTE,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `service_request` left join owner on owner.ID = service_request.OWNER_ID left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.ID = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 1  [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 1  [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 1  [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 1  [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 2  [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 2  [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 0  [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 0  [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 0  [ RunTime:0.0001s ]
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+
+[ 2015-08-28T16:00:00+08:00 ] 114.243.214.8 /Api/Index/offerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.SERVICE_DATE,owner.PHONE,service_request.ID,service_request.NOTE,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `service_request` left join owner on owner.ID = service_request.OWNER_ID left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.ID = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0004s ]
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 1  [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 1  [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 1  [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 1  [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 1  [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 2  [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 2  [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 0  [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 0  [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 0  [ RunTime:0.0001s ]
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+
+[ 2015-08-28T16:02:23+08:00 ] 114.243.214.8 /Api/Index/offerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.SERVICE_DATE,owner.PHONE,service_request.ID,service_request.NOTE,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `service_request` left join owner on owner.ID = service_request.OWNER_ID left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.ID = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 1  [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 1  [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 1  [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 1  [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 1  [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 2  [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 2  [ RunTime:0.0003s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 0  [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 0  [ RunTime:0.0001s ]
+NOTIC: [2] Illegal string offset 'id' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 737 行.
+NOTIC: [2] Illegal string offset 'mfg' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_year' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'model_type' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 738 行.
+NOTIC: [2] Illegal string offset 'service_date' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+NOTIC: [2] Illegal string offset 'PHONE' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 740 行.
+NOTIC: [2] Illegal string offset 'service' /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 742 行.
+SQL: SELECT * FROM `service_type` WHERE `ID` = 0  [ RunTime:0.0001s ]
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+NOTIC: [2] json_encode(): Invalid UTF-8 sequence in argument /alidata/www/default/Application/Common/Common/function.php 第 19 行.
+
+[ 2015-08-28T17:59:10+08:00 ] 114.243.214.8 /Api/Index/offerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.SERVICE_DATE,owner.PHONE,service_request.ID,service_request.NOTE,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `service_request` left join owner on owner.ID = service_request.OWNER_ID left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.ID = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: service_request /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 735 行.
+
+[ 2015-08-28T17:59:20+08:00 ] 114.243.214.8 /Api/Index/offerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.SERVICE_DATE,owner.PHONE,service_request.ID,service_request.NOTE,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `service_request` left join owner on owner.ID = service_request.OWNER_ID left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.ID = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: PHONE /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` IN ('1','2')  [ RunTime:0.0002s ]
+
+[ 2015-08-28T18:08:49+08:00 ] 114.243.214.8 /Api/Index/offerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0006s ]
+SQL: SELECT service_request.SERVICE_DATE,owner.PHONE,service_request.ID,service_request.NOTE,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `service_request` left join owner on owner.ID = service_request.OWNER_ID left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.ID = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: PHONE /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` IN ('1','2')  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `service_part` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `service_part`  [ RunTime:0.0002s ]
+
+[ 2015-08-28T18:09:28+08:00 ] 114.243.214.8 /Api/Index/offerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0009s ]
+SQL: SELECT service_request.SERVICE_DATE,owner.PHONE,service_request.ID,service_request.NOTE,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `service_request` left join owner on owner.ID = service_request.OWNER_ID left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.ID = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: PHONE /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` IN ('1','2')  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `service_part` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `service_part`  [ RunTime:0.0002s ]
+
+[ 2015-08-28T18:45:53+08:00 ] 114.243.214.8 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-28T18:45:57+08:00 ] 114.243.214.8 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0005s ]
+
+[ 2015-08-28T18:46:19+08:00 ] 114.243.214.8 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-28T18:46:30+08:00 ] 114.243.214.8 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 6 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 7 [ RunTime:0.0002s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='Y' WHERE `ID` = 6 AND `OWNER_ID` = 7 [ RunTime:0.0002s ]
+
+[ 2015-08-28T18:46:30+08:00 ] 114.243.214.8 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-28T18:46:39+08:00 ] 114.243.214.8 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0047s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0005s ]
+
+[ 2015-08-28T18:46:47+08:00 ] 114.243.214.8 /Api/Index/def
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `ID` = 24239 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='Y' WHERE `ID` = 24239 AND `OWNER_ID` = 7 [ RunTime:0.0002s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='N' WHERE `ID` <> '24239' AND `OWNER_ID` = 7 [ RunTime:0.0002s ]
+
+[ 2015-08-28T18:46:47+08:00 ] 114.243.214.8 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0004s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0005s ]
+
+[ 2015-08-28T18:46:56+08:00 ] 114.243.214.8 /Api/Index/def
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `ID` = 24238 AND `OWNER_ID` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='Y' WHERE `ID` = 24238 AND `OWNER_ID` = 7 [ RunTime:0.0002s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='N' WHERE `ID` <> '24238' AND `OWNER_ID` = 7 [ RunTime:0.0002s ]
+
+[ 2015-08-28T18:46:56+08:00 ] 114.243.214.8 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0004s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0005s ]
+
+[ 2015-08-28T19:59:45+08:00 ] 117.136.0.189 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='15233333363' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `owner` WHERE `PHONE` = '15233333363' AND `PASSWORD` = '7694f4a66316e53c8cdd9d9954bd611d' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-28T20:00:01+08:00 ] 117.136.0.189 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='15211111112' ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-28T20:00:14+08:00 ] 117.136.0.189 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='15233333363' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `owner` WHERE `PHONE` = '15233333363' AND `PASSWORD` = '7694f4a66316e53c8cdd9d9954bd611d' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-28T20:01:36+08:00 ] 117.136.0.189 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `owner` WHERE `PHONE` = '18301034592' AND `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-28T20:01:58+08:00 ] 117.136.0.189 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0005s ]
+
+[ 2015-08-28T20:02:00+08:00 ] 117.136.0.189 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-28T20:02:03+08:00 ] 117.136.0.189 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0004s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0005s ]
+
+[ 2015-08-28T20:02:09+08:00 ] 117.136.0.189 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0003s ]
+
+[ 2015-08-28T20:02:12+08:00 ] 117.136.0.189 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-28T21:59:12+08:00 ] 117.114.147.93 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-28T22:06:29+08:00 ] 60.194.194.16 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-28T22:06:52+08:00 ] 60.194.194.16 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=13651338108 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-28T22:07:47+08:00 ] 60.194.194.16 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: INSERT INTO `owner` (`PHONE`,`PASSWORD`,`ADDTIME`) VALUES ('13651338108','e10adc3949ba59abbe56e057f20f883e','1440770866') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 18 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-28T22:08:18+08:00 ] 60.194.194.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '18' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-28T22:08:20+08:00 ] 60.194.194.16 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-28T22:08:40+08:00 ] 60.194.194.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '18' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-28T22:08:42+08:00 ] 60.194.194.16 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-28T22:08:44+08:00 ] 60.194.194.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '18' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-28T22:08:46+08:00 ] 60.194.194.16 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-28T22:09:06+08:00 ] 60.194.194.16 /Api/Index/addvehicle2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `vehicle_model` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vehicle_model` WHERE `MFG_ID` = 138 ORDER BY ID asc  [ RunTime:0.0044s ]
+
+[ 2015-08-28T22:09:34+08:00 ] 60.194.194.16 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-28T22:09:36+08:00 ] 117.114.147.93 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE=18301034593 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-28T22:10:06+08:00 ] 60.194.194.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '18' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-28T22:10:10+08:00 ] 60.194.194.16 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-28T22:10:15+08:00 ] 60.194.194.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '18' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-28T22:10:19+08:00 ] 60.194.194.16 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-28T22:10:32+08:00 ] 60.194.194.16 /Api/Index/addvehicle2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `vehicle_model` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model` WHERE `MFG_ID` = 23 ORDER BY ID asc  [ RunTime:0.0005s ]
+
+[ 2015-08-28T22:10:35+08:00 ] 60.194.194.16 /Api/Index/addvehicle3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_year` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_year` WHERE `MODEL_ID` = 175 ORDER BY ID asc  [ RunTime:0.0012s ]
+
+[ 2015-08-28T22:10:36+08:00 ] 60.194.194.16 /Api/Index/addvehicle4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_type` WHERE `MODEL_YEAR_ID` = 5475 ORDER BY ID asc  [ RunTime:0.0045s ]
+
+[ 2015-08-28T22:10:38+08:00 ] 117.114.147.93 /Api/Index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: INSERT INTO `owner` (`PHONE`,`PASSWORD`,`ADDTIME`) VALUES ('18301034593','e10adc3949ba59abbe56e057f20f883e','1440771038') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `owner` WHERE `ID` = 19 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-28T22:10:47+08:00 ] 60.194.194.16 /Api/Index/addvehicle5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `OWNER_ID` = 18 AND `IS_DEFAULT` = 'Y' LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `owner_vehicle` (`OWNER_ID`,`VEHICLE_MODEL_TYPE_ID`,`DATE_PURCHASE`,`MILEAGE`) VALUES ('18','5970','1440691200','200') [ RunTime:0.0002s ]
+
+[ 2015-08-28T22:10:47+08:00 ] 60.194.194.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '18' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-28T22:10:50+08:00 ] 60.194.194.16 /Api/Index/vehicleinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.ID = '24241' ORDER BY owner_vehicle.IS_DEFAULT desc LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-08-28T22:10:52+08:00 ] 60.194.194.16 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '18' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0035s ]
+
+[ 2015-08-28T22:11:46+08:00 ] 60.194.194.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 18  [ RunTime:0.0002s ]
+
+[ 2015-08-28T22:11:59+08:00 ] 60.194.194.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 18  [ RunTime:0.0002s ]
+
+[ 2015-08-28T22:13:00+08:00 ] 60.194.194.16 /Api/Index/addaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 18 LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `owner_address` (`OWNER_ID`,`LATITUDE`,`LONGITUDE`,`DISTRICT`,`CITY`,`POSTAL_CODE`,`PROVINCE`,`COUNTRY`,`IS_DEFAULT`) VALUES ('18','40.002259','116.487856','null','北京市','null','北京市','中国','Y') [ RunTime:0.0002s ]
+
+[ 2015-08-28T22:13:00+08:00 ] 60.194.194.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 18  [ RunTime:0.0003s ]
+
+[ 2015-08-28T22:13:16+08:00 ] 117.114.147.93 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 19  [ RunTime:0.0002s ]
+
+[ 2015-08-28T22:13:25+08:00 ] 117.114.147.93 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 19  [ RunTime:0.0003s ]
+
+[ 2015-08-28T22:14:41+08:00 ] 117.114.147.93 /Api/Index/addaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 19 LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `owner_address` (`OWNER_ID`,`LATITUDE`,`LONGITUDE`,`DISTRICT`,`CITY`,`POSTAL_CODE`,`PROVINCE`,`COUNTRY`,`IS_DEFAULT`) VALUES ('19','39.95032','116.473501','麦子店街道朝阳公园','北京市','null','北京市','中国','Y') [ RunTime:0.0002s ]
+
+[ 2015-08-28T22:14:41+08:00 ] 117.114.147.93 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 19  [ RunTime:0.0003s ]
+
+[ 2015-08-28T22:15:45+08:00 ] 117.114.147.93 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 19  [ RunTime:0.0002s ]
+
+[ 2015-08-28T22:15:51+08:00 ] 117.114.147.93 /Api/Index/addaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 19 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `owner_address` (`OWNER_ID`,`LATITUDE`,`LONGITUDE`,`DISTRICT`,`CITY`,`POSTAL_CODE`,`PROVINCE`,`COUNTRY`,`IS_DEFAULT`) VALUES ('19','39.90414','116.64939','北苑街道中山大街36','北京市','null','北京市','中国','N') [ RunTime:0.0002s ]
+
+[ 2015-08-28T22:15:51+08:00 ] 117.114.147.93 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 19  [ RunTime:0.0003s ]
+
+[ 2015-08-28T22:15:55+08:00 ] 117.114.147.93 /Api/Index/addrdef
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `ID` = 20 AND `OWNER_ID` = 19 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 19 [ RunTime:0.0002s ]
+SQL: UPDATE `owner_address` SET `IS_DEFAULT`='Y' WHERE `ID` = 20 AND `OWNER_ID` = 19 [ RunTime:0.0002s ]
+
+[ 2015-08-28T22:15:55+08:00 ] 117.114.147.93 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 19  [ RunTime:0.0002s ]
+
+[ 2015-08-28T22:16:29+08:00 ] 117.114.147.93 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '19' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-28T22:16:31+08:00 ] 117.114.147.93 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-28T22:17:51+08:00 ] 117.114.147.93 /Api/Index/addvehicle2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `vehicle_model` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model` WHERE `MFG_ID` = 37 ORDER BY ID asc  [ RunTime:0.0004s ]
+
+[ 2015-08-28T22:18:34+08:00 ] 117.114.147.93 /Api/Index/addvehicle3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_year` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_year` WHERE `MODEL_ID` = 292 ORDER BY ID asc  [ RunTime:0.0011s ]
+
+[ 2015-08-28T22:19:02+08:00 ] 117.114.147.93 /Api/Index/addvehicle4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_type` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vehicle_model_type` WHERE `MODEL_YEAR_ID` = 5911 ORDER BY ID asc  [ RunTime:0.0043s ]
+
+[ 2015-08-28T22:20:59+08:00 ] 117.114.147.93 /Api/Index/addvehicle5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `OWNER_ID` = 19 AND `IS_DEFAULT` = 'Y' LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `owner_vehicle` (`OWNER_ID`,`VEHICLE_MODEL_TYPE_ID`,`DATE_PURCHASE`,`MILEAGE`) VALUES ('19','7652','1440691200','5222') [ RunTime:0.0002s ]
+
+[ 2015-08-28T22:21:00+08:00 ] 117.114.147.93 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '19' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-28T22:21:57+08:00 ] 117.114.147.93 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0005s ]
+
+[ 2015-08-28T22:21:59+08:00 ] 117.114.147.93 /Api/Index/addvehicle2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `vehicle_model` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model` WHERE `MFG_ID` = 1 ORDER BY ID asc  [ RunTime:0.0005s ]
+
+[ 2015-08-28T22:22:00+08:00 ] 117.114.147.93 /Api/Index/addvehicle3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_year` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_year` WHERE `MODEL_ID` = 2 ORDER BY ID asc  [ RunTime:0.0012s ]
+
+[ 2015-08-28T22:22:01+08:00 ] 117.114.147.93 /Api/Index/addvehicle4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_type` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `vehicle_model_type` WHERE `MODEL_YEAR_ID` = 4750 ORDER BY ID asc  [ RunTime:0.0043s ]
+
+[ 2015-08-28T22:22:08+08:00 ] 117.114.147.93 /Api/Index/addvehicle5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `OWNER_ID` = 19 AND `IS_DEFAULT` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 19 AND `IS_DEFAULT` = 'Y' [ RunTime:0.0002s ]
+SQL: INSERT INTO `owner_vehicle` (`OWNER_ID`,`VEHICLE_MODEL_TYPE_ID`,`DATE_PURCHASE`,`MILEAGE`) VALUES ('19','10651','1440691200','222') [ RunTime:0.0002s ]
+
+[ 2015-08-28T22:22:09+08:00 ] 117.114.147.93 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '19' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-28T22:22:13+08:00 ] 117.114.147.93 /Api/Index/addvehicle1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `vehicle_mfg` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_mfg` ORDER BY PREFIX asc  [ RunTime:0.0006s ]
+
+[ 2015-08-28T22:22:15+08:00 ] 117.114.147.93 /Api/Index/addvehicle2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `vehicle_model` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model` WHERE `MFG_ID` = 5 ORDER BY ID asc  [ RunTime:0.0005s ]
+
+[ 2015-08-28T22:22:17+08:00 ] 117.114.147.93 /Api/Index/addvehicle3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_year` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_year` WHERE `MODEL_ID` = 31 ORDER BY ID asc  [ RunTime:0.0012s ]
+
+[ 2015-08-28T22:22:18+08:00 ] 117.114.147.93 /Api/Index/addvehicle4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `vehicle_model_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vehicle_model_type` WHERE `MODEL_YEAR_ID` = 5264 ORDER BY ID asc  [ RunTime:0.0091s ]
+
+[ 2015-08-28T22:22:26+08:00 ] 117.114.147.93 /Api/Index/addvehicle5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `OWNER_ID` = 19 AND `IS_DEFAULT` = 'Y' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='N' WHERE `OWNER_ID` = 19 AND `IS_DEFAULT` = 'Y' [ RunTime:0.0002s ]
+SQL: INSERT INTO `owner_vehicle` (`OWNER_ID`,`VEHICLE_MODEL_TYPE_ID`,`DATE_PURCHASE`,`MILEAGE`) VALUES ('19','13639','1440691200','22') [ RunTime:0.0002s ]
+
+[ 2015-08-28T22:22:26+08:00 ] 117.114.147.93 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '19' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-28T22:22:34+08:00 ] 117.114.147.93 /Api/Index/state
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: UPDATE `owner_vehicle` SET `IS_ACTIVE`='N' WHERE `ID` = 24243 [ RunTime:0.0002s ]
+
+[ 2015-08-28T22:22:34+08:00 ] 117.114.147.93 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0004s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '19' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-28T22:25:04+08:00 ] 60.194.194.16 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 18  [ RunTime:0.0002s ]
+
+[ 2015-08-28T22:52:29+08:00 ] 60.206.230.74 /Api/Index/offerlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `provider_user` [ RunTime:0.0006s ]
+SQL: SELECT provider.CITY,provider.LATITUDE,provider.LONGITUDE FROM `provider_user` left join provider on provider.ID = provider_user.PROVIDER_ID  WHERE ( provider_user.ID = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,owner_address.LATITUDE,owner_address.LONGITUDE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `service_request` left join owner_address on owner_address.ID = service_request.ADDR_ID left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE service_request.REQUEST_STATUS_ID = 2 AND owner_address.CITY = '北京市' ORDER BY service_request.DATE_CREATED desc LIMIT 1,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` IN ('1','2','3')  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` IN ('1','2','3')  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` IN ('1','2','3')  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` IN ('1','2','3')  [ RunTime:0.0002s ]
+
+[ 2015-08-28T22:56:36+08:00 ] 60.206.230.74 /Api/Index/offerlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `provider_user` [ RunTime:0.0006s ]
+SQL: SELECT provider.CITY,provider.LATITUDE,provider.LONGITUDE FROM `provider_user` left join provider on provider.ID = provider_user.PROVIDER_ID  WHERE ( provider_user.ID = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,owner_address.LATITUDE,owner_address.LONGITUDE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `service_request` left join owner_address on owner_address.ID = service_request.ADDR_ID left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE service_request.REQUEST_STATUS_ID = 2 AND owner_address.CITY = '北京市' ORDER BY service_request.DATE_CREATED desc LIMIT 1,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` IN ('1','2','3')  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` IN ('1','2','3')  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` IN ('1','2','3')  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` IN ('1','2','3')  [ RunTime:0.0002s ]
+
+[ 2015-08-28T23:06:20+08:00 ] 60.206.230.74 /Api/Index/offerlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+SQL: SHOW COLUMNS FROM `provider_user` [ RunTime:0.0006s ]
+SQL: SELECT provider.CITY,provider.LATITUDE,provider.LONGITUDE FROM `provider_user` left join provider on provider.ID = provider_user.PROVIDER_ID  WHERE ( provider_user.ID = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0004s ]
+SQL: SELECT service_request.REQUEST_STATUS_ID,service_request.SERVICE_DATE,service_request.ID,service_request.SERVICE,owner_address.LATITUDE,owner_address.LONGITUDE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `service_request` left join owner_address on owner_address.ID = service_request.ADDR_ID left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE service_request.REQUEST_STATUS_ID = 2 AND owner_address.CITY = '北京市' ORDER BY service_request.DATE_CREATED desc LIMIT 1,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` IN ('1','2','3')  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` IN ('1','2','3')  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` IN ('1','2','3')  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` IN ('1','2','3')  [ RunTime:0.0001s ]
+
+[ 2015-08-28T23:11:07+08:00 ] 60.206.230.74 /Api/Index/offerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0007s ]
+SQL: SELECT service_request.SERVICE_DATE,owner.PHONE,service_request.ID,service_request.NOTE,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `service_request` left join owner on owner.ID = service_request.OWNER_ID left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.ID = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: PHONE /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` IN ('1','2')  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `service_part` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `service_part`  [ RunTime:0.0002s ]
+
+[ 2015-08-28T23:16:01+08:00 ] 60.206.230.74 /Api/Index/offerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0007s ]
+SQL: SELECT service_request.SERVICE_DATE,owner.PHONE,service_request.ID,service_request.NOTE,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `service_request` left join owner on owner.ID = service_request.OWNER_ID left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.ID = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: PHONE /alidata/www/default/Application/Api/Controller/IndexController.class.php 第 739 行.
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` IN ('1','2')  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `service_part` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `service_part`  [ RunTime:0.0002s ]
+
+[ 2015-08-28T23:16:46+08:00 ] 60.206.230.74 /Api/Index/offerinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `service_request` [ RunTime:0.0007s ]
+SQL: SELECT service_request.SERVICE_DATE,owner.PHONE,service_request.ID,service_request.NOTE,service_request.SERVICE,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `service_request` left join owner on owner.ID = service_request.OWNER_ID left join owner_vehicle on owner_vehicle.ID = service_request.VEHICLE_ID left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE ( service_request.ID = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `service_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `service_type` WHERE `ID` IN ('1','2')  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `service_type`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `service_part` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `service_part`  [ RunTime:0.0002s ]
+
+[ 2015-08-28T23:34:03+08:00 ] 117.114.147.93 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034593' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `owner` WHERE `PHONE` = '18301034593' AND `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `owner` SET `JPUSHID`='551f30c48196d3e0' WHERE `ID` = 19 [ RunTime:0.0002s ]
+
+[ 2015-08-28T23:34:10+08:00 ] 117.114.147.93 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '19' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0006s ]
+
+[ 2015-08-28T23:34:16+08:00 ] 117.114.147.93 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '19' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-28T23:34:20+08:00 ] 117.114.147.93 /Api/Index/def
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `owner_vehicle` WHERE `ID` = 24242 AND `OWNER_ID` = 19 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='Y' WHERE `ID` = 24242 AND `OWNER_ID` = 19 [ RunTime:0.0002s ]
+SQL: UPDATE `owner_vehicle` SET `IS_DEFAULT`='N' WHERE `ID` <> '24242' AND `OWNER_ID` = 19 [ RunTime:0.0002s ]
+
+[ 2015-08-28T23:34:20+08:00 ] 117.114.147.93 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0004s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '19' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
+[ 2015-08-28T23:34:53+08:00 ] 117.114.147.93 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '19' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0003s ]
+
+[ 2015-08-28T23:37:06+08:00 ] 117.114.147.93 /Api/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `owner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner` WHERE ( PHONE='18301034592' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `owner` WHERE `PHONE` = '18301034592' AND `PASSWORD` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `owner` SET `JPUSHID`='551f30c48196d3e0' WHERE `ID` = 7 [ RunTime:0.0002s ]
+
+[ 2015-08-28T23:39:22+08:00 ] 117.114.147.93 /Api/Index/myaddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `owner_address` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `owner_address` WHERE `OWNER_ID` = 7  [ RunTime:0.0002s ]
+
+[ 2015-08-28T23:45:24+08:00 ] 114.240.254.10 /Api/Index/myvehicle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `owner_vehicle` [ RunTime:0.0006s ]
+SQL: SELECT owner_vehicle.*,vehicle_model_type.MODEL_TYPE,vehicle_model_year.MODEL_YEAR,vehicle_model.MODEL,vehicle_mfg.MFG_ORIG,vehicle_mfg.MFG FROM `owner_vehicle` left join vehicle_model_type ON vehicle_model_type.ID = owner_vehicle.VEHICLE_MODEL_TYPE_ID left join vehicle_model_year ON vehicle_model_year.ID = vehicle_model_type.MODEL_YEAR_ID left join vehicle_model ON vehicle_model.ID = vehicle_model_year.MODEL_ID left join vehicle_mfg ON vehicle_mfg.ID = vehicle_model.MFG_ID  WHERE owner_vehicle.OWNER_ID = '7' ORDER BY owner_vehicle.IS_DEFAULT desc  [ RunTime:0.0004s ]
+
