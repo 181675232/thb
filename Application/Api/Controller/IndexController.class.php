@@ -190,8 +190,7 @@ class IndexController extends Controller {
 	//获取市列表
 	public function getcitys(){
 		$table = M('city');
-		$data['redcity'] = $table->where('isred = 2')->select();
-		$data['city'] = $table->select();
+		$data = $table->where('isred = 2')->select();
 		if ($data){
 			json('200','成功',$data);
 		}else {
@@ -212,8 +211,16 @@ class IndexController extends Controller {
 		}
 		json('404','没有接收到传值');
 	}
+	
+	//  
     
     
+	
+	
+	
+	
+	
+	
     
     
 
