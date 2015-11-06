@@ -173,6 +173,9 @@ function ExePostBack(table) {
     		data:{'id':arr},
     		success:function(response,status,xhr){   			
     			$(".checkall").prop("checked", false);
+				if(response == 1){
+					alert('您没有此操作权限！');
+				}
     			location.reload();
     		},
     	});

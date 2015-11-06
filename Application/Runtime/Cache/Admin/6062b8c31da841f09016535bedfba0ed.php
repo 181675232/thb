@@ -95,10 +95,8 @@
     <dd>
       <div class="rule-multi-porp multi-porp">
           <span id="cblActionType" style="display: none;">
-			  <input id="cblActionType_0" type="checkbox" name="cblActionType[]" <?php if(in_array('show',$select)){ ?>checked="checked"<?php } ?>  value="show 显示">
-			  <label for="cblActionType_0">显示(Show)</label>
-			  <input id="cblActionType_1" type="checkbox" name="cblActionType[]" <?php if(in_array('view',$select)){ ?>checked="checked"<?php } ?> value="view 查看">
-			  <label for="cblActionType_1">查看(View)</label>
+			  <input id="cblActionType_1" type="checkbox" name="cblActionType[]" <?php if(in_array('index',$select)){ ?>checked="checked"<?php } ?> value="index 查看">
+			  <label for="cblActionType_1">查看(Index)</label>
 			  <input id="cblActionType_2" type="checkbox" name="cblActionType[]" <?php if(in_array('add',$select)){ ?>checked="checked"<?php } ?> value="add 添加">
 			  <label for="cblActionType_2">添加(Add)</label>
 			  <input id="cblActionType_3" type="checkbox" name="cblActionType[]" <?php if(in_array('edit',$select)){ ?>checked="checked"<?php } ?> value="edit 修改">
@@ -109,6 +107,8 @@
 			  <label for="cblActionType_5">审核(State)</label>
 			  <input id="cblActionType_6" type="checkbox" name="cblActionType[]" <?php if(in_array('reply',$select)){ ?>checked="checked"<?php } ?> value="reply 回复">
 			  <label for="cblActionType_6">回复(Reply)</label>
+			  <input id="cblActionType_15" type="checkbox" name="cblActionType[]" <?php if(in_array('reset',$select)){ ?>checked="checked"<?php } ?> value="reset 重置">
+			  <label for="cblActionType_15">重置(Reset)</label>
 			  <!--
 			  <input id="cblActionType_7" type="checkbox" name="cblActionType$7">
 			  <label for="cblActionType_7">确认(Confirm)</label>
@@ -126,8 +126,6 @@
 			  <label for="cblActionType_13">备份(Back)</label>
 			  <input id="cblActionType_14" type="checkbox" name="cblActionType$14">
 			  <label for="cblActionType_14">还原(Restore)</label>
-			  <input id="cblActionType_15" type="checkbox" name="cblActionType$15">
-			  <label for="cblActionType_15">替换(Replace)</label>	
 			  -->
 		  </span>
       </div>

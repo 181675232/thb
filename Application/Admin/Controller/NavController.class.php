@@ -101,34 +101,41 @@ class NavController extends CommonController {
 	
 	
 	
-//	后台获取导航AJAX
+	//	后台获取导航AJAX
 	public function nav(){
 		$nav = D('Nav');
 		$navs = $nav->nav_info(0,1);
 		$sql = '';
 		foreach ($navs as $val){
-			$sql.='<div class="list-group" name="'.$val['title'].'">';			
-			if ($val['catid'] != ''){
-				foreach ($val['catid'] as $val1){
-					$sql.='<h2>'.$val1['title'].'<i></i></h2><ul>';
-					if ($val1['catid'] != ''){
-						foreach ($val1['catid'] as $val2){
-							$sql.='<li><a navid="'.$val2['name'].'" class="item"><span>'.$val2['title'].'</span></a>';
-							if ($val2['catid'] != ''){
-								$sql.='<ul>';
-								foreach ($val2['catid'] as $val3){
-									$sql.='<li><a navid="'.$val3['name'].'" href="'.$val3['url'].'" target="mainframe" class="item"><span>'.$val3['title'].'</span></a></li>';
-										
+			if ($val){
+				$sql.='<div class="list-group" name="'.$val['title'].'">';			
+				if ($val['catid'] != ''){
+					foreach ($val['catid'] as $val1){
+						if ($val1){
+							$sql.='<h2>'.$val1['title'].'<i></i></h2><ul>';
+							if ($val1['catid'] != ''){
+								foreach ($val1['catid'] as $val2){
+									if ($val2){
+										$sql.='<li><a navid="'.$val2['name'].'" class="item"><span>'.$val2['title'].'</span></a>';
+										if ($val2['catid'] != ''){
+											$sql.='<ul>';
+											foreach ($val2['catid'] as $val3){
+												if ($val3){
+													$sql.='<li><a navid="'.$val3['name'].'" href="'.$val3['url'].'" target="mainframe" class="item"><span>'.$val3['title'].'</span></a></li>';
+												}	
+											}
+											$sql.='</ul>';
+										}
+										$sql.='</li>';
+									}
 								}
-								$sql.='</ul>';
 							}
-							$sql.='</li>';
+						$sql.='</ul>';	
 						}
 					}
-				$sql.='</ul>';	
 				}
+				$sql.='</div>';
 			}
-			$sql.='</div>';
 		}
 		echo $sql;	
 	}

@@ -44,7 +44,7 @@
 				        </div>
 
       				</div>
-      				
+      				-->
                 </div>
 				<!-- 
                 <div class="r-list">
@@ -62,11 +62,14 @@
                         <th width="12%">
                             选择
                         </th>
-                        <th align="center" width="15%">
+                        <th align="center" width="12%">
  		编号
                         </th>
-                        <th align="center" >
+                        <th align="center"  width="20%">
                            角色组名称
+                        </th>
+						<th align="center" >
+                           角色组简介
                         </th>
                         <th width="20%">
                             操作
@@ -82,6 +85,9 @@
                     </td>
                      <td align="center">
                         <?php echo ($val["name"]); ?>
+                    </td>
+					<td align="center">
+                        <?php echo ($val["remark"]); ?>
                     </td>
                     <!-- 
                     <td align="center">

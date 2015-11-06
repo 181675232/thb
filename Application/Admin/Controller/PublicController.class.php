@@ -23,8 +23,10 @@ class PublicController extends Controller {
 						$this->error('密码输入错误！');
 					}else {
 						$user = $admin->where($data)->find();
+						if ($user['state'] !=1 && $user['name'] != C('RBAC_SUPERADMIN')){
+							$this->error('您的账号已被冻结！');
+						}
 						session(C('USER_AUTH_KEY'),$user['id']);
-						session('userid',$user['id']);
 						session('username',$user['name']);
 						session('userip',$user['ip']);
 						session('usertime',$user['addtime']);
@@ -32,8 +34,7 @@ class PublicController extends Controller {
 							$_SESSION[C('ADMIN_AUTH_KEY')] =	true;
 						}
 						$rbac = new \Org\Util\Rbac();
-						$rbac::saveAccessList();
-												
+						$rbac::saveAccessList();			
 						$data1['id'] = $user['id'];
 						$data1['ip'] = $_SERVER['REMOTE_ADDR'];
 						$data1['addtime'] = time();

@@ -4,6 +4,18 @@ namespace Admin\Controller;
 class IndexController extends CommonController {
 	
 	public function index(){
+		$table = M('admin');
+		$id = I('session.userid');
+		$data = $table->field('t_admin.name,t_role.name as title')
+		->join('left join t_role_user on t_role_user.user_id = t_admin.id')
+		->join('left join t_role on t_role.id = t_role_user.role_id')
+		->where("t_admin.id = $id")->find();		
+		if ($data['name'] == 'admin'){
+			$res['name'] = '超级管理员';
+		}else {
+			$res['name'] = $data['title'];
+		}
+		$this->assign('usergroup',$res);
 		$this->display();
 	}
 	public function center(){

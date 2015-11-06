@@ -17,10 +17,10 @@ return array(
 	'URL_CASE_INSENSITIVE' => true,
 //  数据库
 	'DB_TYPE'               =>  'mysql',     // 数据库类型
-	'DB_HOST'               =>  'localhost', // 服务器地址
-	'DB_NAME'               =>  'thb',          // 数据库名 
+	'DB_HOST'               =>  '101.200.81.192', // 服务器地址
+	'DB_NAME'               =>  'php8081',          // 数据库名 
 	'DB_USER'               =>  'root',      // 用户名
-	'DB_PWD'                =>  '',          // 密码
+	'DB_PWD'                =>  '1qaz2wsx',          // 密码
 	'DB_PORT'               =>  '3306',        // 端口
 	'DB_PREFIX'             =>  't_',    // 数据库表前缀
 	'DB_CHARSET'			=>  'utf8',      // 数据库编码

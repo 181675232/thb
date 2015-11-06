@@ -9,6 +9,7 @@ class NavModel extends Model{
 	);
 	public function nav_info($bid = 0,$state = 0){
 		$nav = M('Nav');
+		$role = M('access');
 		$arr = array();
 		if ($state == 0){
 			$result = $nav->where("bid = $bid and level !=3")->order('id asc')->select();
@@ -17,14 +18,25 @@ class NavModel extends Model{
 			$data['state'] = $state;
 			$data['level'] = array('neq',3);
 			$result = $nav->where($data)->order('id asc')->select();
-		}
+		}		
 		$arr = $result;
  		if ($result){
-			foreach ($result as $key => $val){
+			foreach ($result as $key => $val){			
 				if ($val['id'] != null){
+					if ($_SESSION['username']!=C('RBAC_SUPERADMIN')){
+						if ($bid != 0){	
+							$data = $role->field('t_access.role_id')
+							->join('left join t_role_user on t_access.role_id = t_role_user.role_id')
+							->where("t_role_user.user_id = '{$_SESSION['userid']}' and t_access.node_id = '{$val['id']}'")->find();							
+							if (!$data){
+								$arr[$key] = array();							
+								continue;
+							}
+						}
+					}				
 					$arr[$key]['catid'] = $this->nav_info($val['id'],$state);
 				}
-			}
+			}		
 			return $arr;
  		}else {
  			return array();

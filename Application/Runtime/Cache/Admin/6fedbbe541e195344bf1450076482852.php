@@ -306,7 +306,7 @@
       <div class="icon-info">
         <span>
           您好，<?php echo (session('username')); ?><br />
-     超级管理员    
+     <?php echo ($usergroup["name"]); ?>   
         </span>
       </div>
       <div class="icon-option">

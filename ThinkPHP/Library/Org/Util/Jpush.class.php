@@ -31,7 +31,7 @@ class Jpush{
 						M\android($content,$title, 1,$array),
 						M\ios($content, "happy", "+1", true, $array, "Ios8 Category")
 				))
-				->setMessage(M\message('Message Content', 'Message Title', 'Message Type', array("key1"=>"value1", "key2"=>"value2")))
+				//->setMessage(M\message('Message Content', 'Message Title', 'Message Type', array("key1"=>"value1", "key2"=>"value2")))
 			//	->printJSON()
 				->send();
 			}else {
@@ -42,7 +42,7 @@ class Jpush{
 						M\android($content,$title, 1,$array),
 						M\ios($content, "happy", "+1", true, $array, "Ios8 Category")
 				))
-				->setMessage(M\message('Message Content', 'Message Title', 'Message Type', array("key1"=>"value1", "key2"=>"value2")))
+				//->setMessage(M\message('Message Content', 'Message Title', 'Message Type', array("key1"=>"value1", "key2"=>"value2")))
 			//	->printJSON()
 				->send();
 			}

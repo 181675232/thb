@@ -20,6 +20,18 @@ function json($code,$message='',$data=array()){
 	exit;
 
 }
+
+/**
+ * 获取当前页面完整URL地址
+ */
+function geturl() {
+	$sys_protocal = isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == '443' ? 'https://' : 'http://';
+	$php_self = $_SERVER['PHP_SELF'] ? $_SERVER['PHP_SELF'] : $_SERVER['SCRIPT_NAME'];
+	$path_info = isset($_SERVER['PATH_INFO']) ? $_SERVER['PATH_INFO'] : '';
+	$relate_url = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : $php_self.(isset($_SERVER['QUERY_STRING']) ? '?'.$_SERVER['QUERY_STRING'] : $path_info);
+	return $sys_protocal.(isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : '').$relate_url;
+}
+
 //计算两地之间距离
 function  powc($lat_a,$lng_a,$lat_b,$lng_b){
 	$pk = 180 / 3.1415926;
@@ -86,6 +98,21 @@ function checkNum($_data) {
 	return false;
 }
 
+//二维数组去重
+function take($arr){
+	$tmp_array = array();
+	$new_array = array();
+	foreach($arr as $k => $val){
+		$hash = md5(json_encode($val));
+		if (!in_array($hash, $tmp_array)) {
+			$tmp_array[] = $hash;
+			$new_array[] = $val;
+		}
+	}
+	return $new_array;
+}
+
+
 //长度是否合法
 function checkLength($_data, $_length, $_flag) {
 	if ($_flag == 'min') {
@@ -146,6 +173,12 @@ function alertBack($_info) {
 //弹窗返回刷新
 function alertReplace($_info) {
 	echo "<script type='text/javascript'>alert('$_info');location.replace(document.referrer);</script>";
+	exit();
+}
+
+//不弹窗返回刷新
+function jsReplace() {
+	echo "<script type='text/javascript'>location.replace(document.referrer);</script>";
 	exit();
 }
 

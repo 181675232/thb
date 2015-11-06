@@ -152,8 +152,8 @@ a:active{ color:#0065D9; text-decoration:none; }
 textarea{ overflow:auto; }
 textarea.input{ width:300px; height:65px; }
 .input{ padding:5px 4px; min-height:20px; line-height:20px; border:1px solid #d4d4d4; background:#fff; vertical-align:middle; color:#333; font-size:100%; }
-	.input.normal{ width:300px; }
-	.input.txt{ width:200px; }
+	.input.normal{ width:200px; }
+	.input.txt{ width:150px; }
 	.input.small{ width:50px; }
 	.input:focus{ background:#FFFBDE; border-color:#7BBFF2; outline:2px solid #99D8F5; }
 .input-date{ position:relative; display:inline-block; width:180px; height:30px; vertical-align:middle; *display:inline; }

@@ -11,6 +11,7 @@
 	<link href="/Public/admin/admin.css" rel="stylesheet" type="text/css" />
 	<link href="/Public/admin/page.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="/Public/js/check.js"></script>
+
 </head>
 <body class="mainbody">
     <form id="form1" method="get">
@@ -59,17 +60,20 @@
         <!--列表-->
                 <table width="100%" border="0" cellspacing="0" cellpadding="0" class="ltable">
                     <tr>
-                        <th width="12%">
+                        <th width="10%">
                         选择
                         </th>
-						<th width="12%">
+						<th width="10%">
                         编号
                         </th>
-                        <th align="center" width="30%">
+                        <th align="center" width="25%">
  						管理员账号
                         </th>
-                        <th align="center" width="30%">
+                        <th align="center" width="25%">
                         所属管理组
+                        </th>
+						<th align="center" width="10%">
+                        状态
                         </th>
                         <th>
                         操作
@@ -85,18 +89,17 @@
                      <td align="center">
                         <?php echo ($val["name"]); ?>
                     </td>
-					<td align="center">6217680700657484
-                        <?php echo ($val["name"]); ?>
+					<td align="center">
+                        <?php echo ($val["title"]); ?>
                     </td>
-                    <!-- 
                     <td align="center">
-                    	<?php if($val["sex"] == 1): ?>男
-						<?php elseif($val["sex"] == 2): ?>女
-						<?php else: ?>保密<?php endif; ?>                   
+                    	<?php if($val["state"] == 1): ?>正常
+						<?php else: ?>
+						<span style="color: red">冻结</span><?php endif; ?>                   
                     </td>
-                     -->
                     <td align="center">
-                        <a href="/Admin/Admin/edit/id/<?php echo ($val["id"]); ?>">修改</a>
+                    	<a href="/Admin/Admin/edit/id/<?php echo ($val["id"]); ?>">查看/修改</a>　
+                        <a href="/Admin/Admin/reset/id/<?php echo ($val["id"]); ?>">重置密码</a>
                     </td>
                 </tr><?php endforeach; endif; else: echo "" ;endif; ?>
  

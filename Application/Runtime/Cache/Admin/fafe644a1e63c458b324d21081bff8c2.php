@@ -66,7 +66,7 @@
   <a href="javascript:history.back(-1);" class="back"><i></i><span>返回上一页</span></a>
   <a href="/Admin/Index/center" class="home"><i></i><span>首页</span></a>
   <i class="arrow"></i>
-  <a href="/Admin/Model"><span>车系</span></a>
+  <a href="/Admin/Admin"><span>管理员列表</span></a>
   <i class="arrow"></i>
   <span>修改信息</span>
 </div>
@@ -85,34 +85,31 @@
 </div>
 
 <div class="tab-content">
-	<input type="hidden" name="ID" value="<?php echo ($id); ?>" />
+	<input type="hidden" name="id" value="<?php echo ($id); ?>" />
 	<dl>
-		<dt>品牌</dt>
+		<dt>权限</dt>
 		<dd>
 			<div class="rule-single-select">
-				<select name="MFG_ID" datatype="*" sucmsg=" " id="ddlParentId">
-					<option value=" ">请选择所属品牌</option>
-					<?php if(is_array($mfg)): $i = 0; $__LIST__ = $mfg;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val): $mod = ($i % 2 );++$i;?><option value="<?php echo ($val["id"]); ?>" <?php if($val["id"] == $mfg_id): ?>selected="selected"<?php endif; ?> ><?php echo ($val["mfg"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+				<select name="role_id" datatype="*" sucmsg=" " id="ddlParentId">
+					<option value=" ">请选择所属权限组</option>
+					<?php if(is_array($role)): $i = 0; $__LIST__ = $role;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val): $mod = ($i % 2 );++$i;?><option value="<?php echo ($val["id"]); ?>" <?php if($val["id"] == $role_id): ?>selected="selected"<?php endif; ?> ><?php echo ($val["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
 				</select>
 			</div>
 		</dd>
-	</dl> 
+	</dl>
 	<dl>
-		<dt>车系</dt>
-		<dd><input type="text" name="MODEL" value="<?php echo ($model); ?>" datatype="*" Class="input normal" sucmsg=" " /> <span class="Validform_checktip">*</span></dd>
+		<dt>账号</dt>
+		<dd><input type="text" name="name" value="<?php echo ($name); ?>" datatype="*" Class="input normal" sucmsg=" " /> <span class="Validform_checktip">*</span></dd>
 	</dl> 
-	<!-- 
   <dl>
-    <dt>性别</dt>
+    <dt>状态</dt>
     <dd>
 		<div class="rule-multi-radio multi-radio">	
-    		<label><input type="radio" Value="0" <?php if($sex == 0): ?>checked="checked"<?php endif; ?> name="sex" />保密</label>
-      		<label><input type="radio" Value="1" <?php if($sex == 1): ?>checked="checked"<?php endif; ?> name="sex" />男</label>
-			<label><input type="radio" Value="2" <?php if($sex == 2): ?>checked="checked"<?php endif; ?> name="sex" />女</label>
+      		<label><input type="radio" Value="1" <?php if($state == 1): ?>checked="checked"<?php endif; ?> name="state" />正常</label>
+			<label><input type="radio" Value="2" <?php if($state == 2): ?>checked="checked"<?php endif; ?> name="state" />冻结</label>
     	</div>
 	</dd>
   </dl>
-   -->
  </div>
 <!--/内容-->
 

@@ -218,8 +218,9 @@ function createHtmlProgress(swfuInstance) {
 function addImage(targetObj, originalSrc, thumbSrc) {
     //插入到相册UL里面
     var newLi = $('<li>'
-    + '<input type="hidden" name="user_simg" value="0|' + originalSrc + '|' + thumbSrc + '" />'
-    + '<input type="hidden" name="user_desc" value="" />'
+	+ '<input type="hidden" name="user_simg[]" value="' +originalSrc+ '" />'
+   // + '<input type="hidden" name="user_simg[]" value="0|' + originalSrc + '|' + thumbSrc + '" />'
+    + '<input type="hidden" name="user_desc[]" value="" />'
     + '<div class="img-box" onclick="setFocusImg(this);">'
     + '<img src="' + thumbSrc + '" bigsrc="' + originalSrc + '" />'
     + '<span class="remark"><i>暂无描述...</i></span>'
@@ -246,7 +247,7 @@ function setFocusImg(obj) {
 //设置图片描述
 function setRemark(obj) {
     var parentObj = $(obj); //父对象
-    var hidRemarkObj = parentObj.prevAll("input[name='user_desc']").eq(0); //取得隐藏值
+    var hidRemarkObj = parentObj.prevAll("input[name='user_desc[]']").eq(0); //取得隐藏值
     var m = $.dialog({
         lock: true,
         max: false,
@@ -264,7 +265,7 @@ function setRemark(obj) {
                     }, m);
                     return false;
                 }
-                parentObj.parent().parent().find("li input[name='user_desc']").val(remarkObj.val());
+                parentObj.parent().parent().find("li input[name='user_desc[]']").val(remarkObj.val());
                 parentObj.parent().parent().find("li .img-box .remark i").html(remarkObj.val());
             }
         }, {

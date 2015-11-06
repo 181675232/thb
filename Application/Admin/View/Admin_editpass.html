@@ -88,15 +88,15 @@
 	<!--<input type="hidden" name="ID" value="{$id}" />-->
 	<dl>
 		<dt>原密码</dt>
-		<dd><input type="password" name="password" datatype="*" Class="input normal" sucmsg=" " /> <span class="Validform_checktip">*</span></dd>
+		<dd><input type="password" name="password" datatype="*6-15" errormsg="密码范围在6~15位之间！" Class="input normal" sucmsg=" " /> <span class="Validform_checktip">*</span></dd>
 	</dl> 
 	<dl>
 		<dt>新密码</dt>
-		<dd><input type="password" name="newpass" datatype="*" Class="input normal" sucmsg=" " /> <span class="Validform_checktip">*</span></dd>
+		<dd><input type="password" name="newpass" datatype="*6-15" errormsg="密码范围在6~15位之间！" Class="input normal" sucmsg=" " /> <span class="Validform_checktip">*</span></dd>
 	</dl> 
 	<dl>
 		<dt>再次输入</dt>
-		<dd><input type="password" name="pass" datatype="*" Class="input normal" sucmsg=" " /> <span class="Validform_checktip">*</span></dd>
+		<dd><input type="password" name="pass" datatype="*" recheck="newpass" errormsg="您两次输入的账号密码不一致！" Class="input normal" sucmsg=" " /> <span class="Validform_checktip">*</span></dd>
 	</dl> 
 	<!-- 
   <dl>

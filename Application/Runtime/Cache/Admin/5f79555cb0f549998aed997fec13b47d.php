@@ -14,48 +14,32 @@
 	<link href="/Public/admin/page.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="/Public/js/check.js"></script>
 	<script type="text/javascript">
+
 	    $(function () {
 	        //初始化表单验证
 	        $("#form").initValidform();
-			 //初始化上传控件
-	        $(".upload-img").each(function () {
-	            $(this).InitSWFUpload({ sendurl: "/Admin/Public/upload", flashurl: "/Public/js/scripts/swfupload/swfupload.swf" });
+	        //是否启用权限
+	        if ($("#ddlRoleType").find("option:selected").attr("value") == 1) {
+	            $(".border-table").find("input[type='checkbox']").prop("disabled", true);
+	        }
+	        $("#ddlRoleType").change(function () {
+	            if ($(this).find("option:selected").attr("value") == 1) {
+	                $(".border-table").find("input[type='checkbox']").prop("checked", false);
+	                $(".border-table").find("input[type='checkbox']").prop("disabled", true);
+	            } else {
+	                $(".border-table").find("input[type='checkbox']").prop("disabled", false);
+	            }
 	        });
-	        $(".upload-album").each(function () {
-	            $(this).InitSWFUpload({ btntext: "批量上传", btnwidth: 66, single: false, water: true, thumbnail: true, filesize: "2048", sendurl: "/Admin/Public/upload", flashurl: "/Public/js/scripts/swfupload/swfupload.swf", filetypes: "*.jpg;*.jpge;*.png;*.gif;" });
-	        });
-	        $(".attach-btn").click(function () {
-	            showAttachDialog();
-	        });
-	        //设置封面图片的样式
-	        $(".photo-list ul li .img-box img").each(function () {
-	            if ($(this).attr("src") == $("#hidFocusPhoto").val()) {
-	                $(this).parent().addClass("selected");
+	        //权限全选
+	        $("input[name='checkAll']").click(function () {
+	            if ($(this).prop("checked") == true) {
+	                $(this).parent().siblings("td").find("input[type='checkbox']").prop("checked", true);
+	            } else {
+	                $(this).parent().siblings("td").find("input[type='checkbox']").prop("checked", false);
 	            }
 	        });
 	    });
-	    //创建附件窗口
-	    function showAttachDialog(obj) {
-	        var objNum = arguments.length;
-	        var attachDialog = $.dialog({
-	            id: 'attachDialogId',
-	            lock: true,
-	            max: false,
-	            min: false,
-	            title: "上传附件",
-	            content: 'url:dialog/dialog_attach.aspx',
-	            width: 500,
-	            height: 180
-	        });
-	        //如果是修改状态，将对象传进去
-	        if (objNum == 1) {
-	            attachDialog.data = obj;
-	        }
-	    }
-	    //删除附件节点
-	    function delAttachNode(obj) {
-	        $(obj).parent().remove();
-	    }	
+
 		
 	</script>
 </head>
@@ -66,7 +50,7 @@
   <a href="javascript:history.back(-1);" class="back"><i></i><span>返回上一页</span></a>
   <a href="/Admin/Index/center" class="home"><i></i><span>首页</span></a>
   <i class="arrow"></i>
-  <a href="/Admin/Mfg"><span>品牌</span></a>
+  <a href="/Admin/Role"><span>角色列表</span></a>
   <i class="arrow"></i>
   <span>修改信息</span>
 </div>
@@ -85,32 +69,76 @@
 </div>
 
 <div class="tab-content">
-	<input type="hidden" name="ID" value="<?php echo ($id); ?>" />
+	<input type="hidden" name="id" value="<?php echo ($id); ?>" />
 	<dl>
-		<dt>品牌</dt>
-		<dd><input type="text" name="MFG_ORIG" value="<?php echo ($mfg_orig); ?>" datatype="*" Class="input normal" sucmsg=" " /> <span class="Validform_checktip">*</span></dd>
+		<dt>角色名称</dt>
+		<dd><input type="text" name="name" datatype="*" value="<?php echo ($name); ?>" Class="input normal" sucmsg=" " /> <span class="Validform_checktip">*</span></dd>
 	</dl> 
 	<dl>
-		<dt>标签</dt>
-		<dd><input type="text" name="PREFIX" value="<?php echo ($prefix); ?>" datatype="*" Class="input normal" sucmsg=" " /> <span class="Validform_checktip">*</span></dd>
+		<dt>角色简介</dt>
+		<dd>
+			<textarea id="webcopyright" name="remark" Class="input" /><?php echo ($remark); ?></textarea>
+	      	<!--<span class="Validform_checktip">支持HTML</span>-->
+		</dd>
 	</dl> 
 	<dl>
-		<dt>制造商</dt>
-		<dd><input type="text" name="MFG" value="<?php echo ($mfg); ?>" datatype="*" Class="input normal" sucmsg=" " /> <span class="Validform_checktip">*</span></dd>
-	</dl> 
-	<!-- 
-  <dl>
-    <dt>性别</dt>
+    <dt>管理权限</dt>
     <dd>
-		<div class="rule-multi-radio multi-radio">	
-    		<label><input type="radio" Value="0" <?php if($sex == 0): ?>checked="checked"<?php endif; ?> name="sex" />保密</label>
-      		<label><input type="radio" Value="1" <?php if($sex == 1): ?>checked="checked"<?php endif; ?> name="sex" />男</label>
-			<label><input type="radio" Value="2" <?php if($sex == 2): ?>checked="checked"<?php endif; ?> name="sex" />女</label>
-    	</div>
-	</dd>
+      <table border="0" cellspacing="0" cellpadding="0" class="border-table" width="98%">
+        <thead>
+          <tr>
+            <th width="25%">导航名称</th>
+            <th>权限分配</th>
+            <th width="10%">全选</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php if(is_array($nav)): $i = 0; $__LIST__ = $nav;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val): $mod = ($i % 2 );++$i; if(is_array($val["catid"])): $i = 0; $__LIST__ = $val["catid"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val1): $mod = ($i % 2 );++$i;?><tr>
+				    <td style="white-space:nowrap;word-break:break-all;overflow:hidden;padding-left: 50px;">
+				      <span class="folder-open"></span>
+				      <a><?php echo ($val1["title"]); ?></a>
+				    </td>		    
+		            <td align="left">
+		            	<input type="checkbox" id="cblActionType" Class="cbllist" <?php if(in_array($val1['id'],$select)){ ?>checked="checked"<?php } ?> name="node_id[]" value="<?php echo ($val1["id"]); ?>_1" Style="vertical-align: middle;" /> 显示　
+	            		<?php if(is_array($val1["role"])): $i = 0; $__LIST__ = $val1["role"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val11): $mod = ($i % 2 );++$i;?><input type="checkbox" id="cblActionType" Class="cbllist" <?php if(in_array($val11['id'],$select)){ ?>checked="checked"<?php } ?> name="node_id[]" value="<?php echo ($val11["id"]); ?>_3" Style="vertical-align: middle;" /> <?php echo ($val11["title"]); ?> 　<?php endforeach; endif; else: echo "" ;endif; ?>
+		            </td>
+					<td align="center">
+						<input name="checkAll" type="checkbox" />
+				    </td>
+				  </tr>
+					  <?php if(is_array($val1["catid"])): $i = 0; $__LIST__ = $val1["catid"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val2): $mod = ($i % 2 );++$i;?><tr>
+						    <td style="white-space:nowrap;word-break:break-all;overflow:hidden;padding-left: 50px;">
+							  <span style="display:inline-block;width:0px;"></span>
+						      <span class="folder-line"></span><span class="folder-open"></span>
+						      <a><?php echo ($val2["title"]); ?></a>						  	
+						    </td>				    
+				            <td align="left">		        
+									<input type="checkbox" id="cblActionType" Class="cbllist" <?php if(in_array($val2['id'],$select)){ ?>checked="checked"<?php } ?> name="node_id[]" value="<?php echo ($val2["id"]); ?>_1" Style="vertical-align: middle;" /> 显示　
+				            		<?php if(is_array($val2["role"])): foreach($val2["role"] as $key=>$val21): ?><input type="checkbox" id="cblActionType" name="node_id[]" Class="cbllist" <?php if(in_array($val21['id'],$select)){ ?>checked="checked"<?php } ?> value="<?php echo ($val21["id"]); ?>_3" Style="vertical-align: middle;" /> <?php echo ($val21["title"]); ?> 　<?php endforeach; endif; ?>
+				            </td>
+							<td align="center">
+								<input name="checkAll" type="checkbox" />
+						    </td>
+						  </tr>		
+							  <?php if(is_array($val2["catid"])): foreach($val2["catid"] as $key=>$val3): ?><tr>
+								    <td style="white-space:nowrap;word-break:break-all;overflow:hidden;padding-left: 50px;">
+									  <span style="display:inline-block;width:25px;"></span>
+								      <span class="folder-line"></span><span class="folder-open"></span>
+								      <a><?php echo ($val3["title"]); ?></a>
+								    </td>
+						            <td align="left">
+						            	<input type="checkbox" Class="cbllist" name="node_id[]" <?php if(in_array($val3['id'],$select)){ ?>checked="checked"<?php } ?> value="<?php echo ($val3["id"]); ?>_2" Style="vertical-align: middle;" /> 显示　
+						            	<?php if(is_array($val3["role"])): foreach($val3["role"] as $key=>$val31): ?><input type="checkbox" name="node_id[]" Class="cbllist" <?php if(in_array($val31['id'],$select)){ ?>checked="checked"<?php } ?> value="<?php echo ($val31["id"]); ?>_3" Style="vertical-align: middle;" /> <?php echo ($val31["title"]); ?> 　<?php endforeach; endif; ?>
+						            </td>
+									<td align="center">
+										<input name="checkAll" type="checkbox" />
+								    </td>
+								  </tr><?php endforeach; endif; endforeach; endif; else: echo "" ;endif; endforeach; endif; else: echo "" ;endif; endforeach; endif; else: echo "" ;endif; ?>
+        </tbody>
+      </table>
+    </dd>
   </dl>
-   -->
- </div>
+</div>
 <!--/内容-->
 
 <!--工具栏-->

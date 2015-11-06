@@ -8,7 +8,7 @@ class RoleController extends CommonController {
 		$table = M('role'); // 实例化User对象
 		
 		$count      = $table->count();// 查询满足要求的总记录数
-		$Page       = new \Think\Page($count,10);// 实例化分页类 传入总记录数和每页显示的记录数(25)
+		$Page       = new \Think\Page($count,15);// 实例化分页类 传入总记录数和每页显示的记录数(25)
 		$show       = $Page->show();// 分页显示输出
 		// 进行分页数据查询 注意limit方法的参数要使用Page类的属性
 		$res = $table->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
@@ -22,11 +22,14 @@ class RoleController extends CommonController {
 			$table = M('role');
 			$access = M('access');
 			$where['name'] = I('post.name');
+			$where['remark'] = I('post.remark');
 			$id = $table->add($where);
 			if ($id){
 				$data = I('post.node_id');
 				foreach ($data as $val){
-					$where1['node_id'] = $val;
+					$r = explode('_', $val);
+					$where1['node_id'] = $r[0];
+					$where1['level'] = $r[1];
 					$where1['role_id'] = $id;
 					$access->add($where1);
 				}
@@ -43,18 +46,35 @@ class RoleController extends CommonController {
 	
 	public function edit(){
 		$id = I('get.id');
+		$table = M('role');
+		$access = M('access');
 		if (IS_POST){
-			$table = M('role');
-			if ($table->save(I('post.'))){
+			$where['name'] = I('post.name');
+			$where['id'] = I('post.id');
+			$where['remark'] = I('post.remark');
+			$table->save($where);
+			if ($access->where("role_id = '{$where['id']}'")->delete()){
+				$data = I('post.node_id');
+				foreach ($data as $val){
+					$r = explode('_', $val);
+					$where1['node_id'] = $r[0];
+					$where1['level'] = $r[1];
+					$where1['role_id'] = $id;
+					$access->add($where1);
+				}
 				alertBack('修改成功！');
 			}else {
-				$this->error('没有任何修改！');
-			}			
+				$this->error('系统出错！');
+			}		
 		}
-		$table = M('role');
-		$data = $table->where("id = $id")->find();
+		$res = $access->where("role_id = $id")->getField('node_id',true);
+		$nav = D('Nav');
+		$data = $table->find($id);
+		$navs = $nav->nav_role();
+		$this->assign('nav',$navs);
+		$this->assign('select',$res);
 		$this->assign($data);
-		$this->display('');
+		$this->display();
 	}
 	
 //	public function state(){

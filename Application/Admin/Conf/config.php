@@ -5,9 +5,9 @@ return array(
 	//权限
 	'USER_AUTH_ON' => true, //是否需要认证，设置为true时$rbac::AccessDecision()函数才会根据当前的操作检查权限并返回true或false，，设为false只返回true
 	'USER_AUTH_TYPE' => 1, //认证类型,2代表每次进行操作的时候都会数据库取出权限(权限更改即时生效)，1代表只在登录的时候取出权限(权限更改下次登录时生效)
-	'USER_AUTH_KEY' => 'user_id', //认证识别号,执行$rbac::saveAccessList();的时候回用以这个为键值的session去数据库取权限
+	'USER_AUTH_KEY' => 'userid', //认证识别号,执行$rbac::saveAccessList();的时候回用以这个为键值的session去数据库取权限
 		//定义rbac超级管理员,登录成功之后把用户名和这个值进行比对，一样就是超级管理员
-		'RBAC_SUPERADMIN'   =>  'admin',
+	'RBAC_SUPERADMIN'   =>  'admin',
 	'ADMIN_AUTH_KEY' => 'admin', //超级管理员识别,当当前用户是超级管理员时，把键值为这个值的session这个设置为true，当前用户就能进行一切操作
 	'ADMINISTRATOR' => 'admin',
 	'USER_AUTH_MODEL' => 'Admin', // 默认验证数据表模型
