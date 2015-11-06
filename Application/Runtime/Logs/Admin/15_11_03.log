@@ -1,0 +1,1059 @@
+[ 2015-11-03T18:46:52+08:00 ] 127.0.0.1 /Admin/Shop/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0069s ]
+SQL: DELETE FROM `t_shop` WHERE `id` = 9503545 [ RunTime:0.0844s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2015-11-03T18:46:52+08:00 ] 127.0.0.1 /Admin/shop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\thb\Application\Admin\Controller\ShopController.class.php 第 24 行.
+SQL: SELECT * FROM `t_shop` ORDER BY ord asc,addtime desc LIMIT 0,14   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 78 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 79 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 80 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 81 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 82 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 83 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 84 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 85 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000653s ]
+
+[ 2015-11-03T18:47:48+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+NOTIC: [8] Undefined index: userid D:\wamp\www\thb\Application\Admin\Controller\CommonController.class.php 第 8 行.
+
+[ 2015-11-03T18:47:48+08:00 ] 127.0.0.1 /Admin/Public/admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005546s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000575s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000625s ]
+
+[ 2015-11-03T18:47:49+08:00 ] 127.0.0.1 /Admin/Public/scode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2015-11-03T18:47:49+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+
+[ 2015-11-03T18:47:49+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+
+[ 2015-11-03T18:47:57+08:00 ] 127.0.0.1 /admin/public/scode/0.3168730859229134
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2015-11-03T18:48:04+08:00 ] 127.0.0.1 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0057s ]
+SQL: SELECT `password` FROM `t_admin` WHERE `name` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-11-03T18:48:04+08:00 ] 127.0.0.1 /Admin/Public/admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0072s ]
+SQL: SELECT `password`,`name` FROM `t_admin` WHERE `name` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_admin` WHERE `password` = '1c63129ae9db9c60c3e8aa94d3e00495' AND `name` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `t_admin` SET `ip`='127.0.0.1',`addtime`='1446547684' WHERE `id` = 3 [ RunTime:0.0004s ]
+
+[ 2015-11-03T18:48:04+08:00 ] 127.0.0.1 /Admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0061s ]
+SQL: SELECT t_admin.name,t_role.name as title FROM `t_admin` left join t_role_user on t_role_user.user_id = t_admin.id left join t_role on t_role.id = t_role_user.role_id  WHERE ( t_admin.id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007553s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000519s ]
+
+[ 2015-11-03T18:48:04+08:00 ] 127.0.0.1 /Public/admin/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+
+[ 2015-11-03T18:48:04+08:00 ] 127.0.0.1 /Admin/Index/center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `t_base` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `t_admin` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006367s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000557s ]
+
+[ 2015-11-03T18:48:04+08:00 ] 127.0.0.1 /Admin/Nav/nav
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `t_access` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 0 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 1 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 2 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 158 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 159 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 342 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 167 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 169 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 335 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 204 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 205 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 207 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 208 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 363 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 364 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 3 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 4 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 173 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 174 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 206 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 175 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 199 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 200 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 5 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 6 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 187 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 188 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 7 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 8 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 209 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 210 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 243 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 320 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000654s ]
+
+[ 2015-11-03T18:48:06+08:00 ] 127.0.0.1 /Admin/shop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\thb\Application\Admin\Controller\ShopController.class.php 第 24 行.
+SQL: SELECT * FROM `t_shop` ORDER BY ord asc,addtime desc LIMIT 0,14   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 78 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 79 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 80 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 81 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 82 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 83 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 84 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 85 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015528s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015584s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000724s ]
+
+[ 2015-11-03T18:48:09+08:00 ] 127.0.0.1 /Admin/Shop/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0128s ]
+SQL: DELETE FROM `t_shop` WHERE `id` = 9503546 [ RunTime:0.0984s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000643s ]
+
+[ 2015-11-03T18:48:10+08:00 ] 127.0.0.1 /Admin/shop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001681s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0113s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_shop` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\thb\Application\Admin\Controller\ShopController.class.php 第 24 行.
+SQL: SELECT * FROM `t_shop` ORDER BY ord asc,addtime desc LIMIT 0,14   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 78 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 79 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 80 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 81 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 82 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 83 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 84 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 85 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant iscomment - assumed 'iscomment' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 120 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant isred - assumed 'isred' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant p - assumed 'p' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: p D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Use of undefined constant keyword - assumed 'keyword' D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+NOTIC: [8] Undefined index: keyword D:\wamp\www\thb\Application\Runtime\Cache\Admin\ab63740b314964bce8815219e0a3eb97.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016596s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000736s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000779s ]
+

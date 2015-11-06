@@ -1,0 +1,1583 @@
+[ 2015-10-22T18:32:03+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000857s ]
+
+[ 2015-10-22T18:32:05+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.031025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031098s ]
+NOTIC: [8] Undefined index: userid D:\wamp\www\thb\Application\Admin\Controller\CommonController.class.php 第 8 行.
+
+[ 2015-10-22T18:32:05+08:00 ] 127.0.0.1 /Admin/Public/admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000814s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001088s ]
+
+[ 2015-10-22T18:32:05+08:00 ] 127.0.0.1 /Admin/Public/scode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000720s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000854s ]
+
+[ 2015-10-22T18:32:05+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+
+[ 2015-10-22T18:32:18+08:00 ] 127.0.0.1 /Admin/Public/admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0215s ]
+SQL: SELECT `password`,`name` FROM `t_admin` WHERE `name` = 'admin' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_admin` WHERE `password` = '1c63129ae9db9c60c3e8aa94d3e00495' AND `name` = 'admin' LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `t_admin` SET `ip`='127.0.0.1',`addtime`='1445509938' WHERE `id` = 3 [ RunTime:0.0007s ]
+
+[ 2015-10-22T18:32:18+08:00 ] 127.0.0.1 /Admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030242s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+
+[ 2015-10-22T18:32:18+08:00 ] 127.0.0.1 /Public/admin/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+
+[ 2015-10-22T18:32:18+08:00 ] 127.0.0.1 /Admin/Index/center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001089s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `t_base` [ RunTime:0.0175s ]
+SQL: SELECT * FROM `t_admin` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000420s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018963s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019057s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2015-10-22T18:32:18+08:00 ] 127.0.0.1 /Admin/Nav/nav
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0242s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 0 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 1 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 2 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 158 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 159 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 167 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 169 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 204 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 205 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 207 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 208 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 3 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 4 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 173 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 174 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 206 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 175 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 199 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 200 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 5 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 6 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 187 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 188 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 7 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 8 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 209 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 210 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 243 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 320 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000643s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000697s ]
+
+[ 2015-10-22T18:32:18+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+
+[ 2015-10-22T18:32:22+08:00 ] 127.0.0.1 /Admin/Role
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+SQL: SHOW COLUMNS FROM `t_role` [ RunTime:0.0128s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_role` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_role` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 41 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 42 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 88 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014350s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000729s ]
+
+[ 2015-10-22T18:32:23+08:00 ] 127.0.0.1 /Admin/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_admin` WHERE `name` <> 'admin' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_admin` WHERE `name` <> 'admin' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 41 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 42 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 93 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048208s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000634s ]
+
+[ 2015-10-22T18:32:24+08:00 ] 127.0.0.1 /Admin/Role
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `t_role` [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_role` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `t_role` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 41 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 42 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 88 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000548s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000591s ]
+
+[ 2015-10-22T18:32:25+08:00 ] 127.0.0.1 /Admin/Nav
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 0 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 1 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 2 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 158 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 159 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 167 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 169 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 204 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 205 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 207 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 208 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 3 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 4 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 173 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 174 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 206 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 175 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 199 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 200 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 5 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 6 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 187 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 188 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 7 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 8 and level !=3 ) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 209 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 210 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 243 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 320 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033205s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000456s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2015-10-22T18:32:26+08:00 ] 127.0.0.1 /Admin/Role
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+SQL: SHOW COLUMNS FROM `t_role` [ RunTime:0.0075s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_role` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_role` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 41 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 42 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 88 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008899s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008976s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000646s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000691s ]
+
+[ 2015-10-22T18:32:27+08:00 ] 127.0.0.1 /Admin/Role/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 0 and level !=3 ) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '1' and level =3 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '3' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '5' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '7' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 1 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '2' and level =3 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 2 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '158' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '167' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '204' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '207' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 158 and level !=3 ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '159' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 159 and level !=3 ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 167 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '169' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 169 and level !=3 ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 204 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '205' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 205 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 207 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '208' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 208 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 3 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '4' and level =3 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 4 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '173' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '175' and level =3 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 173 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '174' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '206' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 174 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 206 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 175 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '199' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '200' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 199 and level !=3 ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 200 and level !=3 ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 5 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '6' and level =3 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 6 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '187' and level =3 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 187 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '188' and level =3 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 188 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 7 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '8' and level =3 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 8 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '209' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 209 and level !=3 ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '210' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '243' and level =3 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '320' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 210 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 243 and level !=3 ) ORDER BY id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 320 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068352s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000606s ]
+
+[ 2015-10-22T18:32:32+08:00 ] 127.0.0.1 /Admin/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_admin` WHERE `name` <> 'admin' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_admin` WHERE `name` <> 'admin' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 41 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 42 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 93 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007947s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000729s ]
+
+[ 2015-10-22T18:32:34+08:00 ] 127.0.0.1 /Admin/Admin/edit/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_admin` WHERE ( id = 6 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Undefined variable: mfg D:\wamp\www\thb\Application\Runtime\Cache\Admin\fafe644a1e63c458b324d21081bff8c2.php 第 95 行.
+NOTIC: [8] Undefined variable: model D:\wamp\www\thb\Application\Runtime\Cache\Admin\fafe644a1e63c458b324d21081bff8c2.php 第 102 行.
+NOTIC: [8] Undefined variable: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\fafe644a1e63c458b324d21081bff8c2.php 第 109 行.
+NOTIC: [8] Undefined variable: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\fafe644a1e63c458b324d21081bff8c2.php 第 110 行.
+NOTIC: [8] Undefined variable: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\fafe644a1e63c458b324d21081bff8c2.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000608s ]
+
+[ 2015-10-22T18:32:37+08:00 ] 127.0.0.1 /Admin/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_admin` WHERE `name` <> 'admin' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_admin` WHERE `name` <> 'admin' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 41 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 42 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 93 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007463s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000562s ]
+
+[ 2015-10-22T18:32:38+08:00 ] 127.0.0.1 /Admin/Admin/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `t_role` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `t_role`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032699s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000579s ]
+
+[ 2015-10-22T18:32:41+08:00 ] 127.0.0.1 /Admin/Role
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `t_role` [ RunTime:0.0103s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_role` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_role` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 41 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 42 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 88 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007519s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000607s ]
+
+[ 2015-10-22T18:32:45+08:00 ] 127.0.0.1 /Admin/Index/center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `t_base` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `t_admin` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006413s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006467s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000866s ]
+
+[ 2015-10-22T18:33:15+08:00 ] 127.0.0.1 /Admin/Role
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+SQL: SHOW COLUMNS FROM `t_role` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_role` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `t_role` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 41 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 42 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 88 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+
+[ 2015-10-22T18:33:16+08:00 ] 127.0.0.1 /Admin/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_admin` WHERE `name` <> 'admin' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_admin` WHERE `name` <> 'admin' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 41 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 42 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 93 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008191s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000577s ]
+
+[ 2015-10-22T18:33:17+08:00 ] 127.0.0.1 /Admin/Role
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `t_role` [ RunTime:0.0063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_role` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `t_role` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 41 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 42 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 88 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000589s ]
+
+[ 2015-10-22T18:33:17+08:00 ] 127.0.0.1 /Admin/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_admin` WHERE `name` <> 'admin' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_admin` WHERE `name` <> 'admin' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 41 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 42 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 93 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000718s ]
+
+[ 2015-10-22T18:33:18+08:00 ] 127.0.0.1 /Admin/Role
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `t_role` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_role` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_role` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 41 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 42 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 88 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007426s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2015-10-22T18:33:19+08:00 ] 127.0.0.1 /Admin/Nav
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 0 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 1 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 2 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 158 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 159 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 167 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 169 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 204 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 205 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 207 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 208 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 3 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 4 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 173 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 174 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 206 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 175 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 199 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 200 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 5 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 6 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 187 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 188 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 7 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 8 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 209 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 210 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 243 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 320 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014544s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000566s ]
+
+[ 2015-10-22T18:33:21+08:00 ] 127.0.0.1 /Admin/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0059s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_admin` WHERE `name` <> 'admin' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_admin` WHERE `name` <> 'admin' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 41 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 42 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 93 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007999s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008047s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000603s ]
+
+[ 2015-10-22T18:33:21+08:00 ] 127.0.0.1 /Admin/Role
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+SQL: SHOW COLUMNS FROM `t_role` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_role` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_role` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 41 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 42 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 88 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000604s ]
+
+[ 2015-10-22T18:33:34+08:00 ] 127.0.0.1 /Admin/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'thb.t_service_request' doesn't exist
+
+[ 2015-10-22T18:33:35+08:00 ] 127.0.0.1 /Admin/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'thb.t_service_request' doesn't exist
+
+[ 2015-10-22T18:33:37+08:00 ] 127.0.0.1 /Admin/User
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0155s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\thb\Application\Admin\Controller\UserController.class.php 第 26 行.
+SQL: SELECT * FROM `t_user` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 78 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 79 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 80 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 81 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033303s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000559s ]
+
+[ 2015-10-22T18:33:37+08:00 ] 127.0.0.1 /Admin/Log
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'thb.t_vehicle_maintenance_log' doesn't exist
+
+[ 2015-10-22T18:33:39+08:00 ] 127.0.0.1 /Admin/Provider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'thb.t_provider' doesn't exist
+
+[ 2015-10-22T18:33:39+08:00 ] 127.0.0.1 /Admin/Provideruser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'thb.t_provider_user' doesn't exist
+
+[ 2015-10-22T18:33:40+08:00 ] 127.0.0.1 /Admin/Provider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'thb.t_provider' doesn't exist
+
+[ 2015-10-22T18:33:41+08:00 ] 127.0.0.1 /Admin/User
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\thb\Application\Admin\Controller\UserController.class.php 第 26 行.
+SQL: SELECT * FROM `t_user` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 78 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 79 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 80 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 81 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+
+[ 2015-10-22T18:33:41+08:00 ] 127.0.0.1 /Admin/Log
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'thb.t_vehicle_maintenance_log' doesn't exist
+
+[ 2015-10-22T18:33:50+08:00 ] 127.0.0.1 /Admin/User
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\thb\Application\Admin\Controller\UserController.class.php 第 26 行.
+SQL: SELECT * FROM `t_user` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 78 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 79 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 80 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 81 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009384s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009469s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000638s ]
+
+[ 2015-10-22T18:33:52+08:00 ] 127.0.0.1 /Admin/Address/index/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'thb.t_owner_address' doesn't exist
+
+[ 2015-10-22T18:33:53+08:00 ] 127.0.0.1 /Admin/User
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\thb\Application\Admin\Controller\UserController.class.php 第 26 行.
+SQL: SELECT * FROM `t_user` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 78 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 79 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 80 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 81 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009689s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009769s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000643s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000694s ]
+
+[ 2015-10-22T18:33:54+08:00 ] 127.0.0.1 /Admin/Vehicle/index/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'thb.t_owner_vehicle' doesn't exist
+
+[ 2015-10-22T18:33:54+08:00 ] 127.0.0.1 /Admin/User
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\thb\Application\Admin\Controller\UserController.class.php 第 26 行.
+SQL: SELECT * FROM `t_user` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 78 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 79 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 80 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 81 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000540s ]
+
+[ 2015-10-22T18:33:55+08:00 ] 127.0.0.1 /Admin/Log
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'thb.t_vehicle_maintenance_log' doesn't exist
+
+[ 2015-10-22T18:33:56+08:00 ] 127.0.0.1 /Admin/User
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0071s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\thb\Application\Admin\Controller\UserController.class.php 第 26 行.
+SQL: SELECT * FROM `t_user` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 78 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 79 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 80 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 81 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010087s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010170s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000659s ]
+
+[ 2015-10-22T18:34:14+08:00 ] 127.0.0.1 /Admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+NOTIC: [8] Undefined index: userid D:\wamp\www\thb\Application\Admin\Controller\CommonController.class.php 第 8 行.
+
+[ 2015-10-22T18:34:14+08:00 ] 127.0.0.1 /Admin/Public/admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000661s ]
+
+[ 2015-10-22T18:34:14+08:00 ] 127.0.0.1 /Admin/Public/scode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000722s ]
+
+[ 2015-10-22T18:34:14+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+
+[ 2015-10-22T18:34:14+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+
+[ 2015-10-22T18:34:24+08:00 ] 127.0.0.1 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+
+[ 2015-10-22T18:34:24+08:00 ] 127.0.0.1 /admin/public/scode/0.1949959295153022
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2015-10-22T18:34:29+08:00 ] 127.0.0.1 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+
+[ 2015-10-22T18:34:29+08:00 ] 127.0.0.1 /admin/public/scode/0.7843105280212792
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000595s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000661s ]
+
+[ 2015-10-22T18:34:38+08:00 ] 127.0.0.1 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0061s ]
+SQL: SELECT `password` FROM `t_admin` WHERE `name` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-10-22T18:34:38+08:00 ] 127.0.0.1 /Admin/Public/admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0079s ]
+SQL: SELECT `password`,`name` FROM `t_admin` WHERE `name` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_admin` WHERE `password` = '1c63129ae9db9c60c3e8aa94d3e00495' AND `name` = 'admin' LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `t_admin` SET `ip`='127.0.0.1',`addtime`='1445510078' WHERE `id` = 3 [ RunTime:0.0007s ]
+
+[ 2015-10-22T18:34:38+08:00 ] 127.0.0.1 /Admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014215s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000598s ]
+
+[ 2015-10-22T18:34:38+08:00 ] 127.0.0.1 /Public/admin/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+
+p_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 0 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 1 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 2 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 158 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 159 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 167 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 169 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 204 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 205 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 207 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 208 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 3 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 4 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 173 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 174 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 206 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 175 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 199 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 200 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 5 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 6 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 187 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 188 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 7 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 8 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 209 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 210 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 243 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE `bid` = 320 AND `state` = 1 AND `level` <> 3 ORDER BY id asc  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000707s ]
+
+[ 2015-10-22T18:34:38+08:00 ] 127.0.0.1 /Admin/Index/center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `t_base` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `t_admin` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_base` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013451s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000714s ]
+
+[ 2015-10-22T18:34:42+08:00 ] 127.0.0.1 /Admin/User
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\thb\Application\Admin\Controller\UserController.class.php 第 26 行.
+SQL: SELECT * FROM `t_user` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 78 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 79 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 80 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 81 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\thb\Application\Runtime\Cache\Admin\5d69f8c4d2442b936a99d5818ebdd6d3.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009767s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009819s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000567s ]
+
+[ 2015-10-22T18:34:45+08:00 ] 127.0.0.1 /Admin/Log
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'thb.t_vehicle_maintenance_log' doesn't exist
+
+[ 2015-10-22T18:34:47+08:00 ] 127.0.0.1 /Admin/Provider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'thb.t_provider' doesn't exist
+
+[ 2015-10-22T18:34:47+08:00 ] 127.0.0.1 /Admin/Provideruser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'thb.t_provider_user' doesn't exist
+
+[ 2015-10-22T18:34:48+08:00 ] 127.0.0.1 /Admin/Provider
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'thb.t_provider' doesn't exist
+
+[ 2015-10-22T18:34:51+08:00 ] 127.0.0.1 /Admin/Role
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+SQL: SHOW COLUMNS FROM `t_role` [ RunTime:0.0091s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_role` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `t_role` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 41 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 42 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 88 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010299s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000615s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000669s ]
+
+[ 2015-10-22T18:34:53+08:00 ] 127.0.0.1 /Admin/Role/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0079s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 0 and level !=3 ) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '1' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '3' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '5' and level =3 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '7' and level =3 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 1 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '2' and level =3 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 2 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '158' and level =3 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '167' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '204' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '207' and level =3 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 158 and level !=3 ) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '159' and level =3 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 159 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 167 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '169' and level =3 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 169 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 204 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '205' and level =3 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 205 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 207 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '208' and level =3 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 208 and level !=3 ) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 3 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '4' and level =3 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 4 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '173' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '175' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 173 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '174' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '206' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 174 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 206 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 175 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '199' and level =3 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '200' and level =3 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 199 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 200 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 5 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '6' and level =3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 6 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '187' and level =3 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 187 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '188' and level =3 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 188 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 7 and level !=3 ) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '8' and level =3 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 8 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '209' and level =3 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 209 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '210' and level =3 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '243' and level =3 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '320' and level =3 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 210 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 243 and level !=3 ) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 320 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015697s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015795s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000643s ]
+
+[ 2015-10-22T18:35:07+08:00 ] 127.0.0.1 /Admin/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0074s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_admin` WHERE `name` <> 'admin' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_admin` WHERE `name` <> 'admin' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 41 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 42 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 93 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008705s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000575s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000620s ]
+
+[ 2015-10-22T18:35:09+08:00 ] 127.0.0.1 /Admin/Admin/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `t_role` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `t_role`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007544s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2015-10-22T18:35:13+08:00 ] 127.0.0.1 /Admin/Role
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+SQL: SHOW COLUMNS FROM `t_role` [ RunTime:0.0094s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_role` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `t_role` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 41 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 42 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 88 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009113s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000538s ]
+
+[ 2015-10-22T18:35:14+08:00 ] 127.0.0.1 /Admin/Nav
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001005s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 0 and level !=3 ) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 1 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 2 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 158 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 159 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 167 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 169 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 204 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 205 and level !=3 ) ORDER BY id asc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 207 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 208 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 3 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 4 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 173 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 174 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 206 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 175 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 199 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 200 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 5 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 6 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 187 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 188 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 7 and level !=3 ) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 8 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 209 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 210 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 243 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 320 and level !=3 ) ORDER BY id asc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015596s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015668s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000700s ]
+
