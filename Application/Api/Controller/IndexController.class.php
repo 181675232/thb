@@ -301,8 +301,152 @@ class IndexController extends Controller {
 	}
 	
 	
+	//好友列表
+	public function friends_list(){
+		if(I('post.id')){
+			$user = M('user');
+			$where['pid'] = $_POST['id'];
+			$page = (I('post.page')-1)*10;
+			$return = $user->where($where)->field('id,simg,username,addtime')->limit("$page,10")->select();
+			
+			foreach ($return as $key=>$val){
+				$return[$key]['count'] = $user->where("pid='{$val['id']}'")->count();
+			}
+			
+			$indirect_friends=0;
+			foreach ($return as $key=>$val){
+				$return[$key]['indirect'] = $user->where("pid='{$val['id']}'")->field('id,simg,username,addtime')->select();
+				$indirect_friends = $indirect_friends+$return[$key]['count'];
+			}
+			
+			
+			
+			$return['direct_num'] = $user->where($where)->count();//直接好友总数
+			$return['indirect_num'] = $indirect_friends;//间接好友总数
+			$return['all_num'] = $return['direct_num']+$return['indirect_num'];//全部好友总数
+			if($return){
+				json('200','成功',$return);
+			}else{
+				json('400','失败');
+			}
+		}
+	}
 	
 	
+	
+	
+	
+	
+	
+/* 	//直接好友列表
+	public function direct_friends(){
+		if(I('post.id')){
+			$user = M('user');
+			$where['pid'] = $_POST['id'];
+			$page = (I('post.page')-1)*10;
+			$return = $user->where($where)->field('id,simg,username,addtime')->limit("$page,10")->select();		
+			$return['count'] = $user->where($where)->count();//直接好友总数
+			if($return){
+				json('200','成功',$return);
+			}else{
+				json('400','失败');
+			}
+		}
+	}
+	
+	//间接好友总数
+	public function indirect_friends(){
+		if(I('post.id')){
+			$user = M('user');
+			$where['pid'] = $_POST['id'];
+			$page = (I('post.page')-1)*10;
+			$res = $user->where($where)->field('id,simg,username,addtime')->select();
+			
+			foreach ($res as $val){
+				$return[] = $user->where("pid='{$val['id']}'")->field('id,simg,username,addtime')->select();
+			}
+			
+			$i=0;
+			foreach ($return as $key=>$val){
+				if(!empty($val)){
+					foreach ($val as $v){
+						$return2[] = $v;
+						$i++;
+					}
+				}
+			}
+			
+			
+			//数组排序
+			foreach ($return2 as $arrys) {
+				$id[] = $arrys['id'];
+			}
+			array_multisort($id, SORT_ASC, $return2);
+			
+			//数组分页
+			$return2 = array_page($return2, $page,10);
+			
+			$return2['count'] = $i;
+			if($return2){
+				json('200','成功',$return2);
+			}else{
+				json('400','失败');
+			}
+		}
+	}
+	
+	//全部好友
+	public function all_friends(){
+		if(I('post.id')){
+			$user = M('user');
+			$where['pid'] = $_POST['id'];
+			$page = (I('post.page')-1)*10;
+			$res = $user->where($where)->field('id,simg,username,addtime')->select();
+			
+			foreach ($res as $val){
+				$return[] = $user->where("pid='{$val['id']}'")->field('id,simg,username,addtime')->select();
+			}
+			
+			$i=0;
+			foreach ($return as $key=>$val){
+				if(!empty($val)){
+					foreach ($val as $v){
+						$return2[] = $v;
+						$i++;
+					}
+				}
+			}
+			
+			//直接好友
+			$i=0;
+			foreach ($res as $key=>$val){
+				$res[$key]['state'] = '1';
+				$i++;
+			}
+			
+			//间接好友
+			$e=0;
+			foreach ($return2 as $key=>$val){
+				$return2[$key]['state'] = '2';
+				$e++;
+			}
+			
+			foreach ($return2 as $val){
+				$res[] = $val;
+			}
+			
+			
+			//数组分页
+			$res = array_page($res, $page,10);
+			$res["count"] = $i+$e;
+
+			if($res){
+				json('200','成功',$res);
+			}else{
+				json('400','失败');
+			}
+		}
+	} */
 	
 	
 	
