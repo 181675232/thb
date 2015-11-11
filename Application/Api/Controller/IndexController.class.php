@@ -156,7 +156,6 @@ class IndexController extends Controller {
     //修改密码
     public function passedit(){ 
     	if(I('post.')){
-    		$mobile = I('post.PHONE');
     		$user = M('user');
     		$where['id'] = I('post.id');
     		$where['password'] = md5(I('post.pass'));
@@ -212,9 +211,162 @@ class IndexController extends Controller {
 		json('404','没有接收到传值');
 	}
 	
-	//  
+	//获取分类列表
+	public function shopgroup(){
+		$table = M('group');
+		$data = $table->where('pid = 0')->select();
+		if ($data){
+			foreach ($data as $key=>$val){
+				$data[$key]['catid'] = $table->where("pid = '{$val['id']}'")->select();
+			}
+			json('200','成功',$data);
+		}else {
+			json('400','暂无数据');
+		}
+	}
+	
+	//周片商铺列表
+	public function shoplist(){
+		if (I('post.')){
+			if (I('post.page')){
+				$page = I('post.page');
+			}else {
+				$page = 1;
+			}
+			if (I('post.cityid')){
+				$where['cityid'] = I('post.cityid');
+			}else {
+				if (I('post.areaid')){
+					$where['areaid'] = I('post.areaid');
+				}else {
+					json('400','请选择所在城市');
+				}
+			}
+			if (I('post.keyword')){
+				$keyword = I('post.keyword');
+				$where['name'] =  array('like',"%{$keyword}%");
+			}
+			if (I('post.groupid')){
+				$where['groupid'] = I('post.groupid');
+			}
+			$table = M('shop');
+			$data = $table->where($where)->order('isred desc,id desc')->limit(0,5000)->select();			
+			if ($data){
+				if (I('post.subgroupid')){				
+					foreach ($data as $key=>$val){
+						$arr =explode(',', $val['subgroupid']);
+						if (in_array(I('post.subgroupid'), $arr)){
+							$res[] = $val;
+						}
+					}
+					$data = $res;
+					$res = array();
+				}
+				if (I('post.ord') == 3){
+					foreach ($data as $key=>$val){
+						$arr =explode(',', $val['tags']);
+						if (in_array(I('post.ord'), $arr)){
+							$res[] = $val;
+						}
+					}
+					$data = $res;
+					$res = array();
+				}
+				foreach ($data as $key => $val){
+					$data[$key]['di'] = powc(I('post.latitude'),I('post.longitude'), $val['latitude'], $val['longitude']);
+					if ($data[$key]['di'] >= 1000){
+						$data[$key]['distance'] = ceil($data[$key]['di']/1000).'km';
+					}else {
+						$data[$key]['distance'] = $res[$key]['di'].'m';
+					}
+				}
+				if (I('post.di')){
+					foreach ($data as $key=>$val){
+						if ($val['di'] < I('post.di')){
+							$res[] = $val;
+						}
+					}
+					$data = $res;
+					$res = array();
+				}
+				
+				foreach ($data as $arrys) {
+					$distances[] = $arrys['di'];
+				}
+				foreach ($res as $arrys) {
+					$price[] = $arrys['price'];
+				}
+				foreach ($res as $arrys) {
+					$mark[] = $arrys['mark'];
+				}
+				if (I('post.ord') == 1){
+					array_multisort($mark,SORT_DESC,$data);
+				}elseif (I('post.ord') == 2){
+					array_multisort($price,SORT_ASC,$data);
+				}else {
+					array_multisort($distances,SORT_ASC,$data);					
+				}
+				$data = array_page($data,$page);
+				if ($data){
+					json('200','成功',$data);
+				}else {
+					json('400','没有更多数据');
+				}
+			}else{
+				json('400','暂无数据');
+			}
+		}
+		json('404','没有接收到传值');
+	}
     
-    
+	//店铺详情
+	public function shopinfo(){
+		if (I('post.')){
+			$id = I('post.id');
+			$table = M('shop');
+			$data['shop'] = $table->find($id);
+			if (!$data['shop']){
+				json('400','非法请求');
+			}
+			$goods = M('goods');
+			$data['goods'] = $goods->field("id,count,name,simg,price,isred")->where("pid = $id")->order('isred desc,ord asc,id desc')->select();
+			if ($data['goods']){
+				foreach ($data['goods'] as $key => $val){
+					$data['goods'][$key]['price'] = round($val['price'] * $data['shop']['discount'] / 100);
+				}
+			}
+			$comment = M('comment');
+			$data['shop']['comment'] = $comment->where("shopid = $id")->count();
+			$league = M('league');
+			$res = $league->where("shopid = $id and pid !=0")->find();
+			if ($res){
+				if ($league->where("id = '{$res['pid']}' and state = 2")->find()){
+					$data['league'] = $league->field("t_shop.*")
+					->join('left join t_shop on t_shop.id = t_league.shopid')
+					->where("pid = '{$res['pid']}' and shopid !=$id")->select();
+					foreach ($data['league'] as $key => $val){
+						$data['league'][$key]['di'] = powc(I('post.latitude'),I('post.longitude'), $val['latitude'], $val['longitude']);
+						if ($data['league'][$key]['di'] >= 1000){
+							$data['league'][$key]['distance'] = ceil($data['league'][$key]['di']/1000).'km';
+						}else {
+							$data['league'][$key]['distance'] = $res[$key]['di'].'m';
+						}
+					}
+					array_multisort($distances,SORT_ASC,$data);
+				}else {
+					$data['league'] = '';	
+				}
+			}else {
+				$data['league'] = '';	
+			}
+			if ($data){
+				json('200','成功',$data);
+			}else {
+				json('400','暂无数据');
+			}
+		}
+		json('404','没有接收到传值');
+	}
 	
 	
 	
@@ -301,152 +453,8 @@ class IndexController extends Controller {
 	}
 	
 	
-	//好友列表
-	public function friends_list(){
-		if(I('post.id')){
-			$user = M('user');
-			$where['pid'] = $_POST['id'];
-			$page = (I('post.page')-1)*10;
-			$return = $user->where($where)->field('id,simg,username,addtime')->limit("$page,10")->select();
-			
-			foreach ($return as $key=>$val){
-				$return[$key]['count'] = $user->where("pid='{$val['id']}'")->count();
-			}
-			
-			$indirect_friends=0;
-			foreach ($return as $key=>$val){
-				$return[$key]['indirect'] = $user->where("pid='{$val['id']}'")->field('id,simg,username,addtime')->select();
-				$indirect_friends = $indirect_friends+$return[$key]['count'];
-			}
-			
-			
-			
-			$return['direct_num'] = $user->where($where)->count();//直接好友总数
-			$return['indirect_num'] = $indirect_friends;//间接好友总数
-			$return['all_num'] = $return['direct_num']+$return['indirect_num'];//全部好友总数
-			if($return){
-				json('200','成功',$return);
-			}else{
-				json('400','失败');
-			}
-		}
-	}
 	
 	
-	
-	
-	
-	
-	
-/* 	//直接好友列表
-	public function direct_friends(){
-		if(I('post.id')){
-			$user = M('user');
-			$where['pid'] = $_POST['id'];
-			$page = (I('post.page')-1)*10;
-			$return = $user->where($where)->field('id,simg,username,addtime')->limit("$page,10")->select();		
-			$return['count'] = $user->where($where)->count();//直接好友总数
-			if($return){
-				json('200','成功',$return);
-			}else{
-				json('400','失败');
-			}
-		}
-	}
-	
-	//间接好友总数
-	public function indirect_friends(){
-		if(I('post.id')){
-			$user = M('user');
-			$where['pid'] = $_POST['id'];
-			$page = (I('post.page')-1)*10;
-			$res = $user->where($where)->field('id,simg,username,addtime')->select();
-			
-			foreach ($res as $val){
-				$return[] = $user->where("pid='{$val['id']}'")->field('id,simg,username,addtime')->select();
-			}
-			
-			$i=0;
-			foreach ($return as $key=>$val){
-				if(!empty($val)){
-					foreach ($val as $v){
-						$return2[] = $v;
-						$i++;
-					}
-				}
-			}
-			
-			
-			//数组排序
-			foreach ($return2 as $arrys) {
-				$id[] = $arrys['id'];
-			}
-			array_multisort($id, SORT_ASC, $return2);
-			
-			//数组分页
-			$return2 = array_page($return2, $page,10);
-			
-			$return2['count'] = $i;
-			if($return2){
-				json('200','成功',$return2);
-			}else{
-				json('400','失败');
-			}
-		}
-	}
-	
-	//全部好友
-	public function all_friends(){
-		if(I('post.id')){
-			$user = M('user');
-			$where['pid'] = $_POST['id'];
-			$page = (I('post.page')-1)*10;
-			$res = $user->where($where)->field('id,simg,username,addtime')->select();
-			
-			foreach ($res as $val){
-				$return[] = $user->where("pid='{$val['id']}'")->field('id,simg,username,addtime')->select();
-			}
-			
-			$i=0;
-			foreach ($return as $key=>$val){
-				if(!empty($val)){
-					foreach ($val as $v){
-						$return2[] = $v;
-						$i++;
-					}
-				}
-			}
-			
-			//直接好友
-			$i=0;
-			foreach ($res as $key=>$val){
-				$res[$key]['state'] = '1';
-				$i++;
-			}
-			
-			//间接好友
-			$e=0;
-			foreach ($return2 as $key=>$val){
-				$return2[$key]['state'] = '2';
-				$e++;
-			}
-			
-			foreach ($return2 as $val){
-				$res[] = $val;
-			}
-			
-			
-			//数组分页
-			$res = array_page($res, $page,10);
-			$res["count"] = $i+$e;
-
-			if($res){
-				json('200','成功',$res);
-			}else{
-				json('400','失败');
-			}
-		}
-	} */
 	
 	
 	

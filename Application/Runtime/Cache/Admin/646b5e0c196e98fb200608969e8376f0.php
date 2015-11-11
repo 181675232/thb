@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>管理后台</title>
@@ -66,7 +66,7 @@
             <div id="floatHead" class="toolbar">
                 <div class="l-list">
                     <ul class="icon-list">
-                        <li><a class="add" href="{:U('/Admin/Goods/add')}"><i></i><span> 新增</span></a></li>
+                        <li><a class="add" href="<?php echo U('/Admin/Goods/add');?>"><i></i><span> 新增</span></a></li>
 						<!--<li><a id="btnSave" Class="save"><i></i><span>保存</span></a></li>-->
                         <li><a class="all" href="javascript:;" onclick="checkAll(this)"><i></i><span>全选</span></a></li>
                         <li><a class="del" style="cursor:pointer;" id="btnDelete" OnClick="return ExePostBack('Goods')"><i></i><span>删除</span></a></li>
@@ -76,14 +76,14 @@
 
 				        <div class="rule-single-select single-select">
 				          <select id="ddlProperty" name="verify" onchange="location='/Admin/Shop/index/verify/'+options[selectedIndex].value">
-				            <option Value=""  <if condition="$verify eq ''">selected="selected"</if>>所有分类</option>
-				            <option Value="1" <if condition="$verify eq '1'">selected="selected"</if>>美食</option>
-				            <option Value="2" <if condition="$verify eq '2'">selected="selected"</if>>娱乐</option>
-				            <option Value="3" <if condition="$verify eq '3'">selected="selected"</if>>美容保健</option>
-							<option Value="4" <if condition="$verify eq '4'">selected="selected"</if>>酒店</option>
-				            <option Value="5" <if condition="$verify eq '5'">selected="selected"</if>>电影</option>
-				            <option Value="6" <if condition="$verify eq '6'">selected="selected"</if>>KTV</option>
-							<option Value="7" <if condition="$verify eq '7'">selected="selected"</if>>购物</option>
+				            <option Value=""  <?php if($verify == ''): ?>selected="selected"<?php endif; ?>>所有分类</option>
+				            <option Value="1" <?php if($verify == '1'): ?>selected="selected"<?php endif; ?>>美食</option>
+				            <option Value="2" <?php if($verify == '2'): ?>selected="selected"<?php endif; ?>>娱乐</option>
+				            <option Value="3" <?php if($verify == '3'): ?>selected="selected"<?php endif; ?>>美容保健</option>
+							<option Value="4" <?php if($verify == '4'): ?>selected="selected"<?php endif; ?>>酒店</option>
+				            <option Value="5" <?php if($verify == '5'): ?>selected="selected"<?php endif; ?>>电影</option>
+				            <option Value="6" <?php if($verify == '6'): ?>selected="selected"<?php endif; ?>>KTV</option>
+							<option Value="7" <?php if($verify == '7'): ?>selected="selected"<?php endif; ?>>购物</option>
 				          </select>
 				        </div>
 
@@ -103,49 +103,41 @@
 
 		<div class="imglist">
 		  <ul>
-		  	<if condition="$data" >
-		  	<volist name="data" id="val">
-		    <li>
+		  	<?php if($data): if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val): $mod = ($i % 2 );++$i;?><li>
 		      <div class="details">
-		        <div class="check"><input type="checkbox" Class="checkall" value="{$val.id}" Style="vertical-align: middle;" /></div>
+		        <div class="check"><input type="checkbox" Class="checkall" value="<?php echo ($val["id"]); ?>" Style="vertical-align: middle;" /></div>
 		        <div class="pic">
-		        	<if condition="$val['simg']">
-		        		<img src="{$val.simg}" width="220" height="220" />
-					<else />
-						<img src="/Public/admin/loadimg.gif" />
-					</if>
+		        	<?php if($val['simg']): ?><img src="<?php echo ($val["simg"]); ?>" width="220" height="220" />
+					<?php else: ?>
+						<img src="/Public/admin/loadimg.gif" /><?php endif; ?>
 				</div><i class="absbg"></i>
-		        <h1><span><a href="/Admin/Goods/edit/id/{$val.id}">{$val.name}</a></span></h1>
+		        <h1><span><a href="/Admin/Goods/edit/id/<?php echo ($val["id"]); ?>"><?php echo ($val["name"]); ?></a></span></h1>
 		        <div class="remark">
-		        	<if condition="$val['title']" >
-		        		店铺：{$val.title}<br />
-						价格：{$val.price}
-		        	<else />	
-					暂无内容摘要说明...	
-					</if>
+		        	<?php if($val['title']): ?>店铺：<?php echo ($val["title"]); ?><br />
+						价格：<?php echo ($val["price"]); ?>
+		        	<?php else: ?>	
+					暂无内容摘要说明...<?php endif; ?>
 				          
 		        </div>
 		        <div class="tools">	  
 				<!--      	
-		        	<a title="<if condition='$val[iscomment] eq 2'>取消评论<else />开启评论</if>" Class="<if condition='$val[iscomment] eq 2'>msg selected<else />msg</if>" href="/Admin/Shop/state/id/{$val.id}/iscomment/<if condition='$val[iscomment] eq 2'>1<else />2</if><if condition='$_GET[p]'>/p/{$Think.get.p}</if><if condition='$_GET[verify]'>/verify/{$Think.get.verify}</if><if condition='$_GET[keyword]'>/keyword/{$Think.get.keyword}</if>"></a>
+		        	<a title="<?php if($val[iscomment] == 2): ?>取消评论<?php else: ?>开启评论<?php endif; ?>" Class="<?php if($val[iscomment] == 2): ?>msg selected<?php else: ?>msg<?php endif; ?>" href="/Admin/Shop/state/id/<?php echo ($val["id"]); ?>/iscomment/<?php if($val[iscomment] == 2): ?>1<?php else: ?>2<?php endif; if($_GET[p]): ?>/p/<?php echo ($_GET['p']); endif; if($_GET[verify]): ?>/verify/<?php echo ($_GET['verify']); endif; if($_GET[keyword]): ?>/keyword/<?php echo ($_GET['keyword']); endif; ?>"></a>
 				-->
-				 	<a title="<if condition='$val[isred] eq 2'>取消推荐<else />设置推荐</if>" Class="<if condition='$val[isred] eq 2'>red selected<else />red</if>" href="/Admin/Group/state/id/{$val.id}/isred/<if condition='$val[isred] eq 2'>1<else />2</if><if condition='$_GET[p]'>/p/{$Think.get.p}</if><if condition='$_GET[verify]'>/verify/{$Think.get.verify}</if><if condition='$_GET[keyword]'>/keyword/{$Think.get.keyword}</if>"></a>
+				 	<a title="<?php if($val[isred] == 2): ?>取消推荐<?php else: ?>设置推荐<?php endif; ?>" Class="<?php if($val[isred] == 2): ?>red selected<?php else: ?>red<?php endif; ?>" href="/Admin/Group/state/id/<?php echo ($val["id"]); ?>/isred/<?php if($val[isred] == 2): ?>1<?php else: ?>2<?php endif; if($_GET[p]): ?>/p/<?php echo ($_GET['p']); endif; if($_GET[verify]): ?>/verify/<?php echo ($_GET['verify']); endif; if($_GET[keyword]): ?>/keyword/<?php echo ($_GET['keyword']); endif; ?>"></a>
 				  <!--
 				  <a title="取消置顶" Class="top selected" href=""></a>
 		          <a title="取消热门" Class="hot selected" href=""></a>
 				  -->
-				  <input name="ord" value="{$val.ord}" Class="sort" style="text-align:center;" onblur="order({$val.id},this.value,'Goods')" />	        
+				  <input name="ord" value="<?php echo ($val["ord"]); ?>" Class="sort" style="text-align:center;" onblur="order(<?php echo ($val["id"]); ?>,this.value,'Goods')" />	        
 		        </div>
 		        <div class="foot">
-		          <p class="time">{$val.addtime|date = "Y-m-d H:i:s",###}</p>
-		          <a href="/Admin/Goods/edit/id/{$val.id}" title="编辑" class="edit">编辑</a>
+		          <p class="time"><?php echo (date( "Y-m-d H:i:s",$val["addtime"])); ?></p>
+		          <a href="/Admin/Goods/edit/id/<?php echo ($val["id"]); ?>" title="编辑" class="edit">编辑</a>
 		        </div>
 		      </div>
-		    </li>
-			</volist>
-			<else />
-		    	<div align="center" style="padding: 8px 2px;border: 1px solid #e8e8e8;line-height: 1.5em;color: #666;">暂无记录</div>
-			</if>
+		    </li><?php endforeach; endif; else: echo "" ;endif; ?>
+			<?php else: ?>
+		    	<div align="center" style="padding: 8px 2px;border: 1px solid #e8e8e8;line-height: 1.5em;color: #666;">暂无记录</div><?php endif; ?>
 		  </ul>
 		</div>
 		<!--/图片列表-->
@@ -154,7 +146,7 @@
         </div>
         <div class="pagelist">
             <div class="flickr">
-                {$page}
+                <?php echo ($page); ?>
             </div>
         </div>
         <!--/内容底部-->

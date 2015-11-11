@@ -9,11 +9,24 @@
 	<script type="text/javascript" src="/Public/js/scripts/swfupload/swfupload.js"></script>
 	<script type="text/javascript" src="/Public/js/scripts/swfupload/swfupload.handlers.js"></script>
     <script type="text/javascript" src="/Public/js/layout.js"></script>	
+	<script type="text/javascript" charset="utf-8" src="/Public/js/scripts/kindeditor/kindeditor.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/Public/js/scripts/kindeditor/lang/zh_CN.js"></script>
     <link href="/Public/admin/css/pagination.css" rel="stylesheet" type="text/css" />	
 	<link href="/Public/admin/admin.css" rel="stylesheet" type="text/css" />
 	<link href="/Public/admin/page.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="/Public/js/check.js"></script>
 	<script type="text/javascript">
+		 //初始化编辑器
+        KindEditor.ready(function(K) {
+                window.editor = K.create('#content');
+        });
+        KindEditor.ready(function(K) {
+                K.create('#content', {
+						uploadJson : '/Public/js/scripts/kindeditor/php/upload_json.php',
+						fileManagerJson : '/Public/js/scripts/kindeditor/php/file_manager_json.php',
+                        allowFileManager : true
+                });
+        });
 	    $(function () {
 	        //初始化表单验证
 	        $("#form").initValidform();
@@ -216,16 +229,20 @@
     	</div>
 	</dd>
   </dl>
-	<dl>
-		<dt>简介</dt>
-		<dd>
-			<textarea id="webcopyright" name="description" Class="input" /> <?php echo ($description); ?></textarea>
-	      	<!--<span class="Validform_checktip">支持HTML</span>-->
-		</dd>
-	</dl>
   <dl>
     <dt>注册时间</dt>
     <dd><input type="text" name="addtime" value="<?php echo (date('Y-m-d H:i:s',$addtime)); ?>" disabled="disabled" Class="input normal" /></dd>
+  </dl>
+	<dl>
+		<dt>简介</dt>
+		<dd>
+			<textarea id="webcopyright" name="description" Class="input" /><?php echo ($description); ?></textarea>
+	      	<!--<span class="Validform_checktip">支持HTML</span>-->
+		</dd>
+	</dl>	
+  <dl>
+    <dt>详情</dt>
+    <dd><textarea id="content" name="content" style="width:700px;height:200px;visibility:hidden;"><?php echo ($content); ?></textarea></dd>
   </dl>
 </div>
 

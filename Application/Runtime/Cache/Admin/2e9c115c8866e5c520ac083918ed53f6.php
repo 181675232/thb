@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -8,25 +8,13 @@
     <script type="text/javascript" src="/Public/js/scripts/lhgdialog/lhgdialog.js?skin=idialog"></script>
 	<script type="text/javascript" src="/Public/js/scripts/swfupload/swfupload.js"></script>
 	<script type="text/javascript" src="/Public/js/scripts/swfupload/swfupload.handlers.js"></script>
+	<script type="text/javascript" src="/Public/js/scripts/datepicker/WdatePicker.js"></script>
     <script type="text/javascript" src="/Public/js/layout.js"></script>	
-	<script type="text/javascript" charset="utf-8" src="/Public/js/scripts/kindeditor/kindeditor.js"></script>
-	<script type="text/javascript" charset="utf-8" src="/Public/js/scripts/kindeditor/lang/zh_CN.js"></script>
     <link href="/Public/admin/css/pagination.css" rel="stylesheet" type="text/css" />	
 	<link href="/Public/admin/admin.css" rel="stylesheet" type="text/css" />
 	<link href="/Public/admin/page.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="/Public/js/check.js"></script>
 	<script type="text/javascript">
-		 //初始化编辑器
-        KindEditor.ready(function(K) {
-                window.editor = K.create('#content');
-        });
-        KindEditor.ready(function(K) {
-                K.create('#content', {
-						uploadJson : '/Public/js/scripts/kindeditor/php/upload_json.php',
-						fileManagerJson : '/Public/js/scripts/kindeditor/php/file_manager_json.php',
-                        allowFileManager : true
-                });
-        });
 	    $(function () {
 	        //初始化表单验证
 	        $("#form").initValidform();
@@ -105,7 +93,22 @@
             	
 		}
 		
-	
+		function otable(str){
+			if(str == 2){
+				$('#otable').css('display','block');
+			}else{
+				$('#otable').css('display','none');
+			}
+		}
+		
+		function addtable(){
+			$str = '<tr><td style="padding: 5px;"><input type="text" name="tab[]" style="width: 160px;height: 26px;text-align: center;"  /></td><td style="padding: 5px;"><input type="text" name="tab[]" style="width: 160px;height: 26px;text-align: center;"  /></td><td style="padding: 5px;"><input type="text" name="tab[]" style="width: 160px;height: 26px;text-align: center;"  /></td></tr>';
+			$('#tab').append($str);
+		}
+		
+		function deltable(){
+			$("#tab tr:last").remove();
+		}
 		
 	</script>
 </head>
@@ -116,9 +119,9 @@
   <a href="javascript:history.back(-1);" class="back"><i></i><span>返回上一页</span></a>
   <a href="/Admin/Index/center" class="home"><i></i><span>首页</span></a>
   <i class="arrow"></i>
-  <a href="/Admin/Shop"><span>商铺列表</span></a>
+  <a href="/Admin/Shop"><span>用户</span></a>
   <i class="arrow"></i>
-  <span>新增信息</span>
+  <span>修改信息</span>
 </div>
 <div class="line10"></div>
 <!--/导航栏-->
@@ -135,119 +138,90 @@
 </div>
 
 <div class="tab-content">
+	<input type="hidden" name="id" value="<?php echo ($id); ?>" />
 	<dl>
     <dt>头像</dt>
       <dd>
-      	<img src="/Public/admin/touxiang.jpg" class="upload-img" style="width: 120px; height: 120px;" />
-		<input type="hidden" id="txtImgUrl" name="simg" Class="input normal upload-path" />
+      	<?php if(empty($simg)): ?><img src="/Public/admin/touxiang.jpg" class="upload-img" style="width: 120px; height: 120px;" />
+			<input type="hidden" id="txtImgUrl" name="simg" Class="input normal upload-path" />
+		<?php else: ?>
+			<img src="<?php echo ($simg); ?>" class="upload-img" style="width: 120px; height: 120px;" />
+			<input type="hidden" id="txtImgUrl" value="<?php echo ($simg); ?>" name="simg" Class="input normal upload-path" /><?php endif; ?>
       	<div style="position:relative; top: -13px; left: 5px;" class="upload-box upload-img"></div><span style="position:relative; top: -13px; left: 5px;" class="Validform_checktip">*建议上传1:1的jpg,png图片</span>
 	</dd>
   </dl>
-	<dl>
-		<dt>市区</dt>
-		<dd>
-			<div class="rule-single-select">
-				<select id="ddlParentId" name="provinceid">
-					<option value="0" selected="selected">请选择在省级单位</option>
-					<volist name="type1" id="val">		
-						<option value="{$val.provinceid}">{$val.province}</option>
-					</volist>
-				</select>
-			</div>
-			<div class="rule-single-select">
-				<select name="cityid" id="ddlParentId1"> 
-					<option value="0" selected="selected">请选择在市级单位</option>
-				</select>
-			</div>
-			
-			<div class="rule-single-select">
-				<select name="areaid" id="ddlParentId2"> 
-					<option value="0" selected="selected">请选择在区县单位</option>
-				</select>
-			</div>
-		</dd>
-	</dl>
-	<dl>
-	<dt>名称</dt>
-		<dd><input type="text" name="name" datatype="*" Class="input normal" sucmsg=" " /> <span class="Validform_checktip">*</span></dd>
-	</dl> 
-	<dl>
-	<dt>电话</dt>
-		<dd><input type="text" name="phone"  Class="input normal" datatype="*" sucmsg=" " /><span class="Validform_checktip">*</span></dd>
-	</dl>
-	<dl>
-	<dt>折扣</dt>
-		<dd><input type="text" name="discount" datatype="n1-2" Class="input small"  sucmsg=" " errormsg="折扣范围0-99" value="0" /> <span class="Validform_checktip">*0-99之间的数字,0为不打折</span></dd>
-	</dl>
-	<dl>
-	<dt>均价</dt>
-		<dd><input type="text" name="price" datatype="n" Class="input small" sucmsg=" " /> <span class="Validform_checktip">*</span></dd>
-	</dl>
-	<dl>
-	<dt>营业时间</dt>
-		<dd><input type="text" name="businesstime" Class="input normal" /> <span class="Validform_checktip">格式：8:00-22:00</span></dd>
-	</dl>
-	<dl>
-	<dt>广告语</dt>
-		<dd><input type="text" name="ads"  Class="input normal" datatype="*" sucmsg=" "  /><span class="Validform_checktip">*</span></dd>
-	</dl>
-	<dl>
-	<dt>地址</dt>
-		<dd><input type="text" name="address"  Class="input normal" datatype="*" sucmsg=" "  /><span class="Validform_checktip">*</span></dd>
-	</dl>
-	<dl>
-	<dt>大类</dt>
-		<dd>
-			<div class="rule-single-select">
-				<select id="ddlParentId3" name="groupid">
-					<option value="0" selected="selected">请选择所属大类</option>
-					<volist name="group1" id="val">		
-						<option value="{$val.id}">{$val.title}</option>
-					</volist>
-				</select>
-			</div>
-		</dd>
-	</dl> 
-	<dl>
-    <dt>小类</dt>
-    <dd>
-		<div id="checkbox"  class="rule-multi-checkbox  multi-checkbox ">	
-    	</div>
-	</dd>
-  </dl>
   <dl>
-    <dt>优惠</dt>
-    <dd>
-		<div class="rule-multi-checkbox  multi-checkbox ">	
-    		<label><input type="checkbox" Value="1" checked="checked" name="tags[]" />惠</label>
-      		<label><input type="checkbox" Value="2" name="tags[]" />折</label>
-			<label><input type="checkbox" Value="3" name="tags[]" />券</label>
-			<label><input type="checkbox" Value="4" name="tags[]" />联</label>
-			<label><input type="checkbox" Value="5" name="tags[]" />P</label>
-			<label><input type="checkbox" Value="6" name="tags[]" />wifi</label>
-    	</div>
-	</dd>
-  </dl>
-	<dl>
-		<dt>简介</dt>
+		<dt>商铺</dt>
 		<dd>
-			<textarea id="webcopyright" name="description" Class="input" /></textarea>
-	      	<!--<span class="Validform_checktip">支持HTML</span>-->
+			<div class="rule-single-select">
+				<select id="ddlParentId" name="pid">
+					<option value="0" selected="selected">请选择所属商铺</option>
+					<?php if(is_array($type1)): $i = 0; $__LIST__ = $type1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val): $mod = ($i % 2 );++$i;?><option value="<?php echo ($val["id"]); ?>" <?php if($val["id"] == $pid): ?>selected="selected"<?php endif; ?>><?php echo ($val["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+				</select>
+			</div>
 		</dd>
 	</dl>
 	<dl>
-    <dt>详情</dt>
-    <dd><textarea id="content" name="content" style="width:700px;height:200px;visibility:hidden;"></textarea></dd>
+	<dt>标题</dt>
+		<dd><input type="text" value="<?php echo ($name); ?>" name="name" datatype="*" Class="input normal" sucmsg=" " /> <span class="Validform_checktip">*</span></dd>
+	</dl> 
+	<dl>
+	<dt>价格</dt>
+		<dd><input type="text" value="<?php echo ($price); ?>" name="price" datatype="n" Class="input small" sucmsg=" " /> <span class="Validform_checktip">*</span></dd>
+	</dl>
+	<dl>
+    <dt>起始时间</dt>
+    <dd>
+    	<div style="width: 190px" class="input-date">
+        <input type="text" value="<?php echo (date('Y-m-d H:i:s',$starttime)); ?>" name="starttime" id="txtAddTime" Class="input date" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" datatype="/^\s*$|^\d{4}\-\d{1,2}\-\d{1,2}\s{1}(\d{1,2}:){2}\d{1,2}$/" errormsg="请选择正确的日期" sucmsg=" " />
+        <i>日期</i>
+      </div>
+	</dd>
   </dl>
-  
-
+	<dl>
+    <dt>结束时间</dt>
+    <dd>
+    	<div style="width: 190px" class="input-date">
+        <input type="text" value="<?php echo (date('Y-m-d H:i:s',$stoptime)); ?>" name="stoptime" id="txtAddTime" Class="input date" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" datatype="/^\s*$|^\d{4}\-\d{1,2}\-\d{1,2}\s{1}(\d{1,2}:){2}\d{1,2}$/" errormsg="请选择正确的日期" sucmsg=" " />
+        <i>日期</i>
+      </div>
+	</dd>
+  </dl>
+	<dl>
+		<dt>详细信息</dt>
+		<dd>
+			<textarea id="webcopyright" name="description" Class="input" /> <?php echo ($description); ?></textarea>
+	      	<span class="Validform_checktip">非必填</span>
+		</dd>
+	</dl>
+	<dl>
+    <dt>使用表格</dt>
+    <dd>
+		<div class="rule-multi-radio multi-radio">	   		
+			<label><input type="radio" onclick="otable(this.value)" Value="2" <?php if($istab == 2): ?>checked="checked"<?php endif; ?> name="istab" />是</label>
+			<label><input type="radio" onclick="otable(this.value)" Value="1" <?php if($istab == 1): ?>checked="checked"<?php endif; ?> name="istab" />否</label>
+    	</div>
+	</dd>
+  </dl>
+	<dl id="otable" style="display: block;">
+		<dt>表格详情</dt>
+		<dd>
+			<p><a onclick = "addtable()" style="display: inline-block; height: 20px; line-height:20px;cursor: pointer; border: 1px solid #ccc; margin: 0 10px 10px 0; padding: 5px;">添加一行</a><a onclick = "deltable()" style="display: inline-block; height: 20px; line-height:20px;cursor: pointer; border: 1px solid #ccc; margin: 0 10px 10px 0; padding: 5px;">删除一行</a>　*标题可写在中间</p>
+			<table id="tab" border = '1' bordercolor = '#ccc'>
+				<?php if(is_array($ttt)): $i = 0; $__LIST__ = $ttt;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val1): $mod = ($i % 2 );++$i;?><tr>
+						<?php if(is_array($val1["content"])): $i = 0; $__LIST__ = $val1["content"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val): $mod = ($i % 2 );++$i;?><td style="padding: 5px;"><input type="text" value="<?php echo ($val); ?>" name="tab[]" style="width: 160px;height: 26px;text-align: center;"  /></td><?php endforeach; endif; else: echo "" ;endif; ?>
+					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+			</table>
+		</dd>
+	</dl>
 </div>
+
 <!--/内容-->
 
 <!--工具栏-->
 <div class="page-footer">
   <div class="btn-list">
-    <input id="btnSubmit" type="submit" value="提交保存" Class="btn" />
+    <input id="btnSubmit" type="submit" value="提交保存" Class="btn" onclick="btnSubmit_Click" />
     <input name="btnReturn" type="button" value="返回上一页" class="btn yellow" onclick="javascript:history.back(-1);" />
   </div>
   <div class="clear"></div>
