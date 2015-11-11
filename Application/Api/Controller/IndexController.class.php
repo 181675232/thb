@@ -452,7 +452,157 @@ class IndexController extends Controller {
 		}		
 	}
 	
+	//好友列表
+	public function friends_list(){
+		if(I('post.id')){
+			$user = M('user');
+			$where['pid'] = $_POST['id'];
+			$page = (I('post.page')-1)*10;
+			$return = $user->where($where)->field('id,simg,username,addtime')->limit("$page,10")->select();
+				
+			foreach ($return as $key=>$val){
+				$return[$key]['count'] = $user->where("pid='{$val['id']}'")->count();
+			}
+				
+			$indirect_friends=0;
+			foreach ($return as $key=>$val){
+				$return[$key]['indirect'] = $user->where("pid='{$val['id']}'")->field('id,simg,username,addtime')->select();
+				$indirect_friends = $indirect_friends+$return[$key]['count'];
+			}
+				
+				
+				
+			$return['direct_num'] = $user->where($where)->count();//直接好友总数
+			$return['indirect_num'] = $indirect_friends;//间接好友总数
+			$return['all_num'] = $return['direct_num']+$return['indirect_num'];//全部好友总数
+			if($return){
+				json('200','成功',$return);
+			}else{
+				json('400','失败');
+			}
+		}
+	}
 	
+	//添加和取消收藏店铺
+	public function collection_shop(){
+		$collection= M('collection');
+		$data = $_POST;
+		$bid = $data['bid'];
+		$uid = $data['uid'];
+		if(isset($bid) && isset($uid)){
+			$return=$collection->where($data)->find();
+			if($return){
+				$return1 = $collection->delete($return['id']);
+				if ($return1){
+					json('201','取消收藏成功！',$return1);
+				}else{
+					json('401','取消收藏失败！');
+				}
+			}else{
+				$data['addtime'] = time();
+				$return1 = $collection->add($data);
+				if ($return1){
+					json('200','收藏成功！',$return1);
+				}else{
+					json('400','收藏失败！');
+				}
+			}
+		}
+	}
+	
+	//收藏列表
+	public function  collection_list(){
+		$data = $_POST;
+		$shop = M('shop');
+		//收藏
+		$collection = M('collection');
+		$rs=$collection->where($data['uid'])->field('bid')->select();
+		foreach ($rs as $key=>$val){
+			$rs1[]=$val['bid'];
+		}
+	
+		$rs1 = implode(',', $rs1);
+		//店铺数据
+		$return=$shop->field('id,name,simg,address')->select($rs1);
+	
+		//数组分页
+		$page = ($_POST['page']-1)*10;
+		$return = array_slice($return, $page, 10);
+	
+		if ($return){
+			json('200','成功！',$return);
+		}else{
+			json('400','失败！');
+		}
+	}
+	
+	//摇一摇
+	public function shake(){
+		if(I('post.cityid') or I('post.areaid')){
+			$shop = M('shop');
+			$data = $_POST;
+			$data['isred'] = '2';
+			$return = $shop->where($data)->field('id,name,simg,address')->select();
+			if($return){
+				$res = array_rand($return);
+			}else{
+				$where = $_POST;
+				$return = $shop->where($where)->field('id,name,simg,address')->select();
+				$res = array_rand($return);
+			}
+				
+			foreach ($return as $key=>$val){
+				if($key==$res){
+					$res1 = $val;
+				}
+			}
+				
+			if ($res1){
+				json('200','成功！',$res1);
+			}else{
+				json('400','失败！');
+			}
+		}
+	}
+	
+	//商品评论
+	public function comment(){
+		if(I('post.uid')){
+			$comment = M('comment');
+			$comment_img = M('comment_img');
+			$data = $_POST;
+			$return = $comment->where("goodsid='{$data['goodsid']}'")->select();
+			if($return){
+				json('401','已评价！');
+			}else{
+				$return1 = $comment->add($data);
+				if(isset($_FILES)){
+					//			$data = $_FILES;
+					//   		$data=json_encode($_FILES);
+					//   		file_put_contents('./b.txt', $data);
+					foreach ($_FILES as $key=>$val){
+						move_uploaded_file($val['tmp_name'], './Public/comment_img/'.$val['name']);
+						$data1['cid'] = $return1;
+						$data1['img'] = '/Public/comment_img/'.$val['name'];
+						$data1['addtime'] = time();
+						$return2 = $comment_img->add($data1);
+					}
+				}
+				if($return1){
+					json('200','评价成功！',$return1);
+				}else{
+					json('400','评价失败！');
+				}
+			}
+		}
+	}
+	
+	//店铺评论列表
+	public function comment_list(){
+		if(I('post.shopid')){
+				
+		}
+	}
 	
 	
 	

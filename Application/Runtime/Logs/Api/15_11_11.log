@@ -1,0 +1,109 @@
+[ 2015-11-11T16:46:34+08:00 ] 127.0.0.1 /Api/index/shopinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+
+[ 2015-11-11T16:47:12+08:00 ] 127.0.0.1 /Api/index/shopinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0162s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0146s ]
+SQL: SHOW COLUMNS FROM `t_goods` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `t_goods` WHERE ( pid = 1111111 )  [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( shopid = 1111111 ) LIMIT 1   [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `t_league` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `t_league` WHERE ( shopid = 1111111 and pid !=0 ) LIMIT 1   [ RunTime:0.0109s ]
+
+[ 2015-11-11T17:10:21+08:00 ] 127.0.0.1 /Api/index/shopinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `t_goods` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `t_goods` WHERE ( pid = 1111111 )  [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0097s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( shopid = 1111111 ) LIMIT 1   [ RunTime:0.0091s ]
+SQL: SHOW COLUMNS FROM `t_league` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `t_league` WHERE ( shopid = 1111111 and pid !=0 ) LIMIT 1   [ RunTime:0.0085s ]
+SQL: SELECT * FROM `t_league` WHERE ( id = '9503756' and state = 2 ) LIMIT 1   [ RunTime:0.0079s ]
+SQL: SELECT * FROM `t_league` WHERE ( pid = '9503756' and shopid !=1111111 )  [ RunTime:0.0071s ]
+NOTIC: [8] Undefined index: latitude D:\wamp\www\thb\Application\Api\Controller\IndexController.class.php 第 341 行.
+NOTIC: [8] Undefined index: longitude D:\wamp\www\thb\Application\Api\Controller\IndexController.class.php 第 341 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\thb\Application\Api\Controller\IndexController.class.php 第 345 行.
+NOTIC: [8] Undefined index: latitude D:\wamp\www\thb\Application\Api\Controller\IndexController.class.php 第 341 行.
+NOTIC: [8] Undefined index: longitude D:\wamp\www\thb\Application\Api\Controller\IndexController.class.php 第 341 行.
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\thb\Application\Api\Controller\IndexController.class.php 第 345 行.
+NOTIC: [2] array_multisort() [<a href='function.array-multisort'>function.array-multisort</a>]: Argument #1 is expected to be an array or a sort flag D:\wamp\www\thb\Application\Api\Controller\IndexController.class.php 第 348 行.
+
+[ 2015-11-11T17:32:49+08:00 ] 127.0.0.1 /Api/index/shopinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `t_goods` [ RunTime:0.0098s ]
+SQL: SELECT `id`,`count`,`name`,`simg`,`price`,`discount` FROM `t_goods` WHERE ( pid = 1111111 )  [ RunTime:0.0198s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0127s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( shopid = 1111111 ) LIMIT 1   [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `t_league` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `t_league` WHERE ( shopid = 1111111 and pid !=0 ) LIMIT 1   [ RunTime:0.0099s ]
+SQL: SELECT * FROM `t_league` WHERE ( id = '9503756' and state = 2 ) LIMIT 1   [ RunTime:0.0122s ]
+SQL: SELECT t_shop.* FROM `t_league` left join t_shop on t_shop.id = t_league.shopid  WHERE ( pid = '9503756' and shopid !=1111111 )  [ RunTime:0.0120s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\thb\Application\Api\Controller\IndexController.class.php 第 347 行.
+NOTIC: [2] array_multisort() [<a href='function.array-multisort'>function.array-multisort</a>]: Argument #1 is expected to be an array or a sort flag D:\wamp\www\thb\Application\Api\Controller\IndexController.class.php 第 350 行.
+
+[ 2015-11-11T17:38:17+08:00 ] 127.0.0.1 /Api/index/shopinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `t_goods` [ RunTime:0.0117s ]
+SQL: SELECT `id`,`count`,`name`,`simg`,`price` FROM `t_goods` WHERE ( pid = 1111111 )  [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0109s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( shopid = 1111111 ) LIMIT 1   [ RunTime:0.0091s ]
+SQL: SHOW COLUMNS FROM `t_league` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `t_league` WHERE ( shopid = 1111111 and pid !=0 ) LIMIT 1   [ RunTime:0.0094s ]
+SQL: SELECT * FROM `t_league` WHERE ( id = '9503756' and state = 2 ) LIMIT 1   [ RunTime:0.0099s ]
+SQL: SELECT t_shop.* FROM `t_league` left join t_shop on t_shop.id = t_league.shopid  WHERE ( pid = '9503756' and shopid !=1111111 )  [ RunTime:0.0132s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\thb\Application\Api\Controller\IndexController.class.php 第 352 行.
+NOTIC: [2] array_multisort() [<a href='function.array-multisort'>function.array-multisort</a>]: Argument #1 is expected to be an array or a sort flag D:\wamp\www\thb\Application\Api\Controller\IndexController.class.php 第 355 行.
+
+[ 2015-11-11T17:48:56+08:00 ] 127.0.0.1 /Api/index/shopinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0089s ]
+SQL: SHOW COLUMNS FROM `t_goods` [ RunTime:0.0099s ]
+SQL: SELECT `id`,`count`,`name`,`simg`,`price`,`isred` FROM `t_goods` WHERE ( pid = 1111111 ) ORDER BY isred desc,ord asc,id desc  [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0126s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( shopid = 1111111 ) LIMIT 1   [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `t_league` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `t_league` WHERE ( shopid = 1111111 and pid !=0 ) LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT * FROM `t_league` WHERE ( id = '9503756' and state = 2 ) LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT t_shop.* FROM `t_league` left join t_shop on t_shop.id = t_league.shopid  WHERE ( pid = '9503756' and shopid !=1111111 )  [ RunTime:0.0088s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\thb\Application\Api\Controller\IndexController.class.php 第 352 行.
+NOTIC: [2] array_multisort() [<a href='function.array-multisort'>function.array-multisort</a>]: Argument #1 is expected to be an array or a sort flag D:\wamp\www\thb\Application\Api\Controller\IndexController.class.php 第 355 行.
+
