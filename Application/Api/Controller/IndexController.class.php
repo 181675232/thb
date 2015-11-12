@@ -322,14 +322,22 @@ class IndexController extends Controller {
 	//店铺详情
 	public function shopinfo(){
 		if (I('post.')){
-			$id = I('post.id');
+			$id = $where['shopid'] = I('post.id');
+			$uid = $where['uid']  = I('post.uid');
 			$table = M('shop');
 			$data['shop'] = $table->find($id);
 			if (!$data['shop']){
 				json('400','非法请求');
 			}
+			$time = $where['addtime'] = time();
+			$trace = M('trace');			
+			if ($trace->where("uid = $uid and shopid = $id")->find()){
+				$trace->where("uid = $uid and shopid = $id")->setField('addtime',$time);
+			}else {
+				$trace->add($where);
+			}
 			$goods = M('goods');
-			$data['goods'] = $goods->field("id,count,name,simg,price,isred")->where("pid = $id")->order('isred desc,ord asc,id desc')->select();
+			$data['goods'] = $goods->field("id,count,name,simg,price,isred")->where("pid = $id and starttime < $time and stoptime > $time")->order('isred desc,ord asc,id desc')->select();
 			if ($data['goods']){
 				foreach ($data['goods'] as $key => $val){
 					$data['goods'][$key]['price'] = round($val['price'] * $data['shop']['discount'] / 100);
@@ -337,6 +345,12 @@ class IndexController extends Controller {
 			}
 			$comment = M('comment');
 			$data['shop']['comment'] = $comment->where("shopid = $id")->count();
+			$coll = M('collection');
+			if ($coll->where("uid = $uid and bid = $id")->find()){
+				$data['shop']['collection'] = 2;
+			}else {
+				$data['shop']['collection'] = 1;
+			}		
 			$league = M('league');
 			$res = $league->where("shopid = $id and pid !=0")->find();
 			if ($res){
@@ -368,7 +382,41 @@ class IndexController extends Controller {
 		json('404','没有接收到传值');
 	}
 	
+	//商品详情
+	public function goodsinfo(){
+		if (I('post.id')){
+			$id = I('post.id');
+			$table = M('goods');
+			$data['goods'] = $table->field("id,count,name,simg,price,isred,pid,starttime,stoptime,description,istab")->find($id);
+			$shop = M('shop')->where("id = '{$data['goods']['pid']}'")->find();
+			if (!$data['goods']){
+				json('400','非法操作');
+			}
+			$data['goods']['phone'] = $shop['phone'];
+			$data['goods']['trueprice'] = round($data['goods']['price'] * $shop['discount'] / 100);
+			if ($data['goods']['istab'] == 2){
+				$tab = M('tab');
+				$data['goods']['table'] = $tab->where("goodsid = $id")->order('id asc')->select();
+			}
+			$time = time();
+			$data['goodslist'] = $table->field("id,count,name,simg,price,isred")->where("pid = '{$data['goods']['pid']}' and starttime < $time and stoptime > $time")->order('isred desc,ord asc,id desc')->limit(2)->select();
+			if ($data){
+				json('200','成功',$data);
+			}else {
+				json('400','非法操作');
+			}
+		}
+		json('404');
+	}
 	
+	//商品web
+	public function shopweb(){
+		$id = I('post.id');
+		$table = M('shop');
+		$data = $table->find($id);
+		$this->assign('content',$data['content']);
+		$this->display();
+	}
 	
 	
 	
@@ -600,7 +648,85 @@ class IndexController extends Controller {
 	//店铺评论列表
 	public function comment_list(){
 		if(I('post.shopid')){
-				
+			$conmment = M('comment');
+			$conmment_img = M('comment_img');
+			$shop = M('shop');
+			$page = ($_POST['page']-1)*10;
+			$data['t_comment.shopid'] = $_POST['shopid'];
+			
+			//店铺信息
+			$return['shop'] = $shop->field('id,simg,name,address,tags,price,mark,redtag,blacktag')->find($_POST['shopid']);
+			
+			//评论总条数
+			$return['count'] = $conmment->where("shopid='{$_POST['shopid']}'")->count();
+			
+			$redtag = explode(" ", $return['shop']['redtag']);
+			$blacktag = explode(" ", $return['shop']['blacktag']);
+			
+			//标签数据
+			foreach ($redtag as $key=>$val){
+				$where['content'] = array('like',"%{$val}%");
+				$count = $conmment->where($where)->count();
+				$return['redtag'][] = $val.$count;
+			}
+			
+			//标签数据
+			foreach ($blacktag as $key=>$val){
+				$where['content'] = array('like',"%{$val}%");
+				$count = $conmment->where($where)->count();
+				$return['blacktag'][] = $val.$count;
+			}
+			
+			//标签搜索
+			if(!empty($_POST['tag'])){
+				$data['t_comment.content'] = array('like',"%{$_POST['tag']}%");
+			}
+			
+			//评论数据
+			$return['comment'] = $conmment
+			->join('left join t_user on t_comment.uid=t_user.id')
+			->where($data)
+			->field('t_comment.id,t_comment.uid,t_comment.content,t_comment.addtime,t_user.simg,t_user.username')
+			->order('t_comment.id desc')
+			->limit("$page,10")
+			->select();
+			
+		  	foreach ($return['comment'] as $key=>$val){
+  				$return['comment'][$key]['img'] = $conmment_img->where("cid='{$val['id']}'")->field('img')->select();
+  			}  
+			
+			if($return){
+				json('200','成功！',$return);
+			}else{
+				json('400','失败！');
+			}
+		}
+	}  
+	
+	
+	//足迹列表
+	public function  trace_list(){
+		$data = $_POST;
+		$shop = M('shop');
+		//足迹
+		$trace = M('trace');
+		$rs=$trace->where($data['uid'])->field('shop')->select();
+		foreach ($rs as $key=>$val){
+			$rs1[]=$val['shop'];
+		}
+	
+		$rs1 = implode(',', $rs1);
+		//店铺数据
+		$return=$shop->field('id,name,simg,address')->select($rs1);
+	
+		//数组分页
+		$page = ($_POST['page']-1)*10;
+		$return = array_slice($return, $page, 10);
+	
+		if ($return){
+			json('200','成功！',$return);
+		}else{
+			json('400','失败！');
 		}
 	}
 	

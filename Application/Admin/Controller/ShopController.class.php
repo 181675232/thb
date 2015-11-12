@@ -47,6 +47,7 @@ class ShopController extends CommonController {
 				$where['subgroupid'] = implode(',', $where['subgroupid']);
 			}
 			$where['addtime'] = time();
+			$where['content'] = stripslashes(htmlspecialchars_decode($_POST['content']));
 			if ($table->add($where)){
 				alertLocation('添加成功！', '/Admin/Shop');
 			}else {
@@ -82,6 +83,7 @@ class ShopController extends CommonController {
 			if ($where['subgroupid']){
 				$where['subgroupid'] = implode(',', $where['subgroupid']);
 			}
+			$where['content'] = stripslashes(htmlspecialchars_decode($_POST['content']));
 			if ($table->save($where)){
 				alertBack('修改成功！');
 			}else {

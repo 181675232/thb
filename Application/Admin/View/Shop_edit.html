@@ -190,6 +190,10 @@
 		<dd><input type="text" name="price" value="{$price}" datatype="n" Class="input small" sucmsg=" " /> <span class="Validform_checktip">*</span></dd>
 	</dl>
 	<dl>
+	<dt>店铺评分</dt>
+		<dd><input type="text" name="mark" value="{$mark}" datatype="*" Class="input small" sucmsg=" " /> <span class="Validform_checktip">*4.0-5.0之间</span></dd>
+	</dl>
+	<dl>
 	<dt>营业时间</dt>
 		<dd><input type="text" name="businesstime" value="{$businesstime}" Class="input normal" /> <span class="Validform_checktip">格式：8:00-22:00</span></dd>
 	</dl>
@@ -241,6 +245,20 @@
     <dt>注册时间</dt>
     <dd><input type="text" name="addtime" value="{$addtime|date='Y-m-d H:i:s',###}" disabled="disabled" Class="input normal" /></dd>
   </dl>
+  <dl>
+		<dt>红色标签</dt>
+		<dd>
+			<textarea id="webcopyright" name="redtag" Class="input" />{$redtag}</textarea>
+	      	<span class="Validform_checktip">标签之间用空格隔开</span>
+		</dd>
+	</dl>
+  <dl>
+		<dt>灰色标签</dt>
+		<dd>
+			<textarea id="webcopyright" name="blacktag" Class="input" />{$blacktag}</textarea>
+	      	<span class="Validform_checktip">标签之间用空格隔开</span>
+		</dd>
+	</dl>
 	<dl>
 		<dt>简介</dt>
 		<dd>

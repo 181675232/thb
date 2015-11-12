@@ -98,10 +98,9 @@ class GoodsController extends CommonController {
 					}else {
 						$where1['content'].=$val.',';
 					}
-				}
-				
-				alertBack('修改成功！', '/Admin/Goods');
+				}						
 			}
+			alertBack('修改成功！');
 		}
 		$t = $tab->where("goodsid = $id")->select();
 		foreach ($t as $key => $val){

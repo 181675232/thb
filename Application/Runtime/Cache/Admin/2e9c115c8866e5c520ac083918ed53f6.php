@@ -190,7 +190,7 @@
 	<dl>
 		<dt>详细信息</dt>
 		<dd>
-			<textarea id="webcopyright" name="description" Class="input" /> <?php echo ($description); ?></textarea>
+			<textarea id="webcopyright" name="description" Class="input" /><?php echo ($description); ?></textarea>
 	      	<span class="Validform_checktip">非必填</span>
 		</dd>
 	</dl>
