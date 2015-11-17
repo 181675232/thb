@@ -5,10 +5,17 @@ use Think;
  
 
 class IndexController extends Controller { 
+	//基本配置
+	private $url = 'http://101.200.81.192:8081';
+	
 	//Jpush key
 	private $title = '特惠帮';
-	private $app_key='ebb9531ed9b2c95d5ce5e47c';
-	private $master_secret = '219f6db35902775645897510';
+	private $app_key='52b9e181f96679e59ffb4fa3';
+	private $master_secret = '146a40bb61c640bc1ff6ad1e';
+	
+	//融云
+	private $appKey = 'mgb7ka1nb904g';
+	private $appSecret = 'emEDENErpWhAct';	
 	
     //注册
     public  function  register(){
@@ -17,20 +24,44 @@ class IndexController extends Controller {
     		$data['addtime'] = time();
     		$data['password'] = md5(trim(I('post.password')));
     		$data['simg'] = '/Public/upfile/touxiang.jpg';
-    		$user = M('user');
+    		$table = M('user');
     		$yqm = I('post.pid');
-    		if ($user->where("phone='{$data['phone']}'")->find()){
+    		if ($table->where("phone='{$data['phone']}'")->find()){
     			json('400','该账号已注册');
     		}
-    		if (!$user->where("id = $yqm")->find()){
+    		if (!$table->where("id = $yqm")->find()){
     			json('400','邀请码错误');
     		}
-    		$return = $user->add($data);		
+    		$return = $table->add($data);		
     		if ($return){
-    			$res = $user->field('id,phone,simg,jpushid,username')->find($return);
-    			json('200','成功！',$res);
+    			$user = $table->field('id,phone,simg,jpushid,username')->find($return);
+    			$rongyun = new  \Org\Util\Rongyun($this->appKey,$this->appSecret);
+    			if (empty($user['username'])){
+    				$user['username'] = '用户'.$user['id'];
+    			}
+    			if (empty($user['simg'])){
+    				$user['simg'] = $this->url.'/public/images/pic3.png';
+    			}else {
+    				$user['simg'] = $this->url.$user['simg'];
+    			}
+    			$r = $rongyun->getToken($user['id'],$user['username'],$user['simg']);
+    			if($r){
+    				$rong = json_decode($r);
+    				if ($rong->code == 200){
+    					$where['token'] = $user['token'] = $rong->token;
+    					if ($table->where("id = '{$user['id']}'")->save($where)){
+    						json('200','成功',$user);
+    					}else {
+    						json('400','融云集成失败');
+    					}
+    				}else {
+    					json('400','融云内部错误');
+    				}
+    			}else {
+    				json('400','融云token获取失败');
+    			}
     		}else{
-    			json('400');   			
+    			json('400','注册失败');   			
     		}
     	}
     	json('404','没有接收到传值');
@@ -73,15 +104,46 @@ class IndexController extends Controller {
     //登录
     public function login(){
     	if(I('post.')){
-	    	$user = M('user');
+	    	$table = M('user');
 	    	$phone=I('post.phone');	    	
-	    	$return = $user->where("phone=$phone")->find();	    	
+	    	$return = $table->where("phone=$phone")->find();	    	
 	    	if($return){
-	    		$data = I('post.');
+	    		$data['phone'] = $phone;
 	    		$data['password'] = md5(trim($data['password'])); 		
-	    		$res = $user->field('id,phone,simg,jpushid,username')->where($data)->find();
-	    		if($res){
-	    			json('200','成功',$res);
+	    		$user = $table->field('id,phone,simg,jpushid,username,token')->where($data)->find();
+	    		if($user){
+	    			if ($user['jpushid'] != I('post.jpushid')){
+	    				$return = $table->where("id = '{$user['id']}'")->setField('jpushid',I('post.jpushid'));
+	    			}
+    				$rongyun = new  \Org\Util\Rongyun($this->appKey,$this->appSecret);
+    				if (empty($user['username'])){
+    					$user['username'] = '用户'.$user['id'];
+    				}
+    				if (empty($user['simg'])){
+    					$user['simg'] = $this->url.'/public/images/pic3.png';
+    				}else {
+    					$user['simg'] = $this->url.$user['simg'];
+    				}
+    				$r = $rongyun->getToken($user['id'],$user['username'],$user['simg']);
+    				if($r){
+    					$rong = json_decode($r);
+    					if ($rong->code == 200){
+    						if ($user['token'] == $rong->token){
+    							json('200','成功',$user);
+    						}else {
+    							$where['token'] = $user['token'] = $rong->token;
+    							if ($table->where("id = '{$user['id']}'")->save($where)){
+    								json('200','成功',$user);
+    							}else {
+    								json('400','融云集成失败');
+    							}
+    						}    						
+    					}else {
+    						json('400','融云内部错误');
+    					}
+    				}else {
+    					json('400','融云token获取失败');
+    				}
 	    		}else{
 	    			json('400','密码错误');
 	    		}
@@ -277,7 +339,7 @@ class IndexController extends Controller {
 					if ($data[$key]['di'] >= 1000){
 						$data[$key]['distance'] = ceil($data[$key]['di']/1000).'km';
 					}else {
-						$data[$key]['distance'] = $res[$key]['di'].'m';
+						$data[$key]['distance'] = $data[$key]['di'].'m';
 					}
 				}
 				if (I('post.di')){
@@ -293,10 +355,10 @@ class IndexController extends Controller {
 				foreach ($data as $arrys) {
 					$distances[] = $arrys['di'];
 				}
-				foreach ($res as $arrys) {
+				foreach ($data as $arrys) {
 					$price[] = $arrys['price'];
 				}
-				foreach ($res as $arrys) {
+				foreach ($data as $arrys) {
 					$mark[] = $arrys['mark'];
 				}
 				if (I('post.ord') == 1){
@@ -418,10 +480,94 @@ class IndexController extends Controller {
 		$this->display();
 	}
 	
+	//附近帮友
+	public function nearlyfriend(){
+		if (I('post.')){
+			$where = I('post.');
+			if (I('post.page')){
+				$page = I('post.page');
+			}else {
+				$page = 1;
+			}
+			unset($where['page']);
+			$table = M('user');
+			if ($table->save($where)){
+				$data = $table->field('id,simg,username,latitude,longitude')->select();
+				foreach ($data as $key => $val){
+					$data[$key]['di'] = powc(I('post.latitude'),I('post.longitude'), $val['latitude'], $val['longitude']);
+					if ($data[$key]['di'] >= 1000){
+						$data[$key]['distance'] = ceil($data[$key]['di']/1000).'km';
+					}else {
+						$data[$key]['distance'] = $data[$key]['di'].'m';
+					}
+				}		
+				foreach ($data as $arrys) {
+					$distances[] = $arrys['di'];
+				}
+				array_multisort($distances,SORT_ASC,$data);
+				$data = array_page($data,$page);
+				if ($data){
+					json('200','成功',$data);
+				}else {
+					json('400','没有更多数据');
+				}
+			}else {
+				json('400','坐标获取失败');
+			}
+		}
+		json('404');
+	}
 	
+	//获取手机号
+	public function getphone(){
+		if(I('post.id')){
+			$table = M('user');
+			$data = $table->field('phone')->find(I('post.id'));
+			if ($data){
+				json('200','成功',$data);
+			}else {
+				json('400','修改失败');
+			}
+		}
+		json('404','没有接收到传值');
+	}
 	
-	
+	//忘记交易密码
+	public function forgetjypass(){
+		if(I('post.')){
+			$phone = I('post.phone');
+			$user = M('user');
+			$data['pass'] = md5(I('post.pass'));
+			if ($user->where("phone = $phone")->save($data)){
+				json('200','成功');
+			}else {
+				json('400','修改失败');
+			}
+		}
+		json('404','没有接收到传值');
+	}
     
+	//修改密码
+	public function passjyedit(){
+		if(I('post.')){
+			$user = M('user');
+			$where['id'] = I('post.id');
+			$where['pass'] = md5(I('post.pass'));
+			if (!$user->where($where)->find()){
+				json('400','原密码输出有误');
+			}
+			$data['pass'] = md5(I('post.password'));
+			if ($user->where("id = '{$where['id']}'")->save($data)){
+				json('200');
+			}else {
+				json('400','修改失败');
+			}
+		}
+		json('404','没有接收到传值');
+	}
+	
+	
+	
     
 
     
@@ -506,6 +652,10 @@ class IndexController extends Controller {
 			$user = M('user');
 			$where['pid'] = $_POST['id'];
 			$page = (I('post.page')-1)*10;
+			
+			//本身信息
+			$res['user'] = $user->field('id,simg,username,phone')->find($_POST['id']);
+			
 			$return = $user->where($where)->field('id,simg,username,addtime')->limit("$page,10")->select();
 				
 			foreach ($return as $key=>$val){
@@ -519,12 +669,12 @@ class IndexController extends Controller {
 			}
 				
 				
-				
-			$return['direct_num'] = $user->where($where)->count();//直接好友总数
-			$return['indirect_num'] = $indirect_friends;//间接好友总数
-			$return['all_num'] = $return['direct_num']+$return['indirect_num'];//全部好友总数
-			if($return){
-				json('200','成功',$return);
+			$res['friend'] = $return;	
+			$res['direct_num'] = $user->where($where)->count();//直接好友总数
+			$res['indirect_num'] = $indirect_friends;//间接好友总数
+			$res['all_num'] = $res['direct_num']+$res['indirect_num'];//全部好友总数
+			if($res){
+				json('200','成功',$res);
 			}else{
 				json('400','失败');
 			}
@@ -571,7 +721,7 @@ class IndexController extends Controller {
 	
 		$rs1 = implode(',', $rs1);
 		//店铺数据
-		$return=$shop->field('id,name,simg,address')->select($rs1);
+		$return=$shop->field('id,name,simg,address,ads,discount,tags')->select($rs1);
 	
 		//数组分页
 		$page = ($_POST['page']-1)*10;
@@ -667,15 +817,22 @@ class IndexController extends Controller {
 			foreach ($redtag as $key=>$val){
 				$where['content'] = array('like',"%{$val}%");
 				$count = $conmment->where($where)->count();
-				$return['redtag'][] = $val.$count;
+				$res[] = Array('title'=>$val,'tag'=>'true','number'=>$count);
 			}
 			
 			//标签数据
 			foreach ($blacktag as $key=>$val){
 				$where['content'] = array('like',"%{$val}%");
 				$count = $conmment->where($where)->count();
-				$return['blacktag'][] = $val.$count;
+				$res1[] = Array('title'=>$val,'tag'=>'false','number'=>$count);
 			}
+			
+			//合并数组
+			foreach ($res1 as $key=>$val){
+				$res[] = $val;
+			}
+			$return['tag'] = $res;
+			
 			
 			//标签搜索
 			if(!empty($_POST['tag'])){
@@ -710,14 +867,14 @@ class IndexController extends Controller {
 		$shop = M('shop');
 		//足迹
 		$trace = M('trace');
-		$rs=$trace->where($data['uid'])->field('shop')->select();
+		$rs=$trace->where($data['uid'])->field('shopid')->select();
 		foreach ($rs as $key=>$val){
-			$rs1[]=$val['shop'];
+			$rs1[]=$val['shopid'];
 		}
 	
 		$rs1 = implode(',', $rs1);
 		//店铺数据
-		$return=$shop->field('id,name,simg,address')->select($rs1);
+		$return=$shop->field('id,name,simg,address,ads,discount,tags')->select($rs1);
 	
 		//数组分页
 		$page = ($_POST['page']-1)*10;
