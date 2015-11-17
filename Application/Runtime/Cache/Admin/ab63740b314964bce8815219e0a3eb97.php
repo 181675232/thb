@@ -119,6 +119,7 @@
 		        <div class="tools">	        	
 		        	<a title="<?php if($val[iscomment] == 2): ?>取消评论<?php else: ?>开启评论<?php endif; ?>" Class="<?php if($val[iscomment] == 2): ?>msg selected<?php else: ?>msg<?php endif; ?>" href="/Admin/Shop/state/id/<?php echo ($val["id"]); ?>/iscomment/<?php if($val[iscomment] == 2): ?>1<?php else: ?>2<?php endif; if($_GET[p]): ?>/p/<?php echo ($_GET['p']); endif; if($_GET[verify]): ?>/verify/<?php echo ($_GET['verify']); endif; if($_GET[keyword]): ?>/keyword/<?php echo ($_GET['keyword']); endif; ?>"></a>
 				 	<a title="<?php if($val[isred] == 2): ?>取消推荐<?php else: ?>设置推荐<?php endif; ?>" Class="<?php if($val[isred] == 2): ?>red selected<?php else: ?>red<?php endif; ?>" href="/Admin/Shop/state/id/<?php echo ($val["id"]); ?>/isred/<?php if($val[isred] == 2): ?>1<?php else: ?>2<?php endif; if($_GET[p]): ?>/p/<?php echo ($_GET['p']); endif; if($_GET[verify]): ?>/verify/<?php echo ($_GET['verify']); endif; if($_GET[keyword]): ?>/keyword/<?php echo ($_GET['keyword']); endif; ?>"></a>
+					
 				  <!--
 				  <a title="取消置顶" Class="top selected" href=""></a>
 		          <a title="取消热门" Class="hot selected" href=""></a>
@@ -126,7 +127,12 @@
 				  <input name="ord" value="<?php echo ($val["ord"]); ?>" Class="sort" style="text-align:center;" onblur="order(<?php echo ($val["id"]); ?>,this.value,'Shop')" />	        
 		        </div>
 		        <div class="foot">
+		        	<!--
 		          <p class="time"><?php echo (date( "Y-m-d H:i:s",$val["addtime"])); ?></p>
+				  -->
+				  <?php if($val[ismember] == 0): ?><p class="time" style="font-size: 12px; padding: 2px 5px;border: 1px solid #ccc"><a style="color: #666; " title="添加店主" href="<?php echo U('/Admin/Member/add/',array('pid'=>$val['id']));?>">添加店主</a></p>
+				  <?php else: ?>
+				  	<p class="time" style="font-size: 12px; padding: 2px 5px;border: 1px solid #ccc"><a style="color: #666; " title="修改店主" href="<?php echo U('/Admin/Member/edit/',array('id'=>$val[ismember]));?>">修改店主</a></p><?php endif; ?>
 		          <a href="/Admin/Shop/edit/id/<?php echo ($val["id"]); ?>" title="编辑" class="edit">编辑</a>
 		        </div>
 		      </div>

@@ -22,6 +22,15 @@ class ShopController extends CommonController {
 		$show       = $Page->show();// 分页显示输出
 		// 进行分页数据查询 注意limit方法的参数要使用Page类的属性
 		$res = $table->where($data)->order('ord asc,addtime desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+		$member = M('member');
+		foreach ($res as $key=>$val){
+			$mem = $member->where("pid = '{$val['id']}' and level = 1")->find();
+			if ($mem){
+				$res[$key]['ismember'] = $mem['id'];
+			}else {
+				$res[$key]['ismember'] = 0;
+			}
+		}
 		$this->assign('data',$res);// 赋值数据集
 		$this->assign('page',$show);// 赋值分页输出
 		$this->display(); // 输出模板			
