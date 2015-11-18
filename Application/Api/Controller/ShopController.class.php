@@ -4,7 +4,7 @@ use Think\Controller;
 use Think;
  
 
-class IndexController extends Controller { 
+class ShopController extends Controller { 
 	//Jpush key
 	private $title = '特惠帮';
 	private $app_key='52b9e181f96679e59ffb4fa3';
@@ -25,7 +25,7 @@ class IndexController extends Controller {
 	    		$data = I('post.');
 	    		
 	    		$data['password'] = md5(trim($data['password'])); 		
-	    		$res = $member->field('id,phone,simg,jpushid,username,pid,level')->where($data)->find();
+	    		$res = $member->where($data)->field('id,phone,simg,jpushid,name,pid,level')->find();
 	    		if($res){
 	    			json('200','成功',$res);
 	    		}else{
@@ -132,7 +132,7 @@ class IndexController extends Controller {
     			$data1['uid'] = $res['id'];//用户id
     			$data1['shopid'] = $data['shopid'];
     			$data1['price'] = $data['price'];
-    			$data1['addtime'] = $data['addtime'];
+    			$data1['addtime'] = time();
     			$return =	$order->add($data1);
     			if($return){		
     				$jpush = new \Org\Util\Jpush($this->appkey, $this->secret);
@@ -150,11 +150,111 @@ class IndexController extends Controller {
     
     
     
+    //店粉
+    public function powder(){
+    	if(I('post.shopid')){
+    		$push = M('push');
+    		$shop = M('shop');
+    		$shopid = $_POST['shopid'];
+    		$page = (I('post.page')-1)*10;
+    		$res['num'] = $shop->field('push')->find($shopid);
+    		$res['res'] = $push->where("shopid=$shopid")->limit("$page,10")->select();
+			if($res){
+				json('200','成功',$res);
+			}else{
+				json('400','失败');
+			}
+    	}
+    }
+    
+    //看官
+    public function trace(){
+    	if(I('post.shopid')){
+    		$trace = M('trace');
+    		$shopid = $_POST['shopid'];
+    		
+    		
+    		
+    		
+    		//php获取今日开始时间戳和结束时间戳
+    	 	$beginToday=mktime(0,0,0,date('m'),date('d'),date('Y'));
+    		$endToday=mktime(0,0,0,date('m'),date('d')+1,date('Y'))-1;
+    		//php获取昨日起始时间戳和结束时间戳
+    		$beginYesterday=mktime(0,0,0,date('m'),date('d')-1,date('Y'));
+    		$endYesterday=mktime(0,0,0,date('m'),date('d'),date('Y'))-1;
+    		//php获取上周起始时间戳和结束时间戳
+    		$beginLastweek=mktime(0,0,0,date('m'),date('d')-date('w')+1-7,date('Y'));
+    		$endLastweek=mktime(23,59,59,date('m'),date('d')-date('w')+7-7,date('Y'));
+    		//php获取本月起始时间戳和结束时间戳
+    		$beginThismonth=mktime(0,0,0,date('m'),1,date('Y'));
+    		$endThismonth=mktime(23,59,59,date('m'),date('t'),date('Y'));
+    		
+    		
+    		
+//     		$time1 = time()-86400;//一天
+//     		$time2 = time()-172800;//两天
+    		$time3 = time()-604800;//七天
+//     		$time4 = time()-2592000;//月
+    		$res['today'] = $trace->where("shopid=$shopid and addtime>$beginToday")->count();
+    		$res['yesterday'] = $trace->where("shopid=$shopid and addtime>$beginYesterday and addtime<$endYesterday")->count();
+    		$res['thisweek'] = $trace->where("shopid=$shopid and addtime>$time3")->count();
+    		$res['thismonth'] = $trace->where("shopid=$shopid and addtime>$beginThismonth and addtime<$endThismonth")->count();
+    		$res['all'] = $trace->where("shopid=$shopid")->count();
+    		
+    		if($res){
+    			json('200','成功',$res);
+    		}else{
+    			json('400','失败');
+    		}
+    	}
+    }
     
     
-    
-    
-    
+    //账本
+    public function account_books(){
+    	if(I('post.shopid')){
+    		$order = M('order');
+    		$shopid = $_POST['shopid'];
+    		
+    		
+    		//php获取今日开始时间戳和结束时间戳
+    	 	$beginToday=mktime(0,0,0,date('m'),date('d'),date('Y'));
+    		$endToday=mktime(0,0,0,date('m'),date('d')+1,date('Y'))-1;
+    		//php获取昨日起始时间戳和结束时间戳
+    		$beginYesterday=mktime(0,0,0,date('m'),date('d')-1,date('Y'));
+    		$endYesterday=mktime(0,0,0,date('m'),date('d'),date('Y'))-1;
+    		//php获取上周起始时间戳和结束时间戳
+    		$beginLastweek=mktime(0,0,0,date('m'),date('d')-date('w')+1-7,date('Y'));
+    		$endLastweek=mktime(23,59,59,date('m'),date('d')-date('w')+7-7,date('Y'));
+    		//php获取本月起始时间戳和结束时间戳
+    		$beginThismonth=mktime(0,0,0,date('m'),1,date('Y'));
+    		$endThismonth=mktime(23,59,59,date('m'),date('t'),date('Y'));
+    		
+    		
+    		
+			//今日
+    		$res['today']['num'] = $order->where("shopid=$shopid and addtime>$beginToday")->count();
+    		$res['today']['res'] = $order->where("shopid=$shopid and addtime>$beginToday")->select();
+    		
+    		//本周
+    		$res['thisweek']['num'] = $order->where("shopid=$shopid and addtime>$endLastweek")->count();
+    		$res['thisweek']['res'] = $order->where("shopid=$shopid and addtime>$endLastweek")->select();
+    		
+    		//本月
+    		$res['thismonth']['num'] = $order->where("shopid=$shopid and addtime>$beginThismonth and addtime<$endThismonth")->count();
+    		$res['thismonth']['res'] = $order->where("shopid=$shopid and addtime>$beginThismonth and addtime<$endThismonth")->select();
+    		
+    		//全部
+    		$res['all']['num'] = $order->where("shopid=$shopid")->count();
+    		$res['all']['res'] = $order->where("shopid=$shopid")->select();
+    		
+    		if($res){
+    			json('200','成功',$res);
+    		}else{
+    			json('400','失败');
+    		}
+    	}
+    }
     
     
     
