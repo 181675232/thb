@@ -34,6 +34,34 @@
 	            }
 	        });
 	    });
+		$("#ddlParentId").change(function(){
+			$.get('/Admin/Shop/selectajax',{id:this.value},function(data){
+				 var dataobj = eval("("+data+")");
+				 $("#ddlParentId1").prev().find('span').html('请选择在市级单位');					 
+				 $("#ddlParentId1").html(dataobj.str);
+				 $("#ddlParentId1").prev().find('ul').html(dataobj.str1);
+			});
+		});
+		$("#ddlParentId1").change(function(){
+			$.get('/Admin/Shop/selectajax1',{id:this.value},function(data){
+				 var dataobj = eval("("+data+")");
+				 $("#ddlParentId2").prev().find('span').html('请选择在区县单位');					 
+				 $("#ddlParentId2").html(dataobj.str);
+				 $("#ddlParentId2").prev().find('ul').html(dataobj.str1);
+			});
+		});
+		function sel(obj){		
+			$(obj).siblings().removeClass("selected");
+            $(obj).addClass("selected"); //添加选中样式
+            var indexNum = $(obj).index();
+			var titObj = $(obj).parents('.boxwrap');
+            var selectObj = $(obj).parents('.boxwrap').next();
+            //selectObj.find("option").attr("selected", false);			
+           // selectObj.find("option").eq(indexNum).attr("selected", true); //赋值给对应的option
+		   selectObj.get(0).selectedIndex =$(obj).index();
+            titObj.find("span").text($(obj).text()); //赋值选中值        
+            selectObj.trigger("change"); 		
+		}
 	    //创建附件窗口
 	    function showAttachDialog(obj) {
 	        var objNum = arguments.length;
@@ -92,6 +120,28 @@
 				<select name="role_id" datatype="*" sucmsg=" " id="ddlParentId">
 					<option value=" " selected="selected">请选择所属权限组</option>
 					<?php if(is_array($role)): $i = 0; $__LIST__ = $role;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val): $mod = ($i % 2 );++$i;?><option value="<?php echo ($val["id"]); ?>"><?php echo ($val["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+				</select>
+			</div>
+		</dd>
+	</dl>
+	<dl>
+		<dt>市区</dt>
+		<dd>
+			<div class="rule-single-select">
+				<select id="ddlParentId" name="provinceid">
+					<option value="0" selected="selected">请选择在省级单位</option>
+					<?php if(is_array($type1)): $i = 0; $__LIST__ = $type1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val): $mod = ($i % 2 );++$i;?><option value="<?php echo ($val["provinceid"]); ?>"><?php echo ($val["province"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+				</select>
+			</div>
+			<div class="rule-single-select">
+				<select name="cityid" id="ddlParentId1"> 
+					<option value="0" selected="selected">请选择在市级单位</option>
+				</select>
+			</div>
+			
+			<div class="rule-single-select">
+				<select name="areaid" id="ddlParentId2"> 
+					<option value="0" selected="selected">请选择在区县单位</option>
 				</select>
 			</div>
 		</dd>

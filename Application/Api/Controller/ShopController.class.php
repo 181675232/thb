@@ -4,7 +4,7 @@ use Think\Controller;
 use Think;
  
 
-class IndexController extends Controller { 
+class ShopController extends Controller { 
 	//Jpush key
 	private $title = '特惠帮';
 	private $app_key='52b9e181f96679e59ffb4fa3';
@@ -25,7 +25,7 @@ class IndexController extends Controller {
 	    		$data = I('post.');
 	    		
 	    		$data['password'] = md5(trim($data['password'])); 		
-	    		$res = $member->field('id,phone,simg,jpushid,username,pid,level')->where($data)->find();
+	    		$res = $member->field('id,phone,simg,jpushid,name,pid,level')->where($data)->find();
 	    		if($res){
 	    			json('200','成功',$res);
 	    		}else{

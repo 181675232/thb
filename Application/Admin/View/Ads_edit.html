@@ -44,7 +44,6 @@
 	    $(function () {
 	        //初始化表单验证
 	        $("#form").initValidform();
-			
 			 //初始化上传控件
 	        $(".upload-img").each(function () {
 	            $(this).InitSWFUpload({ sendurl: "/Admin/Public/upload", flashurl: "/Public/js/scripts/swfupload/swfupload.swf" });
@@ -94,9 +93,9 @@
   <a href="javascript:history.back(-1);" class="back"><i></i><span>返回上一页</span></a>
   <a href="/Admin/Index/center" class="home"><i></i><span>首页</span></a>
   <i class="arrow"></i>
-  <a href="/Admin/Activity"><span>服务</span></a>
+  <a href="/Admin/Ads"><span>幻灯列表</span></a>
   <i class="arrow"></i>
-  <span>修改服务信息</span>
+  <span>修改信息</span>
 </div>
 <div class="line10"></div>
 <!--/导航栏-->
@@ -116,146 +115,45 @@
 <div class="tab-content">
 	<input type="hidden" name="id" value="{$id}" />
 	<dl>
-    <dt>服务名称</dt>
-      <dd><input type="text" name="activity" value="{$activity_type}" datatype="*" Class="input normal" sucmsg=" " nullmsg="请输入服务名称！" /> <span class="Validform_checktip">*</span></dd>
-  </dl> 
-  <dl>
-    <dt>状态</dt>
-    <dd>
-		<div class="rule-multi-radio multi-radio">	
-      		<label><input type="radio" Value="1" <if condition="$state eq 1">checked="checked"</if> name="state" />审核中</label>
-			<label><input type="radio" Value="2" <if condition="$state eq 2">checked="checked"</if> name="state" />已通过</label>
-    	</div>
+    <dt>头像</dt>
+      <dd>
+			<img src="{$simg}" class="upload-img" style="width: 250px; height: 100px; " />
+			<input type="hidden" name="simg" id="txtImgUrl" value="{$simg}"  Class="input normal upload-path" />
+      	<div style="position:relative; top: -13px; left: 5px;" class="upload-box upload-img"></div><span style="position:relative; top: -13px; left: 5px;" class="Validform_checktip">*建议上传1000:400像素的jpg,png图片</span>
 	</dd>
   </dl>
-  <dl>
-    <dt>价格</dt>
-    <dd><input type="text" name="price" value="{$price}"  Class="input normal" /></dd>
-  
-  <dl>
-    <dt>单位</dt>
-    <dd><input type="text" name="standard" value="{$standard}"  Class="input normal" /></dd>
+	<dl>
+	<dt>标题</dt>
+		<dd><input value="{$title}" type="text" name="title" Class="input normal" /></dd>
+	</dl>
+	<dl>
+	<dt>排序</dt>
+		<dd><input value="{$ord}" type="text" name="ord" Class="input small" /><span class="Validform_checktip">数字越小越在前面</span></dd>
+	</dl>
+	<!--
+	<dl>
+		<dt>简介</dt>
+		<dd>
+			<textarea id="webcopyright" name="description" Class="input" /></textarea>
+	      	<span class="Validform_checktip">支持HTML</span>
+		</dd>
+	</dl>
+	-->
+	<dl>
+    <dt>详情</dt>
+    <dd><textarea id="content" name="content" style="width:700px;height:200px;visibility:hidden;">{$content}</textarea></dd>
   </dl>
- <!-- <dl>
-    <dt>会员价格</dt>
-    <dd>
-      <table border="0" cellspacing="0" cellpadding="0" class="border-table">
-        <tr>
-          <th style="font-size: 13px;" width="80">普通会员</th>
-          <td>
-            <input type="text" id="txtGroupPrice" size="10"  Class="td-input groupprice" maxlength="10" sucmsg=" " />
-            <span class="Validform_checktip">*享受7折折优惠</span>
-          </td>
-        </tr>
-		<tr>
-          <th style="font-size: 13px;" width="80">VIP会员</th>
-          <td>
-            <input type="text" id="txtGroupPrice" size="10"  Class="td-input groupprice" maxlength="10" sucmsg=" " />
-            <span class="Validform_checktip">*享受5折折优惠</span>
-          </td>
-        </tr>
-      </table>
-    </dd>
-  </dl>-->
-   <dl>
-    <dt>认证状态</dt>
-    <dd>
-    	<div class="rule-multi-checkbox multi-checkbox">
-      		<label><input type="checkbox" Value="1" <php>if(in_array(1,$avail_day)){echo 'checked="checked"';}</php> name="avail_day" />周一</label>
-      		<label><input type="checkbox" Value="1" <php>if(in_array(2,$avail_day)){echo 'checked="checked"';}</php> name="avail_day" />周二</label>
-      		<label><input type="checkbox" Value="1" <php>if(in_array(3,$avail_day)){echo 'checked="checked"';}</php> name="avail_day" />周三</label>
-      		<label><input type="checkbox" Value="1" <php>if(in_array(4,$avail_day)){echo 'checked="checked"';}</php> name="avail_day" />周四</label>
-      		<label><input type="checkbox" Value="1" <php>if(in_array(5,$avail_day)){echo 'checked="checked"';}</php> name="avail_day" />周五</label>
-      		<label><input type="checkbox" Value="1" <php>if(in_array(6,$avail_day)){echo 'checked="checked"';}</php> name="avail_day" />周六</label>
-      		<label><input type="checkbox" Value="1" <php>if(in_array(7,$avail_day)){echo 'checked="checked"';}</php> name="avail_day" />周日</label>
-    	</div>
-  </dl>
-  <dl>
-    <dt>所在省/市</dt>
-    <dd><input type="text" name="province" value="{$province}" Class="input normal" /><span class="Validform_checktip">*所在省市拼音</span></dd>
-  </dl>
-  <dl>
-    <dt>所在市/区</dt>
-    <dd><input type="text" name="city" value="{$city}" Class="input normal" /><span class="Validform_checktip">*所在市区拼音</span></dd>
-  </dl>
-  <dl>
-    <dt>被赞数</dt>
-    <dd><input type="text" name="up_vote" value="{$up_vote}" Class="input normal" /></dd>
-  </dl>
-  <dl>
-    <dt>被踩数</dt>
-    <dd><input type="text" name="down_vote" value="{$down_vote}" Class="input normal" /></dd>
-  </dl>
-  <dl>
-    <dt>经度</dt>
-    <dd><input type="text" name="latitude" value="{$latitude}" Class="input normal" /></dd>
-  </dl>
-  <dl>
-    <dt>纬度</dt>
-    <dd><input type="text" name="longtitude" value="{$longtitude}" Class="input normal" /></dd>
-  </dl>
-  <dl>
-    <dt>排序</dt>
-    <dd><input type="text" name="ord" value="{$ord}" Class="input normal" /><span class="Validform_checktip">*数字，越小越向前</span></dd>	
-  </dl>
+  <!--
   <dl>
     <dt>发布时间</dt>
     <dd>
     	<div class="input-date">
-        <input type="text" name="create_ts" value="{$create_ts|date='Y-m-d H:i:s',###}" id="txtAddTime" Class="input date" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" datatype="/^\s*$|^\d{4}\-\d{1,2}\-\d{1,2}\s{1}(\d{1,2}:){2}\d{1,2}$/" errormsg="请选择正确的日期" sucmsg=" " />
+        <input type="text" name="create_ts" value="{$addtime|date='Y-m-d H:i:s',###}" id="txtAddTime" Class="input date" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" datatype="/^\s*$|^\d{4}\-\d{1,2}\-\d{1,2}\s{1}(\d{1,2}:){2}\d{1,2}$/" errormsg="请选择正确的日期" sucmsg=" " />
         <i>日期</i>
       </div>
 	</dd>
   </dl>
-
-  <!--
-  <dl ID="div_albums_container" runat="server" visible="false">
-    <dt>图片相册</dt>
-    <dd>
-      <div class="upload-box upload-album"></div>
-      <input type="hidden" name="hidFocusPhoto" id="hidFocusPhoto" class="focus-photo" />
-      <div class="photo-list">
-        <ul>
-			<li>
-              <input type="hidden" name="hid_photo_name" value="<%#Eval("id")%>|<%#Eval("original_path")%>|<%#Eval("thumb_path")%>" />
-              <input type="hidden" name="hid_photo_remark" value="<%#Eval("remark")%>" />
-              <div class="img-box" onclick="setFocusImg(this);">
-                <img src="<%#Eval("thumb_path")%>" bigsrc="<%#Eval("original_path")%>" />
-                <span class="remark"><i><%#Eval("remark").ToString() == "" ? "暂无描述..." : Eval("remark").ToString()%></i></span>
-              </div>
-              <a href="javascript:;" onclick="setRemark(this);">描述</a>
-              <a href="javascript:;" onclick="delImg(this);">删除</a>
-            </li>
-        </ul>
-      </div>
-    </dd>
-  </dl>
-
-  <dl ID="div_attach_container" runat="server" visible="false">
-    <dt>上传附件</dt>
-    <dd>
-      <a class="icon-btn add attach-btn"><span>添加附件</span></a>
-      <div id="showAttachList" class="attach-list">
-        <ul>
-
-              <li>
-                <input name="hid_attach_id" type="hidden" value="" />
-                <input name="hid_attach_filename" type="hidden" value="" />
-                <input name="hid_attach_filepath" type="hidden" value="" />
-                <input name="hid_attach_filesize" type="hidden" value="" />
-                <i class="icon"></i>
-                <a href="javascript:;" onclick="delAttachNode(this);" class="del" title="删除附件"></a>
-                <a href="javascript:;" onclick="showAttachDialog(this);" class="edit" title="更新附件"></a>
-                <div class="title"></div>
-                <div class="info">类型：<span class="ext"></span> 大小：<span class="size"></span> 下载：<span class="down"></span>次</div>
-                <div class="btns">下载积分：<input type="text" name="txt_attach_point" onkeydown="return checkNumber(event);" value="" /></div>
-              </li>
-
-        </ul>
-      </div>
-    </dd>
-  </dl>
-  -->
+-->
 </div>
 
 <!--

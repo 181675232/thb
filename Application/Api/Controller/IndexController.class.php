@@ -464,29 +464,27 @@ class IndexController extends Controller {
 			}
 			unset($where['page']);
 			$table = M('user');
-			if ($table->save($where)){
-				$data = $table->field('id,simg,username,latitude,longitude')->select();
-				foreach ($data as $key => $val){
-					$data[$key]['di'] = powc(I('post.latitude'),I('post.longitude'), $val['latitude'], $val['longitude']);
-					if ($data[$key]['di'] >= 1000){
-						$data[$key]['distance'] = ceil($data[$key]['di']/1000).'km';
-					}else {
-						$data[$key]['distance'] = $data[$key]['di'].'m';
-					}
-				}		
-				foreach ($data as $arrys) {
-					$distances[] = $arrys['di'];
-				}
-				array_multisort($distances,SORT_ASC,$data);
-				$data = array_page($data,$page);
-				if ($data){
-					json('200','成功',$data);
+			$table->save($where);
+			$data = $table->field('id,simg,username,latitude,longitude')->where("id != '{$where['id']}'")->select();
+			foreach ($data as $key => $val){
+				$data[$key]['di'] = powc(I('post.latitude'),I('post.longitude'), $val['latitude'], $val['longitude']);
+				if ($data[$key]['di'] >= 1000){
+					$data[$key]['distance'] = ceil($data[$key]['di']/1000).'km';
 				}else {
-					json('400','没有更多数据');
+					$data[$key]['distance'] = $data[$key]['di'].'m';
 				}
-			}else {
-				json('400','坐标获取失败');
+			}		
+			foreach ($data as $arrys) {
+				$distances[] = $arrys['di'];
 			}
+			array_multisort($distances,SORT_ASC,$data);
+			$data = array_page($data,$page);
+			if ($data){
+				json('200','成功',$data);
+			}else {
+				json('400','没有更多数据');
+			}
+			
 		}
 		json('404');
 	}
@@ -557,6 +555,8 @@ class IndexController extends Controller {
 		}
 		json('404','没有接收到传值');
 	}
+	
+	
 	
 	
 	

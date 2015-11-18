@@ -8,13 +8,25 @@
     <script type="text/javascript" src="/Public/js/scripts/lhgdialog/lhgdialog.js?skin=idialog"></script>
 	<script type="text/javascript" src="/Public/js/scripts/swfupload/swfupload.js"></script>
 	<script type="text/javascript" src="/Public/js/scripts/swfupload/swfupload.handlers.js"></script>
-	<script type="text/javascript" src="/Public/js/scripts/datepicker/WdatePicker.js"></script>
     <script type="text/javascript" src="/Public/js/layout.js"></script>	
+	<script type="text/javascript" charset="utf-8" src="/Public/js/scripts/kindeditor/kindeditor.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/Public/js/scripts/kindeditor/lang/zh_CN.js"></script>
     <link href="/Public/admin/css/pagination.css" rel="stylesheet" type="text/css" />	
 	<link href="/Public/admin/admin.css" rel="stylesheet" type="text/css" />
 	<link href="/Public/admin/page.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="/Public/js/check.js"></script>
 	<script type="text/javascript">
+		 //初始化编辑器
+        KindEditor.ready(function(K) {
+                window.editor = K.create('#content');
+        });
+        KindEditor.ready(function(K) {
+                K.create('#content', {
+						uploadJson : '/Public/js/scripts/kindeditor/php/upload_json.php',
+						fileManagerJson : '/Public/js/scripts/kindeditor/php/file_manager_json.php',
+                        allowFileManager : true
+                });
+        });
 	    $(function () {
 	        //初始化表单验证
 	        $("#form").initValidform();
@@ -93,22 +105,7 @@
             	
 		}
 		
-		function otable(str){
-			if(str == 2){
-				$('#otable').css('display','block');
-			}else{
-				$('#otable').css('display','none');
-			}
-		}
-		
-		function addtable(){
-			$str = '<tr><td style="padding: 5px;"><input type="text" name="tab[]" style="width: 160px;height: 26px;text-align: center;"  /></td><td style="padding: 5px;"><input type="text" name="tab[]" style="width: 160px;height: 26px;text-align: center;"  /></td><td style="padding: 5px;"><input type="text" name="tab[]" style="width: 160px;height: 26px;text-align: center;"  /></td></tr>';
-			$('#tab').append($str);
-		}
-		
-		function deltable(){
-			$("#tab tr:last").remove();
-		}
+	
 		
 	</script>
 </head>
@@ -119,9 +116,9 @@
   <a href="javascript:history.back(-1);" class="back"><i></i><span>返回上一页</span></a>
   <a href="/Admin/Index/center" class="home"><i></i><span>首页</span></a>
   <i class="arrow"></i>
-  <a href="/Admin/Shop"><span>用户</span></a>
+  <a href="/Admin/Ads"><span>幻灯列表</span></a>
   <i class="arrow"></i>
-  <span>修改信息</span>
+  <span>新增信息</span>
 </div>
 <div class="line10"></div>
 <!--/导航栏-->
@@ -138,121 +135,44 @@
 </div>
 
 <div class="tab-content">
-	<input type="hidden" name="id" value="{$id}" />
 	<dl>
-    <dt>头像</dt>
+    <dt>图片</dt>
       <dd>
-      	<empty name="simg">
-	      	<img src="/Public/admin/touxiang.jpg" class="upload-img" style="width: 120px; height: 120px;" />
-			<input type="hidden" id="txtImgUrl" name="simg" Class="input normal upload-path" />
-		<else />
-			<img src="{$simg}" class="upload-img" style="width: 120px; height: 120px;" />
-			<input type="hidden" id="txtImgUrl" value="{$simg}" name="simg" Class="input normal upload-path" />
-		</empty>
-      	<div style="position:relative; top: -13px; left: 5px;" class="upload-box upload-img"></div><span style="position:relative; top: -13px; left: 5px;" class="Validform_checktip">*建议上传1:1的jpg,png图片</span>
+      	<img src="" class="upload-img" style="width: 250px; height: 110px;" />
+		<input type="hidden" id="txtImgUrl" name="simg" Class="input normal upload-path" />
+      	<div style="position:relative; top: -13px; left: 5px;" class="upload-box upload-img"></div><span style="position:relative; top: -13px; left: 5px;" class="Validform_checktip">*建议上传1000:400像素的jpg,png图片</span>
 	</dd>
   </dl>
-  <dl>
-		<dt>商铺</dt>
-		<dd>
-			<div class="rule-single-select">
-				<select id="ddlParentId" name="pid">
-					<option value="0" selected="selected">请选择所属商铺</option>
-					<volist name="type1" id="val">		
-						<option value="{$val.id}" <if condition="$val.id eq $pid">selected="selected"</if>>{$val.name}</option>
-					</volist>
-				</select>
-			</div>
-		</dd>
-	</dl>
 	<dl>
 	<dt>标题</dt>
-		<dd><input type="text" value="{$name}" name="name" datatype="*" Class="input normal" sucmsg=" " /> <span class="Validform_checktip">*</span></dd>
-	</dl> 
+		<dd><input type="text" name="title" Class="input normal" /></dd>
+	</dl>
 	<dl>
-	<dt>价格</dt>
-		<dd><input type="text" value="{$price}" name="price" datatype="n" Class="input small" sucmsg=" " /> <span class="Validform_checktip">*</span></dd>
+	<dt>排序</dt>
+		<dd><input value="99" type="text" name="ord" Class="input small" /><span class="Validform_checktip">数字越小越在前面</span></dd>
 	</dl>
 	<!--
 	<dl>
-    <dt>会员价格</dt>
-    <dd>
-      <table border="0" cellspacing="0" cellpadding="0" class="border-table">
-        <tr>
-          <th style="font-size: 13px;" width="80">普通会员</th>
-          <td>
-            <input type="text" id="txtGroupPrice" size="10"  Class="td-input groupprice" maxlength="10" sucmsg=" " />
-            <span class="Validform_checktip">*享受7折折优惠</span>
-          </td>
-        </tr>
-		<tr>
-          <th style="font-size: 13px;" width="80">VIP会员</th>
-          <td>
-            <input type="text" id="txtGroupPrice" size="10"  Class="td-input groupprice" maxlength="10" sucmsg=" " />
-            <span class="Validform_checktip">*享受5折折优惠</span>
-          </td>
-        </tr>
-      </table>
-    </dd>
-  </dl>
-  -->
-	<dl>
-    <dt>起始时间</dt>
-    <dd>
-    	<div style="width: 190px" class="input-date">
-        <input type="text" value="{$starttime|date='Y-m-d H:i:s',###}" name="starttime" id="txtAddTime" Class="input date" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" datatype="/^\s*$|^\d{4}\-\d{1,2}\-\d{1,2}\s{1}(\d{1,2}:){2}\d{1,2}$/" errormsg="请选择正确的日期" sucmsg=" " />
-        <i>日期</i>
-      </div>
-	</dd>
-  </dl>
-	<dl>
-    <dt>结束时间</dt>
-    <dd>
-    	<div style="width: 190px" class="input-date">
-        <input type="text" value="{$stoptime|date='Y-m-d H:i:s',###}" name="stoptime" id="txtAddTime" Class="input date" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" datatype="/^\s*$|^\d{4}\-\d{1,2}\-\d{1,2}\s{1}(\d{1,2}:){2}\d{1,2}$/" errormsg="请选择正确的日期" sucmsg=" " />
-        <i>日期</i>
-      </div>
-	</dd>
-  </dl>
-	<dl>
-		<dt>详细信息</dt>
+		<dt>简介</dt>
 		<dd>
-			<textarea id="webcopyright" name="description" Class="input" />{$description}</textarea>
-	      	<span class="Validform_checktip">非必填</span>
+			<textarea id="webcopyright" name="description" Class="input" /></textarea>
+	      	<span class="Validform_checktip">支持HTML</span>
 		</dd>
 	</dl>
+	-->
 	<dl>
-    <dt>使用表格</dt>
-    <dd>
-		<div class="rule-multi-radio multi-radio">	   		
-			<label><input type="radio" onclick="otable(this.value)" Value="2" <if condition="$istab eq 2">checked="checked"</if> name="istab" />是</label>
-			<label><input type="radio" onclick="otable(this.value)" Value="1" <if condition="$istab eq 1">checked="checked"</if> name="istab" />否</label>
-    	</div>
-	</dd>
+    <dt>详情</dt>
+    <dd><textarea id="content" name="content" style="width:700px;height:200px;visibility:hidden;"></textarea></dd>
   </dl>
-	<dl id="otable" style="display: block;">
-		<dt>表格详情</dt>
-		<dd>
-			<p><a onclick = "addtable()" style="display: inline-block; height: 20px; line-height:20px;cursor: pointer; border: 1px solid #ccc; margin: 0 10px 10px 0; padding: 5px;">添加一行</a><a onclick = "deltable()" style="display: inline-block; height: 20px; line-height:20px;cursor: pointer; border: 1px solid #ccc; margin: 0 10px 10px 0; padding: 5px;">删除一行</a>　*标题可写在中间</p>
-			<table id="tab" border = '1' bordercolor = '#ccc'>
-				<volist name="ttt" id="val1">
-					<tr>
-						<volist name="val1.content" id="val">
-							<td style="padding: 5px;"><input type="text" value="{$val}" name="tab[]" style="width: 160px;height: 26px;text-align: center;"  /></td>
-						</volist>
-					</tr>
-				</volist>
-			</table>
-		</dd>
-	</dl>
-</div>
+  
 
+</div>
 <!--/内容-->
 
 <!--工具栏-->
 <div class="page-footer">
   <div class="btn-list">
-    <input id="btnSubmit" type="submit" value="提交保存" Class="btn" onclick="btnSubmit_Click" />
+    <input id="btnSubmit" type="submit" value="提交保存" Class="btn" />
     <input name="btnReturn" type="button" value="返回上一页" class="btn yellow" onclick="javascript:history.back(-1);" />
   </div>
   <div class="clear"></div>

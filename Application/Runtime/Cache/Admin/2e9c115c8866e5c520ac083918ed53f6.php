@@ -169,6 +169,29 @@
 	<dt>价格</dt>
 		<dd><input type="text" value="<?php echo ($price); ?>" name="price" datatype="n" Class="input small" sucmsg=" " /> <span class="Validform_checktip">*</span></dd>
 	</dl>
+	<!--
+	<dl>
+    <dt>会员价格</dt>
+    <dd>
+      <table border="0" cellspacing="0" cellpadding="0" class="border-table">
+        <tr>
+          <th style="font-size: 13px;" width="80">普通会员</th>
+          <td>
+            <input type="text" id="txtGroupPrice" size="10"  Class="td-input groupprice" maxlength="10" sucmsg=" " />
+            <span class="Validform_checktip">*享受7折折优惠</span>
+          </td>
+        </tr>
+		<tr>
+          <th style="font-size: 13px;" width="80">VIP会员</th>
+          <td>
+            <input type="text" id="txtGroupPrice" size="10"  Class="td-input groupprice" maxlength="10" sucmsg=" " />
+            <span class="Validform_checktip">*享受5折折优惠</span>
+          </td>
+        </tr>
+      </table>
+    </dd>
+  </dl>
+  -->
 	<dl>
     <dt>起始时间</dt>
     <dd>

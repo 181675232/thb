@@ -8,7 +8,7 @@ class AdsController extends CommonController {
 		$table = M('ads'); // 实例化User对象
 		
 		//接收查询数据
-		if (IS_POST){
+		if (I('get.keyword')){
 			$keyword = I('get.keyword');
 			$data['title'] = array('like',"%{$keyword}%");
 			$table = $table->where($data);
@@ -29,15 +29,16 @@ class AdsController extends CommonController {
 	
 	public function add(){
 		if (IS_POST){
-			$table = D('ads');
-			if ($table->create()){
-				if ($table->add()){
-					alertLocation('添加会员成功！', '/Admin/Activity');
-				}else {
-					$this->error('添加失败！');
-				}
+			$table = M('ads');
+			$where = I('post.');
+			if (!$where['simg']){
+				alertBack('图片必须上传');
+			}
+			$where['addtime'] = time();
+			if ($table->add($where)){
+				alertLocation('添加成功！', '/Admin/Ads');
 			}else {
-				$this->error($table->getError());
+				$this->error('添加失败！');
 			}
 			
 		}
@@ -47,24 +48,16 @@ class AdsController extends CommonController {
 	public function edit(){
 		$id = I('get.id');
 		if (IS_POST){
-			$table = D('ads');
-			if ($table->create()){
-				$data = $table->create();
-				$data['create_ts'] = strtotime($data['create_ts']);
-				$data['avail_day'] = implode(',', $data['avail_day']);
-				if ($table->save($data)){
-					alertBack('修改成功！');
-				}else {
-					$this->error('没有任何修改！');
-				}
+			$table = M('ads');
+			$data = I('post.');
+			if ($table->save($data)){
+				alertBack('修改成功！');
 			}else {
-				$this->error($table->getError());
-			}
-				
+				$this->error('没有任何修改！');
+			}				
 		}
 		$table = M('ads');
 		$data = $table->where("id = $id")->find();
-		$data['avail_day'] = explode(',', $data['avail_day']);
 		$this->assign($data);
 		$this->display();
 	}

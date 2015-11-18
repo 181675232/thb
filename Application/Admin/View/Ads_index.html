@@ -19,7 +19,7 @@
         <div class="location">
             <a href="javascript:history.back(-1);" class="back"><i></i><span>返回上一页</span></a>
             <a href="/Admin/Index/center" class="home"><i></i><span>首页</span></a> <i class="arrow">
-            </i><span>服务列表</span>
+            </i><span>幻灯列表</span>
         </div>
         <!--/导航栏-->
         <!--工具栏-->	
@@ -27,10 +27,10 @@
             <div id="floatHead" class="toolbar">
                 <div class="l-list">
                     <ul class="icon-list">
-                       <!-- <li><a class="add" href="{:U('/Admin/Activity/add')}"><i></i><span> 新增</span></a></li>-->
+                        <li><a class="add" href="{:U('/Admin/Ads/add')}"><i></i><span> 新增</span></a></li>
 						<!--<li><a id="btnSave" Class="save"><i></i><span>保存</span></a></li>-->
                         <li><a class="all" href="javascript:;" onclick="checkAll(this)"><i></i><span>全选</span></a></li>
-                        <li><a class="del" style="cursor:pointer;" id="btnDelete" OnClick="return ExePostBack('Activity')"><i></i><span>删除</span></a></li>
+                        <li><a class="del" style="cursor:pointer;" id="btnDelete" OnClick="return ExePostBack('Ads')"><i></i><span>删除</span></a></li>
                     </ul>
 <!--					<div class="menu-list">
 
@@ -57,38 +57,31 @@
 		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="ltable">
 		  <tr>
 		    <th width="8%">选择</th>
-		    <th align="left">服务名称</th>
-			<th align="left" width="12%">价格 / 单位</th>
-			<th align="left" width="10%">所在城市</th>
-		    <th align="center" width="16%">发布时间</th>
-			<th align="center" width="8%">被赞数</th>
-			<th align="center" width="8%">被踩数</th>
-		    <th align="center" width="10%">排序</th>
-		    <th align="center" width="10%">属性</th>
-		    <th align="center" width="8%">操作</th>
+		    <th align="center" width="30%">标题</th>   
+			<th align="center" width="30%">发布时间</th>     
+			<th align="center" width="16%">排序</th>			
+		    <th align="center">操作</th>
 		  </tr>
 		<if condition="$data" >
 			<volist name="data" id="val">
 			  <tr>
 			    <td align="center"><input type="checkbox" Class="checkall" value="{$val.id}" Style="vertical-align: middle;" /></td>
-			    <td><a href="">{$val.activity_type}</a></td>
-			    <td>{$val.price} / {$val.standard}</td>
-				<td>{$val.city}</td>
-				<td align="center">{$val.create_ts|date = "Y-m-d H:i:s",###}</td>
-				<td align="center">{$val.up_vote}</td>
-			    <td align="center">{$val.down_vote}</td>
-			    <td align="center"><input name="ord" value="{$val.ord}" Class="sort" style="text-align:center;" onblur="order({$val.id},this.value,'Activity')" /></td>
+			    <td align="center">{$val.title}</td>
+				<td align="center">{$val.addtime|date = "Y-m-d H:i:s",###}</td>
+			    <td align="center"><input name="ord" value="{$val.ord}" Class="sort" style="text-align:center;" onblur="order({$val.id},this.value,'Ads')" /></td>
+				<!--
 			    <td align="center">
 			      <div class="btn-tools">
 			        <a title="<if condition='$val[istop] eq 2'>取消置顶<else />设置置顶</if>" Class="<if condition='$val[istop] eq 2'>top selected<else />top</if>" href="/Admin/Activity/state/id/{$val.id}/istop/<if condition='$val[istop] eq 2'>1<else />2</if>"></a>
 			        <a title="<if condition='$val[isred] eq 2'>取消推荐<else />设置推荐</if>" Class="<if condition='$val[isred] eq 2'>red selected<else />red</if>" href="/Admin/Activity/state/id/{$val.id}/isred/<if condition='$val[isred] eq 2'>1<else />2</if>"></a>
 			      </div>
 			    </td>
-			    <td align="center"><a href="/Admin/Activity/edit/id/{$val.id}">修改</a></td>
+				-->
+			    <td align="center"><a href="/Admin/Ads/edit/id/{$val.id}">查看/修改</a></td>
 			  </tr>
 		  	</volist>
 		<else />
-			<tr><td align="center" colspan="7">暂无记录</td></tr>
+			<tr><td align="center" colspan="5">暂无记录</td></tr>
 		</if>
 		</table>
 		<!--/文字列表-->

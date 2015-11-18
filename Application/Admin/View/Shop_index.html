@@ -115,10 +115,11 @@
 				</div><i class="absbg"></i>
 		        <h1><span><a href="/Admin/Shop/edit/id/{$val.id}">{$val.name}</a></span></h1>
 		        <div class="remark">
+		        	商铺编号：{$val.id}<br />
 		        	<if condition="$val['description']" >
 		        		{$val.description}
-		        	<else />	
-					暂无内容摘要说明...	
+		        	<else />
+					暂无内容摘要说明...		
 					</if>
 				          
 		        </div>

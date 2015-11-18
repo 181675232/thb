@@ -111,8 +111,9 @@
 				</div><i class="absbg"></i>
 		        <h1><span><a href="/Admin/Shop/edit/id/<?php echo ($val["id"]); ?>"><?php echo ($val["name"]); ?></a></span></h1>
 		        <div class="remark">
+		        	商铺编号：<?php echo ($val["id"]); ?><br />
 		        	<?php if($val['description']): echo ($val["description"]); ?>
-		        	<?php else: ?>	
+		        	<?php else: ?>
 					暂无内容摘要说明...<?php endif; ?>
 				          
 		        </div>
