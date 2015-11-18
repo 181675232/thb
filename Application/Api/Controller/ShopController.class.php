@@ -25,14 +25,14 @@ class IndexController extends Controller {
 	    		$data = I('post.');
 	    		
 	    		$data['password'] = md5(trim($data['password'])); 		
-	    		$res = $member->field('id,phone,simg,jpushid,username,level')->where($data)->find();
+	    		$res = $member->field('id,phone,simg,jpushid,username,pid,level')->where($data)->find();
 	    		if($res){
 	    			json('200','成功',$res);
 	    		}else{
 	    			json('400','密码错误');
 	    		}
 	    	}else{
-	    		json('400','未注册！');
+	    		json('401','未注册！');
 	    	}
     	}
     	json('404','没有接收到传值');
