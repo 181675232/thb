@@ -1,0 +1,120 @@
+[ 2015-11-13T14:22:13+08:00 ] 127.0.0.1 /Api/index/friends_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011440s ]
+
+[ 2015-11-13T14:22:39+08:00 ] 127.0.0.1 /Api/index/friends_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE `pid` = 1 LIMIT 0,10   [ RunTime:0.0097s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE ( pid='111158' ) LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE ( pid='111160' ) LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE ( pid='111161' ) LIMIT 1   [ RunTime:0.0093s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE ( pid='111162' ) LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE ( pid='111163' ) LIMIT 1   [ RunTime:0.0105s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE ( pid='111158' )  [ RunTime:0.0084s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE ( pid='111160' )  [ RunTime:0.0087s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE ( pid='111161' )  [ RunTime:0.0117s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE ( pid='111162' )  [ RunTime:0.0087s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE ( pid='111163' )  [ RunTime:0.0148s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE `pid` = 1 LIMIT 1   [ RunTime:0.0081s ]
+
+[ 2015-11-13T14:29:29+08:00 ] 127.0.0.1 /Api/index/friends_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0128s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0118s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE `pid` = 1 LIMIT 0,10   [ RunTime:0.0132s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE ( pid='111158' ) LIMIT 1   [ RunTime:0.0142s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE ( pid='111160' ) LIMIT 1   [ RunTime:0.0126s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE ( pid='111161' ) LIMIT 1   [ RunTime:0.0185s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE ( pid='111162' ) LIMIT 1   [ RunTime:0.0124s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE ( pid='111163' ) LIMIT 1   [ RunTime:0.0123s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE ( pid='111158' )  [ RunTime:0.0209s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE ( pid='111160' )  [ RunTime:0.0197s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE ( pid='111161' )  [ RunTime:0.0298s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE ( pid='111162' )  [ RunTime:0.0118s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE ( pid='111163' )  [ RunTime:0.0119s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE `pid` = 1 LIMIT 1   [ RunTime:0.0120s ]
+
+[ 2015-11-13T14:30:53+08:00 ] 127.0.0.1 /Api/index/friends_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0138s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE `pid` = 1 LIMIT 0,10   [ RunTime:0.0136s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE ( pid='111158' ) LIMIT 1   [ RunTime:0.0138s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE ( pid='111160' ) LIMIT 1   [ RunTime:0.0131s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE ( pid='111161' ) LIMIT 1   [ RunTime:0.0122s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE ( pid='111162' ) LIMIT 1   [ RunTime:0.0134s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE ( pid='111163' ) LIMIT 1   [ RunTime:0.0167s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE ( pid='111158' )  [ RunTime:0.0128s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE ( pid='111160' )  [ RunTime:0.0129s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE ( pid='111161' )  [ RunTime:0.0126s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE ( pid='111162' )  [ RunTime:0.0133s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE ( pid='111163' )  [ RunTime:0.0268s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE `pid` = 1 LIMIT 1   [ RunTime:0.0145s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0157s ]
+
+[ 2015-11-13T14:31:31+08:00 ] 127.0.0.1 /Api/index/friends_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0122s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0153s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE `pid` = 1 LIMIT 0,10   [ RunTime:0.0109s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE ( pid='111158' ) LIMIT 1   [ RunTime:0.0094s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE ( pid='111160' ) LIMIT 1   [ RunTime:0.0104s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE ( pid='111161' ) LIMIT 1   [ RunTime:0.0121s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE ( pid='111162' ) LIMIT 1   [ RunTime:0.0095s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE ( pid='111163' ) LIMIT 1   [ RunTime:0.0177s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE ( pid='111158' )  [ RunTime:0.0111s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE ( pid='111160' )  [ RunTime:0.0122s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE ( pid='111161' )  [ RunTime:0.0121s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE ( pid='111162' )  [ RunTime:0.0131s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE ( pid='111163' )  [ RunTime:0.0133s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE `pid` = 1 LIMIT 1   [ RunTime:0.0106s ]
+
+[ 2015-11-13T14:32:53+08:00 ] 127.0.0.1 /Api/index/friends_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0107s ]
+SQL: SELECT `id`,`simg`,`username`,`phone` FROM `t_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0133s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE `pid` = 1 LIMIT 0,10   [ RunTime:0.0107s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE ( pid='111158' ) LIMIT 1   [ RunTime:0.0124s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE ( pid='111160' ) LIMIT 1   [ RunTime:0.0129s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE ( pid='111161' ) LIMIT 1   [ RunTime:0.0107s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE ( pid='111162' ) LIMIT 1   [ RunTime:0.0121s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE ( pid='111163' ) LIMIT 1   [ RunTime:0.0107s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE ( pid='111158' )  [ RunTime:0.0122s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE ( pid='111160' )  [ RunTime:0.0110s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE ( pid='111161' )  [ RunTime:0.0105s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE ( pid='111162' )  [ RunTime:0.0106s ]
+SQL: SELECT `id`,`simg`,`username`,`addtime` FROM `t_user` WHERE ( pid='111163' )  [ RunTime:0.0118s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_user` WHERE `pid` = 1 LIMIT 1   [ RunTime:0.0104s ]
+
