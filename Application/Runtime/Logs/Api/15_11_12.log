@@ -1,0 +1,676 @@
+[ 2015-11-12T10:53:57+08:00 ] 127.0.0.1 /Api/Index/shopinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `t_goods` [ RunTime:0.0106s ]
+SQL: SELECT `id`,`count`,`name`,`simg`,`price`,`isred` FROM `t_goods` WHERE ( pid = 1111111 and starttime < 1447296837 and stoptime > 1447296837 ) ORDER BY isred desc,ord asc,id desc  [ RunTime:0.0215s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0122s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( shopid = 1111111 ) LIMIT 1   [ RunTime:0.0117s ]
+SQL: SHOW COLUMNS FROM `t_league` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `t_league` WHERE ( shopid = 1111111 and pid !=0 ) LIMIT 1   [ RunTime:0.0096s ]
+SQL: SELECT * FROM `t_league` WHERE ( id = '9503756' and state = 2 ) LIMIT 1   [ RunTime:0.0115s ]
+SQL: SELECT t_shop.* FROM `t_league` left join t_shop on t_shop.id = t_league.shopid  WHERE ( pid = '9503756' and shopid !=1111111 )  [ RunTime:0.0140s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\thb\Application\Api\Controller\IndexController.class.php 第 353 行.
+NOTIC: [2] array_multisort() [<a href='function.array-multisort'>function.array-multisort</a>]: Argument #1 is expected to be an array or a sort flag D:\wamp\www\thb\Application\Api\Controller\IndexController.class.php 第 356 行.
+
+[ 2015-11-12T10:58:29+08:00 ] 127.0.0.1 /Api/Index/shopinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `t_goods` [ RunTime:0.0128s ]
+SQL: SELECT `id`,`count`,`name`,`simg`,`price`,`isred` FROM `t_goods` WHERE ( pid = 1111111 and starttime < 1447297109 and stoptime > 1447297109 ) ORDER BY isred desc,ord asc,id desc  [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0185s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( shopid = 1111111 ) LIMIT 1   [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `t_league` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `t_league` WHERE ( shopid = 1111111 and pid !=0 ) LIMIT 1   [ RunTime:0.0098s ]
+SQL: SELECT * FROM `t_league` WHERE ( id = '9503756' and state = 2 ) LIMIT 1   [ RunTime:0.0097s ]
+SQL: SELECT t_shop.* FROM `t_league` left join t_shop on t_shop.id = t_league.shopid  WHERE ( pid = '9503756' and shopid !=1111111 )  [ RunTime:0.0119s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\thb\Application\Api\Controller\IndexController.class.php 第 353 行.
+NOTIC: [2] array_multisort() [<a href='function.array-multisort'>function.array-multisort</a>]: Argument #1 is expected to be an array or a sort flag D:\wamp\www\thb\Application\Api\Controller\IndexController.class.php 第 356 行.
+
+[ 2015-11-12T11:12:31+08:00 ] 127.0.0.1 /Api/Index/goodsinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+SQL: SHOW COLUMNS FROM `t_goods` [ RunTime:0.0208s ]
+SQL: SELECT * FROM `t_goods` WHERE `id` = 9503742 LIMIT 1   [ RunTime:0.0214s ]
+SQL: SELECT * FROM `t_goods` WHERE ( pid = '1111111' ) ORDER BY isred desc,ord asc,id desc LIMIT 2   [ RunTime:0.0200s ]
+
+[ 2015-11-12T11:50:35+08:00 ] 127.0.0.1 /Api/Index/goodsinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+SQL: SHOW COLUMNS FROM `t_goods` [ RunTime:0.0139s ]
+SQL: SELECT `id`,`count`,`name`,`simg`,`price`,`isred`,`pid`,`starttime`,`stoptime`,`description`,`istab` FROM `t_goods` WHERE `id` = 9503742 LIMIT 1   [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `t_tab` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `t_tab` WHERE ( goodsid = 9503742 ) ORDER BY id asc  [ RunTime:0.0137s ]
+SQL: SELECT `id`,`count`,`name`,`simg`,`price`,`isred` FROM `t_goods` WHERE ( pid = '1111111' ) ORDER BY isred desc,ord asc,id desc LIMIT 2   [ RunTime:0.0132s ]
+
+[ 2015-11-12T13:21:14+08:00 ] 127.0.0.1 /Api/Index/goodsinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+SQL: SHOW COLUMNS FROM `t_goods` [ RunTime:0.0094s ]
+SQL: SELECT `id`,`count`,`name`,`simg`,`price`,`isred`,`pid`,`starttime`,`stoptime`,`description`,`istab` FROM `t_goods` WHERE `id` = 9503742 LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0159s ]
+SQL: SELECT * FROM `t_shop` WHERE ( id = '1111111' ) LIMIT 1   [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `t_tab` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `t_tab` WHERE ( goodsid = 9503742 ) ORDER BY id asc  [ RunTime:0.0095s ]
+SQL: SELECT `id`,`count`,`name`,`simg`,`price`,`isred` FROM `t_goods` WHERE ( pid = '1111111' ) ORDER BY isred desc,ord asc,id desc LIMIT 2   [ RunTime:0.0138s ]
+
+[ 2015-11-12T14:14:38+08:00 ] 127.0.0.1 /Api/Index/shopinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `t_trace` [ RunTime:0.0175s ]
+SQL: SELECT * FROM `t_trace` WHERE ( uid = 1 and shopid = 1111111 ) LIMIT 1   [ RunTime:0.0089s ]
+SQL: INSERT INTO `t_trace` (`shopid`,`uid`,`addtime`) VALUES ('1111111','1','1447308878') [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `t_goods` [ RunTime:0.0109s ]
+SQL: SELECT `id`,`count`,`name`,`simg`,`price`,`isred` FROM `t_goods` WHERE ( pid = 1111111 and starttime < 1447308878 and stoptime > 1447308878 ) ORDER BY isred desc,ord asc,id desc  [ RunTime:0.0188s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( shopid = 1111111 ) LIMIT 1   [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `t_league` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `t_league` WHERE ( shopid = 1111111 and pid !=0 ) LIMIT 1   [ RunTime:0.0089s ]
+SQL: SELECT * FROM `t_league` WHERE ( id = '9503756' and state = 2 ) LIMIT 1   [ RunTime:0.0085s ]
+SQL: SELECT t_shop.* FROM `t_league` left join t_shop on t_shop.id = t_league.shopid  WHERE ( pid = '9503756' and shopid !=1111111 )  [ RunTime:0.0127s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\thb\Application\Api\Controller\IndexController.class.php 第 360 行.
+NOTIC: [2] array_multisort() [<a href='function.array-multisort'>function.array-multisort</a>]: Argument #1 is expected to be an array or a sort flag D:\wamp\www\thb\Application\Api\Controller\IndexController.class.php 第 363 行.
+
+[ 2015-11-12T14:15:01+08:00 ] 127.0.0.1 /Api/Index/shopinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0166s ]
+SQL: SHOW COLUMNS FROM `t_trace` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `t_trace` WHERE ( uid = 1 and shopid = 1111111 ) LIMIT 1   [ RunTime:0.0137s ]
+SQL: UPDATE `t_trace` SET `addtime`='1447308900' WHERE ( uid = 1 and shopid = 1111111 ) [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `t_goods` [ RunTime:0.0114s ]
+SQL: SELECT `id`,`count`,`name`,`simg`,`price`,`isred` FROM `t_goods` WHERE ( pid = 1111111 and starttime < 1447308900 and stoptime > 1447308900 ) ORDER BY isred desc,ord asc,id desc  [ RunTime:0.0116s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( shopid = 1111111 ) LIMIT 1   [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `t_league` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `t_league` WHERE ( shopid = 1111111 and pid !=0 ) LIMIT 1   [ RunTime:0.0094s ]
+SQL: SELECT * FROM `t_league` WHERE ( id = '9503756' and state = 2 ) LIMIT 1   [ RunTime:0.0105s ]
+SQL: SELECT t_shop.* FROM `t_league` left join t_shop on t_shop.id = t_league.shopid  WHERE ( pid = '9503756' and shopid !=1111111 )  [ RunTime:0.0106s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\thb\Application\Api\Controller\IndexController.class.php 第 360 行.
+NOTIC: [2] array_multisort() [<a href='function.array-multisort'>function.array-multisort</a>]: Argument #1 is expected to be an array or a sort flag D:\wamp\www\thb\Application\Api\Controller\IndexController.class.php 第 363 行.
+
+[ 2015-11-12T14:17:50+08:00 ] 127.0.0.1 /Api/Index/shopgroup
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `t_group` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `t_group` WHERE ( pid = 0 )  [ RunTime:0.0128s ]
+SQL: SELECT * FROM `t_group` WHERE ( pid = '1' )  [ RunTime:0.0123s ]
+SQL: SELECT * FROM `t_group` WHERE ( pid = '2' )  [ RunTime:0.0127s ]
+SQL: SELECT * FROM `t_group` WHERE ( pid = '3' )  [ RunTime:0.0141s ]
+SQL: SELECT * FROM `t_group` WHERE ( pid = '4' )  [ RunTime:0.0187s ]
+SQL: SELECT * FROM `t_group` WHERE ( pid = '5' )  [ RunTime:0.0150s ]
+SQL: SELECT * FROM `t_group` WHERE ( pid = '6' )  [ RunTime:0.0150s ]
+SQL: SELECT * FROM `t_group` WHERE ( pid = '7' )  [ RunTime:0.0376s ]
+
+[ 2015-11-12T16:37:04+08:00 ] 127.0.0.1 /Api/Index/shopgroup
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+SQL: SHOW COLUMNS FROM `t_group` [ RunTime:0.0191s ]
+SQL: SELECT * FROM `t_group` WHERE ( pid = 0 )  [ RunTime:0.0101s ]
+SQL: SELECT * FROM `t_group` WHERE ( pid = '1' )  [ RunTime:0.0114s ]
+SQL: SELECT * FROM `t_group` WHERE ( pid = '2' )  [ RunTime:0.0129s ]
+SQL: SELECT * FROM `t_group` WHERE ( pid = '3' )  [ RunTime:0.0126s ]
+SQL: SELECT * FROM `t_group` WHERE ( pid = '4' )  [ RunTime:0.0103s ]
+SQL: SELECT * FROM `t_group` WHERE ( pid = '5' )  [ RunTime:0.0138s ]
+SQL: SELECT * FROM `t_group` WHERE ( pid = '6' )  [ RunTime:0.0106s ]
+SQL: SELECT * FROM `t_group` WHERE ( pid = '7' )  [ RunTime:0.0358s ]
+
+[ 2015-11-12T16:37:11+08:00 ] 127.0.0.1 /Api/Index/shopinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `t_trace` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `t_trace` WHERE ( uid = 1 and shopid = 1111111 ) LIMIT 1   [ RunTime:0.0098s ]
+SQL: UPDATE `t_trace` SET `addtime`='1447317431' WHERE ( uid = 1 and shopid = 1111111 ) [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `t_goods` [ RunTime:0.0118s ]
+SQL: SELECT `id`,`count`,`name`,`simg`,`price`,`isred` FROM `t_goods` WHERE ( pid = 1111111 and starttime < 1447317431 and stoptime > 1447317431 ) ORDER BY isred desc,ord asc,id desc  [ RunTime:0.0113s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0095s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( shopid = 1111111 ) LIMIT 1   [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `t_collection` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `t_collection` WHERE ( uid = 1 and bid = 1111111 ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `t_league` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `t_league` WHERE ( shopid = 1111111 and pid !=0 ) LIMIT 1   [ RunTime:0.0103s ]
+SQL: SELECT * FROM `t_league` WHERE ( id = '9503756' and state = 2 ) LIMIT 1   [ RunTime:0.0103s ]
+SQL: SELECT t_shop.* FROM `t_league` left join t_shop on t_shop.id = t_league.shopid  WHERE ( pid = '9503756' and shopid !=1111111 )  [ RunTime:0.0135s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\thb\Application\Api\Controller\IndexController.class.php 第 366 行.
+NOTIC: [2] array_multisort() [<a href='function.array-multisort'>function.array-multisort</a>]: Argument #1 is expected to be an array or a sort flag D:\wamp\www\thb\Application\Api\Controller\IndexController.class.php 第 369 行.
+
+[ 2015-11-12T16:37:54+08:00 ] 127.0.0.1 /Api/Index/shopinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `t_trace` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `t_trace` WHERE ( uid = 1 and shopid = 1111111 ) LIMIT 1   [ RunTime:0.0086s ]
+SQL: UPDATE `t_trace` SET `addtime`='1447317474' WHERE ( uid = 1 and shopid = 1111111 ) [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `t_goods` [ RunTime:0.0104s ]
+SQL: SELECT `id`,`count`,`name`,`simg`,`price`,`isred` FROM `t_goods` WHERE ( pid = 1111111 and starttime < 1447317474 and stoptime > 1447317474 ) ORDER BY isred desc,ord asc,id desc  [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `t_comment` [ RunTime:0.0095s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_comment` WHERE ( shopid = 1111111 ) LIMIT 1   [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `t_collection` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `t_collection` WHERE ( uid = 1 and bid = 1111111 ) LIMIT 1   [ RunTime:0.0188s ]
+SQL: SHOW COLUMNS FROM `t_league` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `t_league` WHERE ( shopid = 1111111 and pid !=0 ) LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT * FROM `t_league` WHERE ( id = '9503756' and state = 2 ) LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT t_shop.* FROM `t_league` left join t_shop on t_shop.id = t_league.shopid  WHERE ( pid = '9503756' and shopid !=1111111 )  [ RunTime:0.0087s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\thb\Application\Api\Controller\IndexController.class.php 第 366 行.
+NOTIC: [2] array_multisort() [<a href='function.array-multisort'>function.array-multisort</a>]: Argument #1 is expected to be an array or a sort flag D:\wamp\www\thb\Application\Api\Controller\IndexController.class.php 第 369 行.
+
+[ 2015-11-12T16:40:15+08:00 ] 127.0.0.1 /Api/Index/goodsinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+SQL: SHOW COLUMNS FROM `t_goods` [ RunTime:0.0153s ]
+SQL: SELECT `id`,`count`,`name`,`simg`,`price`,`isred`,`pid`,`starttime`,`stoptime`,`description`,`istab` FROM `t_goods` WHERE `id` = 9503742 LIMIT 1   [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `t_shop` WHERE ( id = '1111111' ) LIMIT 1   [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `t_tab` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `t_tab` WHERE ( goodsid = 9503742 ) ORDER BY id asc  [ RunTime:0.0107s ]
+SQL: SELECT `id`,`count`,`name`,`simg`,`price`,`isred` FROM `t_goods` WHERE ( pid = '1111111' and starttime < 1447317615 and stoptime > 1447317615 ) ORDER BY isred desc,ord asc,id desc LIMIT 2   [ RunTime:0.0119s ]
+
+[ 2015-11-12T17:04:01+08:00 ] 127.0.0.1 /Api/Index/goodsweb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001035s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0112s ]
+ERR: 模板不存在:./Application/Api/View/Index_goodsweb.html
+
+[ 2015-11-12T17:04:19+08:00 ] 127.0.0.1 /Api/Index/goodsweb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0105s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined variable: title D:\wamp\www\thb\Application\Runtime\Cache\Api\d96a7b723dfd97871fbe2e9f162e2d3a.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007096s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007177s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000851s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000913s ]
+
+[ 2015-11-12T17:04:41+08:00 ] 127.0.0.1 /Api/Index/goodsweb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0181s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005951s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000728s ]
+
+[ 2015-11-12T17:04:45+08:00 ] 127.0.0.1 /Api/Index/goodsweb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0096s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006191s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006277s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000793s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000840s ]
+
+[ 2015-11-12T17:05:04+08:00 ] 127.0.0.1 /Api/Index/goodsweb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0165s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0127s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006607s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006669s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000829s ]
+
+[ 2015-11-12T17:06:24+08:00 ] 127.0.0.1 /Api/Index/goodsweb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0159s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005864s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2015-11-12T17:06:25+08:00 ] 127.0.0.1 /Api/Index/goodsweb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0106s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006505s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2015-11-12T17:06:25+08:00 ] 127.0.0.1 /Api/Index/goodsweb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005823s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000721s ]
+
+[ 2015-11-12T17:06:26+08:00 ] 127.0.0.1 /Api/Index/goodsweb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0109s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001108s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001178s ]
+
+[ 2015-11-12T17:07:06+08:00 ] 127.0.0.1 /Api/Index/goodsweb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006423s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2015-11-12T17:11:04+08:00 ] 127.0.0.1 /Api/Index/goodsweb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0143s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011592s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000826s ]
+
+[ 2015-11-12T17:11:05+08:00 ] 127.0.0.1 /Api/Index/goodsweb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006183s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000839s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000924s ]
+
+[ 2015-11-12T17:14:38+08:00 ] 127.0.0.1 /Api/Index/goodsweb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0114s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005852s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000578s ]
+
+[ 2015-11-12T17:16:51+08:00 ] 127.0.0.1 /Api/Index/goodsweb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0162s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006244s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000564s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000612s ]
+
+[ 2015-11-12T17:22:15+08:00 ] 127.0.0.1 /Api/Index/goodsweb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0121s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005734s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005815s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000769s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000838s ]
+
+[ 2015-11-12T17:23:09+08:00 ] 127.0.0.1 /Api/Index/goodsweb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0143s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006613s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000715s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000782s ]
+
+[ 2015-11-12T17:23:11+08:00 ] 127.0.0.1 /Api/Index/goodsweb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0109s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005484s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000610s ]
+
+[ 2015-11-12T17:23:45+08:00 ] 127.0.0.1 /Api/Index/goodsweb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0162s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0155s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005988s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000674s ]
+
+[ 2015-11-12T17:23:46+08:00 ] 127.0.0.1 /Api/Index/goodsweb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0146s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005288s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005359s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000600s ]
+
+[ 2015-11-12T17:25:11+08:00 ] 127.0.0.1 /Api/Index/goodsweb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0128s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006540s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000705s ]
+
+[ 2015-11-12T17:25:31+08:00 ] 127.0.0.1 /Api/Index/goodsweb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `t_shop` WHERE `id` = 1111111 LIMIT 1   [ RunTime:0.0143s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007458s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000583s ]
+

@@ -125,6 +125,7 @@
 		        <div class="tools">	        	
 		        	<a title="<if condition='$val[iscomment] eq 2'>取消评论<else />开启评论</if>" Class="<if condition='$val[iscomment] eq 2'>msg selected<else />msg</if>" href="/Admin/Shop/state/id/{$val.id}/iscomment/<if condition='$val[iscomment] eq 2'>1<else />2</if><if condition='$_GET[p]'>/p/{$Think.get.p}</if><if condition='$_GET[verify]'>/verify/{$Think.get.verify}</if><if condition='$_GET[keyword]'>/keyword/{$Think.get.keyword}</if>"></a>
 				 	<a title="<if condition='$val[isred] eq 2'>取消推荐<else />设置推荐</if>" Class="<if condition='$val[isred] eq 2'>red selected<else />red</if>" href="/Admin/Shop/state/id/{$val.id}/isred/<if condition='$val[isred] eq 2'>1<else />2</if><if condition='$_GET[p]'>/p/{$Think.get.p}</if><if condition='$_GET[verify]'>/verify/{$Think.get.verify}</if><if condition='$_GET[keyword]'>/keyword/{$Think.get.keyword}</if>"></a>
+					
 				  <!--
 				  <a title="取消置顶" Class="top selected" href=""></a>
 		          <a title="取消热门" Class="hot selected" href=""></a>
@@ -132,7 +133,14 @@
 				  <input name="ord" value="{$val.ord}" Class="sort" style="text-align:center;" onblur="order({$val.id},this.value,'Shop')" />	        
 		        </div>
 		        <div class="foot">
+		        	<!--
 		          <p class="time">{$val.addtime|date = "Y-m-d H:i:s",###}</p>
+				  -->
+				  <if condition="$val[ismember] eq 0">
+		          	<p class="time" style="font-size: 12px; padding: 2px 5px;border: 1px solid #ccc"><a style="color: #666; " title="添加店主" href="{:U('/Admin/Member/add/',array('pid'=>$val['id']))}">添加店主</a></p>
+				  <else />
+				  	<p class="time" style="font-size: 12px; padding: 2px 5px;border: 1px solid #ccc"><a style="color: #666; " title="修改店主" href="{:U('/Admin/Member/edit/',array('id'=>$val[ismember]))}">修改店主</a></p>
+				  </if>
 		          <a href="/Admin/Shop/edit/id/{$val.id}" title="编辑" class="edit">编辑</a>
 		        </div>
 		      </div>
