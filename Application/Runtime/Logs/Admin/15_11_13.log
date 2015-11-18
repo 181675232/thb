@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+[ 2015-11-13T14:22:13+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+
+[ 2015-11-13T14:22:13+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+=======
 [ 2015-11-13T17:08:02+08:00 ] 127.0.0.1 /Public/js/jquery-1.10.2.min.map
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
@@ -290,4 +301,5 @@ INFO: [ view_filter ] --END-- [ RunTime:0.000334s ]
 INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000539s ]
+>>>>>>> branch 'master' of https://github.com/181675232/thb.git
 

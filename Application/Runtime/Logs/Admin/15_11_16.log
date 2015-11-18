@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+[ 2015-11-16T11:13:37+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+
+[ 2015-11-16T11:13:37+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+=======
 [ 2015-11-16T09:48:50+08:00 ] 127.0.0.1 /
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
@@ -6786,4 +6797,5 @@ INFO: [ view_filter ] --END-- [ RunTime:0.000491s ]
 INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000598s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000641s ]
+>>>>>>> branch 'master' of https://github.com/181675232/thb.git
 

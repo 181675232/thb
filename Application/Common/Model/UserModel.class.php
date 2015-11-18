@@ -2,7 +2,7 @@
 namespace Common\Model;
 use Think\Model;
 
-class OwnerModel extends Model{
+class OwnerModel extends Model{	
 	protected $_validate = array(		
 		array('name','require','昵称必须填写！'), 
 		array('phone','','手机号已经存在！',1,'unique',1),// 在新增的时候验证name字段是否唯一
