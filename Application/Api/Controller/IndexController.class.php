@@ -105,45 +105,18 @@ class IndexController extends Controller {
     public function login(){
     	if(I('post.')){
 	    	$table = M('user');
-	    	$phone=I('post.phone');	    	
-	    	$return = $table->where("phone=$phone")->find();	    	
+	    	$phone=I('post.phone');
+	    	$return = $table->where("phone=$phone")->find();	
 	    	if($return){
 	    		$data['phone'] = $phone;
-	    		$data['password'] = md5(trim($data['password'])); 		
+	    		$data['password'] = md5(I('post.password')); 	
 	    		$user = $table->field('id,phone,simg,jpushid,username,token')->where($data)->find();
 	    		if($user){
 	    			if ($user['jpushid'] != I('post.jpushid')){
 	    				$return = $table->where("id = '{$user['id']}'")->setField('jpushid',I('post.jpushid'));
+	    				$user['jpushid'] = I('post.jpushid');
 	    			}
-    				$rongyun = new  \Org\Util\Rongyun($this->appKey,$this->appSecret);
-    				if (empty($user['username'])){
-    					$user['username'] = '用户'.$user['id'];
-    				}
-    				if (empty($user['simg'])){
-    					$user['simg'] = $this->url.'/public/images/pic3.png';
-    				}else {
-    					$user['simg'] = $this->url.$user['simg'];
-    				}
-    				$r = $rongyun->getToken($user['id'],$user['username'],$user['simg']);
-    				if($r){
-    					$rong = json_decode($r);
-    					if ($rong->code == 200){
-    						if ($user['token'] == $rong->token){
-    							json('200','成功',$user);
-    						}else {
-    							$where['token'] = $user['token'] = $rong->token;
-    							if ($table->where("id = '{$user['id']}'")->save($where)){
-    								json('200','成功',$user);
-    							}else {
-    								json('400','融云集成失败');
-    							}
-    						}    						
-    					}else {
-    						json('400','融云内部错误');
-    					}
-    				}else {
-    					json('400','融云token获取失败');
-    				}
+    				json('200','成功',$user);
 	    		}else{
 	    			json('400','密码错误');
 	    		}
