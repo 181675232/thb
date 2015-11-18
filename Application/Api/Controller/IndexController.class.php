@@ -539,6 +539,29 @@ class IndexController extends Controller {
 		json('404','没有接收到传值');
 	}
 	
+	//检测是否有交易密码
+	public function checkpass(){
+		if(I('post.id')){
+			$user = M('user');
+			$data = $user->find(I('post.id'));
+			if ($data){
+				if (empty($data['pass'])){
+					$res['pass'] = 1;
+				}else {
+					$res['pass'] = 2;
+				}
+				json('200','成功',$res);
+			}else {
+				json('400','非法操作');
+			}
+		}
+		json('404','没有接收到传值');
+	}
+	
+	
+	
+	
+	
 	
 	
     
