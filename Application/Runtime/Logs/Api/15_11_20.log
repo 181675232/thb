@@ -1,0 +1,198 @@
+[ 2015-11-20T15:11:50+08:00 ] 127.0.0.1 /Api/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+
+[ 2015-11-20T15:12:40+08:00 ] 127.0.0.1 /Api/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+
+[ 2015-11-20T15:13:04+08:00 ] 127.0.0.1 /Api/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+SQL: SHOW COLUMNS FROM `t_ads` [ RunTime:0.0176s ]
+SQL: SELECT * FROM `t_ads`  [ RunTime:0.0173s ]
+
+[ 2015-11-20T15:13:30+08:00 ] 127.0.0.1 /Api/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `t_ads` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `t_ads`  [ RunTime:0.0161s ]
+
+[ 2015-11-20T15:13:48+08:00 ] 127.0.0.1 /Api/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+SQL: SHOW COLUMNS FROM `t_ads` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `t_ads`  [ RunTime:0.0126s ]
+
+[ 2015-11-20T15:14:23+08:00 ] 127.0.0.1 /Api/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `t_ads` [ RunTime:0.0166s ]
+SQL: SELECT * FROM `t_ads`  [ RunTime:0.0087s ]
+NOTIC: [8] Use of undefined constant data - assumed 'data' D:\wamp\www\thb\Application\Api\Controller\IndexController.class.php 第 571 行.
+
+[ 2015-11-20T15:14:31+08:00 ] 127.0.0.1 /Api/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+SQL: SHOW COLUMNS FROM `t_ads` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `t_ads`  [ RunTime:0.0133s ]
+
+[ 2015-11-20T15:15:52+08:00 ] 127.0.0.1 /Api/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `t_ads` [ RunTime:0.0135s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_ads`  [ RunTime:0.0140s ]
+
+[ 2015-11-20T15:20:02+08:00 ] 127.0.0.1 /Api/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+SQL: SHOW COLUMNS FROM `t_ads` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0099s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_ads`  [ RunTime:0.0091s ]
+SQL: SELECT * FROM `t_activity` WHERE `cityid` = 110100 ORDER BY ord asc,id desc LIMIT 3   [ RunTime:0.0126s ]
+
+[ 2015-11-20T15:20:26+08:00 ] 127.0.0.1 /Api/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `t_ads` [ RunTime:0.0183s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0148s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0261s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_ads`  [ RunTime:0.0262s ]
+SQL: SELECT * FROM `t_activity` WHERE `cityid` = 110100 ORDER BY ord asc,id desc LIMIT 3   [ RunTime:0.0280s ]
+
+[ 2015-11-20T15:28:26+08:00 ] 127.0.0.1 /Api/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+SQL: SHOW COLUMNS FROM `t_ads` [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0154s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'asc,id desc LIMIT 10' at line 1
+
+[ 2015-11-20T15:29:59+08:00 ] 127.0.0.1 /Api/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `t_ads` [ RunTime:0.0146s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0193s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_ads`  [ RunTime:0.0135s ]
+SQL: SELECT `shopid`,`simg`,`img` FROM `t_activity` WHERE `cityid` = 110100 ORDER BY ord asc,id desc LIMIT 3   [ RunTime:0.0146s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'asc,id desc LIMIT 10' at line 1
+
+[ 2015-11-20T15:30:15+08:00 ] 127.0.0.1 /Api/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+SQL: SHOW COLUMNS FROM `t_ads` [ RunTime:0.0089s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0117s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_ads`  [ RunTime:0.0087s ]
+SQL: SELECT `shopid`,`simg`,`img` FROM `t_activity` WHERE `cityid` = 110100 ORDER BY ord asc,id desc LIMIT 3   [ RunTime:0.0095s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'asc,id desc LIMIT 10' at line 1
+
+[ 2015-11-20T15:30:24+08:00 ] 127.0.0.1 /Api/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `t_ads` [ RunTime:0.0188s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0152s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0144s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_ads`  [ RunTime:0.0155s ]
+SQL: SELECT `shopid`,`simg`,`img` FROM `t_activity` WHERE `cityid` = 110100 ORDER BY ord asc,id desc LIMIT 3   [ RunTime:0.0147s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'asc,id desc LIMIT 10' at line 1
+
+[ 2015-11-20T15:30:50+08:00 ] 127.0.0.1 /Api/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+SQL: SHOW COLUMNS FROM `t_ads` [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0150s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_ads`  [ RunTime:0.0249s ]
+SQL: SELECT `shopid`,`simg`,`img` FROM `t_activity` WHERE `cityid` = 110100 ORDER BY ord asc,id desc LIMIT 3   [ RunTime:0.0179s ]
+NOTIC: [8] Undefined index: shop D:\wamp\www\thb\Application\Api\Controller\IndexController.class.php 第 578 行.
+
+[ 2015-11-20T15:31:29+08:00 ] 127.0.0.1 /Api/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `t_ads` [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0128s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_ads`  [ RunTime:0.0096s ]
+SQL: SELECT `shopid`,`simg`,`img` FROM `t_activity` WHERE `cityid` = 110100 ORDER BY ord asc,id desc LIMIT 3   [ RunTime:0.0121s ]
+SQL: SELECT * FROM `t_shop` WHERE `cityid` = 110100 ORDER BY isred desc,ord asc,id desc LIMIT 10   [ RunTime:0.0140s ]
+
+[ 2015-11-20T15:31:59+08:00 ] 127.0.0.1 /Api/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `t_ads` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `t_activity` [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0135s ]
+SQL: SELECT `id`,`title`,`simg` FROM `t_ads`  [ RunTime:0.0107s ]
+SQL: SELECT `shopid`,`simg`,`img` FROM `t_activity` WHERE `cityid` = 110100 ORDER BY ord asc,id desc LIMIT 3   [ RunTime:0.0155s ]
+SQL: SELECT * FROM `t_shop` WHERE `cityid` = 110100 ORDER BY isred desc,ord asc,id desc LIMIT 10   [ RunTime:0.0119s ]
+

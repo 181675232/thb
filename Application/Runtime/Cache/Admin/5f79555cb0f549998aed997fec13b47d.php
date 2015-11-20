@@ -93,6 +93,7 @@
           </tr>
         </thead>
         <tbody>
+        	<input type="hidden" name="node_id[]" value="9_1"  />
           <?php if(is_array($nav)): $i = 0; $__LIST__ = $nav;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val): $mod = ($i % 2 );++$i; if(is_array($val["catid"])): $i = 0; $__LIST__ = $val["catid"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val1): $mod = ($i % 2 );++$i;?><tr>
 				    <td style="white-space:nowrap;word-break:break-all;overflow:hidden;padding-left: 50px;">
 				      <span class="folder-open"></span>

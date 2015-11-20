@@ -30,6 +30,26 @@ class AdminController extends CommonController {
 		if (IS_POST){
 			$table = M('admin');
 			$where = I('post.');
+			if (I('post.role_id') == 1){
+				if ($where['provinceid'] == 0){
+					alertReplace('请选择所代理的省市区县！');
+				}else {
+					if ($where['cityid'] == 0){
+						$where['level'] = 1;
+					}else {
+						if ($where['areaid'] == 0){
+							$where['level'] = 2;
+						}else {
+							$where['level'] = 3;
+						}
+					}
+				}			
+			}else {
+				$where['level'] = 0;
+				$where['provinceid'] = 0;
+				$where['areaid'] = 0;
+				$where['cityid'] = 0;
+			}
 			$where1['role_id'] = I('post.role_id');
 			$where['password'] = md5($where['password']);
 			$where['addtime'] = time();
@@ -48,9 +68,12 @@ class AdminController extends CommonController {
 				$this->error('添加失败！');
 			}		
 		}
+		$table = M('province');
+		$type1 = $table->select();
 		$role = M('role');
 		$data = $role->select();
 		$this->assign('role',$data);
+		$this->assign('type1',$type1);
 		$this->display();
 	}
 	
@@ -59,9 +82,29 @@ class AdminController extends CommonController {
 		$table = M('admin');
 		if (IS_POST){	
 			$where = I('post.');
+			if (I('post.role_id') == 1){
+				if ($where['provinceid'] == 0){
+					alertReplace('请选择所代理的省市区县！');
+				}else {
+					if ($where['cityid'] == 0){
+						$where['level'] = 1;
+					}else {
+						if ($where['areaid'] == 0){
+							$where['level'] = 2;
+						}else {
+							$where['level'] = 3;
+						}
+					}
+				}
+			}else {
+				$where['level'] = 0;
+				$where['provinceid'] = 0;
+				$where['areaid'] = 0;
+				$where['cityid'] = 0;
+			}
 			$data['role_id'] =  I('post.role_id');
 			unset($where['role_id']);
-			$role_user = M('role_user');			
+			$role_user = M('role_user');	
 			$res1 = $table->save($where);
 			$res2 = $role_user->where("user_id = '{$where['id']}'")->save($data);
 			if ($res1 || $res2){
@@ -71,11 +114,16 @@ class AdminController extends CommonController {
 			}			
 		}
 		$role = M('role');
-		$role = $role->select();		
-		$data = $table->field('t_admin.*,t_role_user.role_id')
+		$role = $role->select();	
+		$province = M('province');
+		$type1 = $province->select();
+		$data = $table->field('t_admin.*,t_role_user.role_id,t_area.area as areatitle,t_city.city as citytitle')
+		->join('left join t_city on t_city.cityid = t_admin.cityid')
+		->join('left join t_area on t_area.areaid = t_admin.areaid')
 		->join('left join t_role_user on t_role_user.user_id = t_admin.id')
 		->where("t_admin.id = $id")->find();
 		$this->assign('role',$role);
+		$this->assign('type1',$type1);
 		$this->assign($data);
 		$this->display();
 	}
@@ -143,6 +191,35 @@ class AdminController extends CommonController {
 		}
 	}
 	
+	public function selectajax(){
+		$id = I('get.id');
+		$table = M('city');
+		$data = $table->where("provinceid = $id")->select();
+		$res['str'] = "<option value='0'>请选择在市级单位</option>";
+		$res['str1'] = "<li class='sel' onclick='sel(this)'>请选择在市级单位</li>";
+		foreach ($data as $val){
+			$res['str'].="<option value='".$val['cityid']."'>".$val['city']."</option>";
+		}
+		foreach ($data as $val){
+			$res['str1'].="<li class='sel' onclick='sel(this)'>".$val['city']."</li>";
+		}
+		echo json_encode($res);
+	}
+	
+	public function selectajax1(){
+		$id = I('get.id');
+		$table = M('area');
+		$data = $table->where("cityid = $id")->select();
+		$res['str'] = "<option value='0'>请选择在区县单位</option>";
+		$res['str1'] = "<li class='sel' onclick='sel(this)'>请选择在区县单位</li>";
+		foreach ($data as $val){
+			$res['str'].="<option value='".$val['areaid']."'>".$val['area']."</option>";
+		}
+		foreach ($data as $val){
+			$res['str1'].="<li class='sel' onclick='sel(this)'>".$val['area']."</li>";
+		}
+		echo json_encode($res);
+	}
 	
 //	public function state(){
 //		$data = I('get.');			

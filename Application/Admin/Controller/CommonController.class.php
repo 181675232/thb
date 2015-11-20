@@ -13,6 +13,7 @@ class CommonController extends Controller {
 		//检测是否登录，没有登录就打回设置的网关
 		$rbac::checkLogin();
 		//检测是否有权限没有权限就做相应的处理
+
 		if(!$rbac::AccessDecision()){
 			if (ACTION_NAME == 'delete'){
 				echo 1;

@@ -13,13 +13,24 @@ class MemberController extends CommonController {
 			$data['name'] = array('like',"%{$keyword}%");
 			$data['phone'] = array('like',"%{$keyword}%");
 			$data['_logic'] = 'or';
-			$Table = $Table->where($data);		
 		}elseif (I('get.verify')){
 			$data = I('get.');
-			$Table = $Table->where($data);
 			$this->assign('verify',I('get.verify'));
 		}
-		$count      = $Table->count();// 查询满足要求的总记录数
+		if ($_SESSION['level'] != 0){
+			switch ($_SESSION['level']){
+				case  1:
+					$data['provinceid'] = $_SESSION['provinceid'];
+					break;
+				case  2:
+					$data['cityid'] = $_SESSION['cityid'];
+					break;
+				case  3:
+					$data['areaid'] = $_SESSION['areaid'];
+					break;
+			}
+		}
+		$count      = $Table->where($data)->count();// 查询满足要求的总记录数
 		$Page       = new \Think\Page($count,10);// 实例化分页类 传入总记录数和每页显示的记录数(25)
 		$show       = $Page->show();// 分页显示输出
 		// 进行分页数据查询 注意limit方法的参数要使用Page类的属性

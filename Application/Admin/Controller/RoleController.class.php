@@ -53,19 +53,16 @@ class RoleController extends CommonController {
 			$where['id'] = I('post.id');
 			$where['remark'] = I('post.remark');
 			$table->save($where);
-			if ($access->where("role_id = '{$where['id']}'")->delete()){
-				$data = I('post.node_id');
-				foreach ($data as $val){
-					$r = explode('_', $val);
-					$where1['node_id'] = $r[0];
-					$where1['level'] = $r[1];
-					$where1['role_id'] = $id;
-					$access->add($where1);
-				}
-				alertBack('修改成功！');
-			}else {
-				$this->error('系统出错！');
-			}		
+			$access->where("role_id = '{$where['id']}'")->delete();
+			$data = I('post.node_id');
+			foreach ($data as $val){
+				$r = explode('_', $val);
+				$where1['node_id'] = $r[0];
+				$where1['level'] = $r[1];
+				$where1['role_id'] = $id;
+				$access->add($where1);
+			}
+			alertBack('修改成功！');	
 		}
 		$res = $access->where("role_id = $id")->getField('node_id',true);
 		$nav = D('Nav');

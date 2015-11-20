@@ -12,26 +12,27 @@ class NavController extends CommonController {
 	public function add(){
 		if (IS_POST){
 			$user = D('Nav');
+			$where1 = I('post.');
 			$data = I('post.cblActionType');			
-			if ($user->create()){
-				$id = $user->add();
-				if ($id){
-					foreach ($data as $val){
-						$res = explode(' ', $val);
-						$where['bid'] = $id;
-						$where['name'] = $res[0];
-						$where['title'] = $res[1];
-						$where['level'] = 3;
-						$where['state'] = 1;
-						$user->add($where);
-					}
-					alertLocation('导航添加成功！', '/Admin/Nav');
-				}else {
-					$this->error('添加失败！');
+			unset($where1['cblActionType']);
+			if ($where1['level'] == 2){
+				$where1['pid'] = 9;
+			}
+			$id = $user->add($where1);
+			if ($id){
+				foreach ($data as $val){
+					$res = explode(' ', $val);
+					$where['bid'] = $id;
+					$where['name'] = $res[0];
+					$where['title'] = $res[1];
+					$where['level'] = 3;
+					$where['state'] = 1;
+					$user->add($where);
 				}
+				alertLocation('导航添加成功！', '/Admin/Nav');
 			}else {
-				$this->error($user->getError());
-			}				
+				$this->error('添加失败！');
+			}			
 		}
 		if (I('get.id')){
 			$this->assign('bid',I('get.id'));

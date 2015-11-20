@@ -30,6 +30,19 @@ class PublicController extends Controller {
 						session('username',$user['name']);
 						session('userip',$user['ip']);
 						session('usertime',$user['addtime']);
+						session('level',$user['level']);
+						if ($user['level'] != 0){
+							if ($user['provinceid']){
+								session('provinceid',$user['provinceid']);
+							}
+							if ($user['cityid']){
+								session('cityid',$user['cityid']);
+							}
+							if ($user['areaid']){
+								session('areaid',$user['areaid']);
+							}
+						}
+						
 						if($_SESSION['username']==C('RBAC_SUPERADMIN')) {
 							$_SESSION[C('ADMIN_AUTH_KEY')] =	true;
 						}

@@ -166,6 +166,10 @@
 		</dd>
 	</dl>
 	<dl>
+	<dt>店主手机号</dt>
+		<dd><input type="text" Class="input normal" name="name"/> <span class="Validform_checktip" style="color:red">非必填，开分店时候添加总店店主手机号（即商家端登陆账号）</span></dd>
+	</dl> 
+	<dl>
 	<dt>名称</dt>
 		<dd><input type="text" name="name" datatype="*" Class="input normal" sucmsg=" " /> <span class="Validform_checktip">*</span></dd>
 	</dl> 

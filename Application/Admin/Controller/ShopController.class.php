@@ -11,13 +11,24 @@ class ShopController extends CommonController {
 		if (I('get.keyword')){
 			$keyword = I('get.keyword');
 			$data['name'] = array('like',"%{$keyword}%");
-			$table = $table->where($data);		
 		}elseif (I('get.verify')){
 			$data['groupid'] = I('get.verify');
-			$table= $table->where($data);
 			$this->assign('verify',I('get.verify'));
 		}
-		$count = $table->count();
+		if ($_SESSION['level'] != 0){
+			switch ($_SESSION['level']){
+				case  1:
+					$data['t_shop.provinceid'] = $_SESSION['provinceid'];
+					break;
+				case  2:
+					$data['t_shop.cityid'] = $_SESSION['cityid'];
+					break;
+				case  3:
+					$data['t_shop.areaid'] = $_SESSION['areaid'];
+					break;
+			}
+		}
+		$count = $table->where($data)->count();
 		$Page       = new \Think\Page($count,14);// 实例化分页类 传入总记录数和每页显示的记录数(25)
 		$show       = $Page->show();// 分页显示输出
 		// 进行分页数据查询 注意limit方法的参数要使用Page类的属性

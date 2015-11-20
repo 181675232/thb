@@ -11,13 +11,11 @@ class BannerController extends CommonController {
 		if (I('get.keyword')){
 			$keyword = I('get.keyword');
 			$data['titile'] = array('like',"%{$keyword}%");
-			$table = $table->where($data);		
 		}elseif (I('get.')){
 			$data = I('get.');
-			$table = $table->where($data);
 			$this->assign('verify',I('get.verify'));
 		}
-		$count      = $table->count();// 查询满足要求的总记录数
+		$count      = $table->where($data)->count();// 查询满足要求的总记录数
 		$Page       = new \Think\Page($count,15);// 实例化分页类 传入总记录数和每页显示的记录数(25)
 		$show       = $Page->show();// 分页显示输出
 		// 进行分页数据查询 注意limit方法的参数要使用Page类的属性

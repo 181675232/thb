@@ -9,11 +9,24 @@
 	<script type="text/javascript" src="/Public/js/scripts/swfupload/swfupload.js"></script>
 	<script type="text/javascript" src="/Public/js/scripts/swfupload/swfupload.handlers.js"></script>
     <script type="text/javascript" src="/Public/js/layout.js"></script>	
+	<script type="text/javascript" charset="utf-8" src="/Public/js/scripts/kindeditor/kindeditor.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/Public/js/scripts/kindeditor/lang/zh_CN.js"></script>
     <link href="/Public/admin/css/pagination.css" rel="stylesheet" type="text/css" />	
 	<link href="/Public/admin/admin.css" rel="stylesheet" type="text/css" />
 	<link href="/Public/admin/page.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="/Public/js/check.js"></script>
 	<script type="text/javascript">
+		 //初始化编辑器
+        KindEditor.ready(function(K) {
+                window.editor = K.create('#content');
+        });
+        KindEditor.ready(function(K) {
+                K.create('#content', {
+						uploadJson : '/Public/js/scripts/kindeditor/php/upload_json.php',
+						fileManagerJson : '/Public/js/scripts/kindeditor/php/file_manager_json.php',
+                        allowFileManager : true
+                });
+        });
 	    $(function () {
 	        //初始化表单验证
 	        $("#form").initValidform();
@@ -34,7 +47,7 @@
 	            }
 	        });
 			$("#ddlParentId").change(function(){
-				$.get('/Admin/Admin/selectajax',{id:this.value},function(data){
+				$.get('/Admin/Shop/selectajax',{id:this.value},function(data){
 					 var dataobj = eval("("+data+")");
 					 $("#ddlParentId1").prev().find('span').html('请选择在市级单位');					 
 					 $("#ddlParentId1").html(dataobj.str);
@@ -42,20 +55,26 @@
 				});
 			});
 			$("#ddlParentId1").change(function(){
-				$.get('/Admin/Admin/selectajax1',{id:this.value},function(data){
+				$.get('/Admin/Shop/selectajax1',{id:this.value},function(data){
 					 var dataobj = eval("("+data+")");
 					 $("#ddlParentId2").prev().find('span').html('请选择在区县单位');					 
 					 $("#ddlParentId2").html(dataobj.str);
 					 $("#ddlParentId2").prev().find('ul').html(dataobj.str1);
 				});
 			});
-			$("#quanxian").change(function(){
-				if(this.value == 1){
-					$("#daili").css("display","block");
-				}else{
-					$("#daili").css("display","none");
-				}
-			});		
+			$("#ddlParentId3").change(function(){
+				$.get('/Admin/Shop/selectajax3',{id:this.value},function(data){
+					if(data == 0){
+						$("#checkbox").html('<div class="boxwrap"></div>');
+					}else{
+						 var dataobj = eval("("+data+")");	
+						 $("#checkbox").html('<div class="boxwrap"></div>');
+						 $("#checkbox").find('div').html(dataobj.str1);
+					 		$("#checkbox").append(dataobj.str);
+					}				 
+				});
+			});
+
 	    });
 		function sel(obj){		
 			$(obj).siblings().removeClass("selected");
@@ -69,28 +88,24 @@
             titObj.find("span").text($(obj).text()); //赋值选中值        
             selectObj.trigger("change"); 		
 		}
-	    //创建附件窗口
-	    function showAttachDialog(obj) {
-	        var objNum = arguments.length;
-	        var attachDialog = $.dialog({
-	            id: 'attachDialogId',
-	            lock: true,
-	            max: false,
-	            min: false,
-	            title: "上传附件",
-	            content: 'url:dialog/dialog_attach.aspx',
-	            width: 500,
-	            height: 180
-	        });
-	        //如果是修改状态，将对象传进去
-	        if (objNum == 1) {
-	            attachDialog.data = obj;
-	        }
-	    }
-	    //删除附件节点
-	    function delAttachNode(obj) {
-	        $(obj).parent().remove();
-	    }	
+		
+		function checkb(obj){
+			if($(obj).attr("class")=='selected'){
+				$(obj).removeClass("selected");         	
+			}else{
+				$(obj).addClass("selected"); //添加选中样式
+			}		
+            var indexNum = $(obj).index();
+			var titObj = $(obj).parents('.boxwrap');
+            var selectObj = $(obj).parents('.boxwrap').siblings('label');
+            //selectObj.find("option").attr("selected", false);			
+           // selectObj.find("option").eq(indexNum).attr("selected", true); //赋值给对应的option
+		  selectObj.eq(indexNum).trigger("click"); 
+            //titObj.find("span").text($(obj).text()); //赋值选中值        
+            	
+		}
+		
+	
 		
 	</script>
 </head>
@@ -101,7 +116,7 @@
   <a href="javascript:history.back(-1);" class="back"><i></i><span>返回上一页</span></a>
   <a href="/Admin/Index/center" class="home"><i></i><span>首页</span></a>
   <i class="arrow"></i>
-  <a href="/Admin/Admin"><span>管理员列表</span></a>
+  <a href="/Admin/Activity"><span>活动列表</span></a>
   <i class="arrow"></i>
   <span>新增信息</span>
 </div>
@@ -121,74 +136,55 @@
 
 <div class="tab-content">
 	<dl>
-		<dt>权限组</dt>
-		<dd>
-			<div class="rule-single-select">
-				<select id="quanxian" name="role_id" datatype="*" sucmsg=" " id="quanxian">
-					<option value=" " selected="selected">请选择所属权限组</option>
-					<volist name="role" id="val">		
-						<option value="{$val.id}">{$val.name}</option>
-					</volist>
-				</select>
-			</div>
-		</dd>
-	</dl>
-	<dl id="daili" style="display:none">
-		<dt>代理区域</dt>
-		<dd>
-			<div class="rule-single-select">
-				<select id="ddlParentId" name="provinceid">
-					<option value="0" selected="selected">请选择在省级单位</option>
-					<volist name="type1" id="val">		
-						<option value="{$val.provinceid}">{$val.province}</option>
-					</volist>
-				</select>
-			</div>
-			<div class="rule-single-select">
-				<select name="cityid" id="ddlParentId1"> 
-					<option value="0" selected="selected">请选择在市级单位</option>
-				</select>
-			</div>
-			
-			<div class="rule-single-select">
-				<select name="areaid" id="ddlParentId2"> 
-					<option value="0" selected="selected">请选择在区县单位</option>
-				</select>
-			</div>
-			<span class="Validform_checktip">*只选择省为省级代理，选择省市为市级代理，三级全选为区县代理</span>
-		</dd>
-	</dl>
-	<dl>
-		<dt>管理员账号</dt>
-		<dd><input type="text" id="name" name="name" datatype="*" ajaxurl="/Admin/Admin/passajax" Class="input normal" sucmsg=" " /> <span class="Validform_checktip">*</span></dd>
-	</dl> 
-	<dl>
-	<dt>管理员密码</dt>
-		<dd><input type="password" name="password" datatype="*6-15" errormsg="密码范围在6~15位之间！" Class="input normal" sucmsg=" " /> <span class="Validform_checktip">*</span></dd>
-	</dl>
-	<dl>
-		<dt>重复密码</dt>
-		<dd><input type="password" name="pass" datatype="*" recheck="password" errormsg="您两次输入的账号密码不一致！" Class="input normal" sucmsg=" " /> <span class="Validform_checktip">*</span></dd>
-	</dl> 
-  <!-- 
-  <dl>
-    <dt>性别</dt>
-    <dd>
-		<div class="rule-multi-radio multi-radio">	
-    		<label><input type="radio" Value="0" checked="checked" name="sex" />保密</label>
-      		<label><input type="radio" Value="1" name="sex" />男</label>
-			<label><input type="radio" Value="2" name="sex" />女</label>
-    	</div>
+    <dt>活动正方图片</dt>
+      <dd>
+      	<img src="" class="upload-img" style="width: 250px; height: 250px;" />
+		<input type="hidden" id="txtImgUrl" name="simg" Class="input normal upload-path" />
+      	<div style="position:relative; top: -13px; left: 5px;" class="upload-box upload-img"></div><span style="position:relative; top: -13px; left: 5px;" class="Validform_checktip">*建议上传400:400像素的jpg,png图片</span>
 	</dd>
   </dl>
-   -->
+	<dl>
+    <dt>活动长方图片</dt>
+      <dd>
+      	<img src="" class="upload-img" style="width: 250px; height: 125px;" />
+		<input type="hidden" id="txtImgUrl" name="img" Class="input normal upload-path" />
+      	<div style="position:relative; top: -13px; left: 5px;" class="upload-box upload-img"></div><span style="position:relative; top: -13px; left: 5px;" class="Validform_checktip">*建议上传400:200像素的jpg,png图片</span>
+	</dd>
+  </dl>
+  <dl>
+	<dt>活动商铺编号</dt>
+		<dd><input type="text" name="shopid" datatype="n" sucmsg=" " Class="input normal" /><span class="Validform_checktip">*</span></dd>
+	</dl>
+	<dl>
+	<dt>标题</dt>
+		<dd><input type="text" name="title" Class="input normal" /></dd>
+	</dl>
+	<dl>
+	<dt>排序</dt>
+		<dd><input value="99" type="text" name="ord" Class="input small" /><span class="Validform_checktip">数字越小越在前面</span></dd>
+	</dl>
+	<!--
+	<dl>
+		<dt>简介</dt>
+		<dd>
+			<textarea id="webcopyright" name="description" Class="input" /></textarea>
+	      	<span class="Validform_checktip">支持HTML</span>
+		</dd>
+	</dl>
+	
+	<dl>
+    <dt>详情</dt>
+    <dd><textarea id="content" name="content" style="width:700px;height:200px;visibility:hidden;"></textarea></dd>
+  </dl>
+  -->
+
 </div>
 <!--/内容-->
 
 <!--工具栏-->
 <div class="page-footer">
   <div class="btn-list">
-    <input id="btnSubmit" type="submit" value="提交保存" Class="btn" onclick="btnSubmit_Click" />
+    <input id="btnSubmit" type="submit" value="提交保存" Class="btn" />
     <input name="btnReturn" type="button" value="返回上一页" class="btn yellow" onclick="javascript:history.back(-1);" />
   </div>
   <div class="clear"></div>

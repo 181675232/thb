@@ -9011,3 +9011,488 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
 ERR: 非法操作:js
 
+[ 2015-11-18T18:05:23+08:00 ] 127.0.0.1 /Admin/Role
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+SQL: SHOW COLUMNS FROM `t_role` [ RunTime:0.0138s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_role` LIMIT 1   [ RunTime:0.0166s ]
+SQL: SELECT * FROM `t_role` ORDER BY id desc LIMIT 0,15   [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 41 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 42 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 94 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 95 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 94 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 95 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009521s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009629s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000848s ]
+
+[ 2015-11-18T18:05:26+08:00 ] 127.0.0.1 /Admin/Role/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0151s ]
+SQL: SHOW COLUMNS FROM `t_nav` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 0 and level !=3 ) ORDER BY id asc  [ RunTime:0.0115s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '1' and level =3 )  [ RunTime:0.0091s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '3' and level =3 )  [ RunTime:0.0113s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '5' and level =3 )  [ RunTime:0.0093s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '7' and level =3 )  [ RunTime:0.0090s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 1 and level !=3 ) ORDER BY id asc  [ RunTime:0.0144s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '2' and level =3 )  [ RunTime:0.0089s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 2 and level !=3 ) ORDER BY id asc  [ RunTime:0.0080s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '158' and level =3 )  [ RunTime:0.0078s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '167' and level =3 )  [ RunTime:0.0090s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '204' and level =3 )  [ RunTime:0.0164s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '207' and level =3 )  [ RunTime:0.0092s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 158 and level !=3 ) ORDER BY id asc  [ RunTime:0.0090s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '159' and level =3 )  [ RunTime:0.0081s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '342' and level =3 )  [ RunTime:0.0084s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 159 and level !=3 ) ORDER BY id asc  [ RunTime:0.0157s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 342 and level !=3 ) ORDER BY id asc  [ RunTime:0.0083s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 167 and level !=3 ) ORDER BY id asc  [ RunTime:0.0092s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '169' and level =3 )  [ RunTime:0.0087s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '335' and level =3 )  [ RunTime:0.0135s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 169 and level !=3 ) ORDER BY id asc  [ RunTime:0.0097s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 335 and level !=3 ) ORDER BY id asc  [ RunTime:0.0096s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 204 and level !=3 ) ORDER BY id asc  [ RunTime:0.0074s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '205' and level =3 )  [ RunTime:0.0087s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 205 and level !=3 ) ORDER BY id asc  [ RunTime:0.0088s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 207 and level !=3 ) ORDER BY id asc  [ RunTime:0.0105s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '208' and level =3 )  [ RunTime:0.0117s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 208 and level !=3 ) ORDER BY id asc  [ RunTime:0.0078s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 3 and level !=3 ) ORDER BY id asc  [ RunTime:0.0081s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '4' and level =3 )  [ RunTime:0.0088s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 4 and level !=3 ) ORDER BY id asc  [ RunTime:0.0161s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '173' and level =3 )  [ RunTime:0.0101s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '363' and level =3 )  [ RunTime:0.0082s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 173 and level !=3 ) ORDER BY id asc  [ RunTime:0.0099s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '174' and level =3 )  [ RunTime:0.0146s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '206' and level =3 )  [ RunTime:0.0104s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 174 and level !=3 ) ORDER BY id asc  [ RunTime:0.0084s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 206 and level !=3 ) ORDER BY id asc  [ RunTime:0.0082s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 363 and level !=3 ) ORDER BY id asc  [ RunTime:0.0108s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '364' and level =3 )  [ RunTime:0.0086s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '370' and level =3 )  [ RunTime:0.0087s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 364 and level !=3 ) ORDER BY id asc  [ RunTime:0.0145s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 370 and level !=3 ) ORDER BY id asc  [ RunTime:0.0263s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 5 and level !=3 ) ORDER BY id asc  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '6' and level =3 )  [ RunTime:0.0097s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 6 and level !=3 ) ORDER BY id asc  [ RunTime:0.0087s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '187' and level =3 )  [ RunTime:0.0084s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 187 and level !=3 ) ORDER BY id asc  [ RunTime:0.0124s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '188' and level =3 )  [ RunTime:0.0091s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 188 and level !=3 ) ORDER BY id asc  [ RunTime:0.0083s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 7 and level !=3 ) ORDER BY id asc  [ RunTime:0.0185s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '8' and level =3 )  [ RunTime:0.0151s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 8 and level !=3 ) ORDER BY id asc  [ RunTime:0.0111s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '209' and level =3 )  [ RunTime:0.0093s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 209 and level !=3 ) ORDER BY id asc  [ RunTime:0.0084s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '210' and level =3 )  [ RunTime:0.0096s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '243' and level =3 )  [ RunTime:0.0095s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = '320' and level =3 )  [ RunTime:0.0084s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 210 and level !=3 ) ORDER BY id asc  [ RunTime:0.0087s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 243 and level !=3 ) ORDER BY id asc  [ RunTime:0.0095s ]
+SQL: SELECT * FROM `t_nav` WHERE ( bid = 320 and level !=3 ) ORDER BY id asc  [ RunTime:0.0083s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016905s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000741s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2015-11-18T18:14:56+08:00 ] 127.0.0.1 /Admin/Role/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+SQL: SHOW COLUMNS FROM `t_role` [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `t_access` [ RunTime:0.0125s ]
+SQL: INSERT INTO `t_role` (`name`,`remark`) VALUES ('区域代理','省市区3级代理商') [ RunTime:0.0124s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('2','1','13') [ RunTime:0.0123s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('4','1','13') [ RunTime:0.0135s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('173','1','13') [ RunTime:0.0147s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('174','2','13') [ RunTime:0.0161s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('274','3','13') [ RunTime:0.0120s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('275','3','13') [ RunTime:0.0149s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('276','3','13') [ RunTime:0.0131s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('277','3','13') [ RunTime:0.0127s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('278','3','13') [ RunTime:0.0147s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('363','1','13') [ RunTime:0.0129s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('364','2','13') [ RunTime:0.0119s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('365','3','13') [ RunTime:0.0122s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('366','3','13') [ RunTime:0.0134s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('369','3','13') [ RunTime:0.0126s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('368','3','13') [ RunTime:0.0164s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('367','3','13') [ RunTime:0.0194s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('370','2','13') [ RunTime:0.0112s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('371','3','13') [ RunTime:0.0173s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('372','3','13') [ RunTime:0.0130s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('373','3','13') [ RunTime:0.0134s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('374','3','13') [ RunTime:0.0126s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('375','3','13') [ RunTime:0.0120s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('6','1','13') [ RunTime:0.0171s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('187','1','13') [ RunTime:0.0125s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('188','2','13') [ RunTime:0.0128s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('301','3','13') [ RunTime:0.0125s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('302','3','13') [ RunTime:0.0120s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('303','3','13') [ RunTime:0.0121s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('304','3','13') [ RunTime:0.0135s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('305','3','13') [ RunTime:0.0122s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('8','1','13') [ RunTime:0.0132s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('209','1','13') [ RunTime:0.0126s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('320','2','13') [ RunTime:0.0124s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('351','3','13') [ RunTime:0.0134s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('350','3','13') [ RunTime:0.0136s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('349','3','13') [ RunTime:0.0122s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('348','3','13') [ RunTime:0.0126s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('353','3','13') [ RunTime:0.0148s ]
+SQL: INSERT INTO `t_access` (`node_id`,`level`,`role_id`) VALUES ('352','3','13') [ RunTime:0.0130s ]
+
+[ 2015-11-18T18:14:57+08:00 ] 127.0.0.1 /Admin/Role
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+SQL: SHOW COLUMNS FROM `t_role` [ RunTime:0.0107s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_role` LIMIT 1   [ RunTime:0.0097s ]
+SQL: SELECT * FROM `t_role` ORDER BY id desc LIMIT 0,15   [ RunTime:0.0104s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 39 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 41 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 42 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 94 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 95 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 94 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 95 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 94 行.
+NOTIC: [8] Undefined index: sex D:\wamp\www\thb\Application\Runtime\Cache\Admin\544b058786e585b010633bb43aff4268.php 第 95 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009271s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000903s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000966s ]
+
+[ 2015-11-18T18:15:18+08:00 ] 127.0.0.1 /Admin/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+SQL: SHOW COLUMNS FROM `t_admin` [ RunTime:0.0144s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_admin` WHERE t_admin.name <> 'admin' LIMIT 1   [ RunTime:0.0129s ]
+SQL: SELECT t_admin.id,t_admin.name,t_admin.state,t_role.name as title FROM `t_admin` left join t_role_user on t_role_user.user_id = t_admin.id left join t_role on t_role.id = t_role_user.role_id  WHERE t_admin.name <> 'admin' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0148s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 40 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 41 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 42 行.
+NOTIC: [8] Undefined variable: verify D:\wamp\www\thb\Application\Runtime\Cache\Admin\e414ee9e598ab7cfed82194511971e23.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009210s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000716s ]
+
+[ 2015-11-18T18:15:20+08:00 ] 127.0.0.1 /Admin/Admin/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+SQL: SHOW COLUMNS FROM `t_role` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `t_role`  [ RunTime:0.0125s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Undefined variable: type1 D:\wamp\www\thb\Application\Runtime\Cache\Admin\d00a76c90f65b440a89c90825fa1e8bd.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009793s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000646s ]
+
+[ 2015-11-18T18:15:27+08:00 ] 127.0.0.1 /Admin/Admin/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+SQL: SHOW COLUMNS FROM `t_role` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `t_role`  [ RunTime:0.0078s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined variable: type1 D:\wamp\www\thb\Application\Runtime\Cache\Admin\d00a76c90f65b440a89c90825fa1e8bd.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007902s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000579s ]
+
+[ 2015-11-18T18:15:27+08:00 ] 127.0.0.1 /Public/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+ERR: 非法操作:js
+
+[ 2015-11-18T18:20:59+08:00 ] 127.0.0.1 /Admin/Admin/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+SQL: SHOW COLUMNS FROM `t_role` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `t_role`  [ RunTime:0.0117s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined variable: type1 D:\wamp\www\thb\Application\Runtime\Cache\Admin\d00a76c90f65b440a89c90825fa1e8bd.php 第 137 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009873s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2015-11-18T18:20:59+08:00 ] 127.0.0.1 /Public/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+ERR: 非法操作:js
+
+[ 2015-11-18T18:22:33+08:00 ] 127.0.0.1 /Admin/Admin/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+SQL: SHOW COLUMNS FROM `t_role` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `t_role`  [ RunTime:0.0205s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined variable: type1 D:\wamp\www\thb\Application\Runtime\Cache\Admin\d00a76c90f65b440a89c90825fa1e8bd.php 第 137 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000656s ]
+
+[ 2015-11-18T18:22:34+08:00 ] 127.0.0.1 /Admin/Admin/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `t_role` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `t_role`  [ RunTime:0.0139s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Undefined variable: type1 D:\wamp\www\thb\Application\Runtime\Cache\Admin\d00a76c90f65b440a89c90825fa1e8bd.php 第 137 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000695s ]
+
+[ 2015-11-18T18:22:34+08:00 ] 127.0.0.1 /Admin/Admin/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+SQL: SHOW COLUMNS FROM `t_role` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `t_role`  [ RunTime:0.0102s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Undefined variable: type1 D:\wamp\www\thb\Application\Runtime\Cache\Admin\d00a76c90f65b440a89c90825fa1e8bd.php 第 137 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009126s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000720s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2015-11-18T18:22:34+08:00 ] 127.0.0.1 /Public/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+ERR: 非法操作:js
+
+[ 2015-11-18T18:24:20+08:00 ] 127.0.0.1 /Admin/Admin/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+SQL: SHOW COLUMNS FROM `t_role` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `t_role`  [ RunTime:0.0106s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined variable: type1 D:\wamp\www\thb\Application\Runtime\Cache\Admin\d00a76c90f65b440a89c90825fa1e8bd.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008699s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008757s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000659s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000710s ]
+
+[ 2015-11-18T18:24:20+08:00 ] 127.0.0.1 /Public/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+ERR: 非法操作:js
+
+[ 2015-11-18T18:25:35+08:00 ] 127.0.0.1 /Admin/Admin/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001137s ]
+SQL: SHOW COLUMNS FROM `t_role` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `t_role`  [ RunTime:0.0096s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Undefined variable: type1 D:\wamp\www\thb\Application\Runtime\Cache\Admin\d00a76c90f65b440a89c90825fa1e8bd.php 第 137 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000789s ]
+
+[ 2015-11-18T18:25:35+08:00 ] 127.0.0.1 /Public/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001054s ]
+ERR: 非法操作:js
+
+[ 2015-11-18T18:27:17+08:00 ] 127.0.0.1 /Admin/Admin/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+SQL: SHOW COLUMNS FROM `t_role` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `t_role`  [ RunTime:0.0122s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined variable: type1 D:\wamp\www\thb\Application\Runtime\Cache\Admin\d00a76c90f65b440a89c90825fa1e8bd.php 第 137 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000643s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000686s ]
+
+[ 2015-11-18T18:27:17+08:00 ] 127.0.0.1 /Public/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+ERR: 非法操作:js
+

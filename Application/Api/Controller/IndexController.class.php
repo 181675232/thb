@@ -446,7 +446,7 @@ class IndexController extends Controller {
 	
 	//商品web
 	public function shopweb(){
-		$id = I('post.id');
+		$id = I('request.id');
 		$table = M('shop');
 		$data = $table->find($id);
 		$this->assign('content',$data['content']);
@@ -556,9 +556,48 @@ class IndexController extends Controller {
 		json('404','没有接收到传值');
 	}
 	
+	//首页
+	public function index(){
+		if (I('post.')){
+			if (I('post.level') == 2){
+				$where['cityid'] = I('post.id');
+			}elseif (I('post.level') == 3){
+				$where['areaid'] = I('post.id');
+			}else {
+				json('数据出错');
+			}
+			$banner = M('ads');
+			$activity = M('activity');
+			$table = M('shop');
+			
+			$data['banner'] = $banner->field("id,title,simg")->select();
+			$data['activity'] = $activity->field('shopid,simg,img')->where($where)->order("ord asc,id desc")->limit(3)->select();
+			$data['shop'] = $table->where($where)->order('isred desc,ord asc,id desc')->limit(10)->select();
+			foreach ($data['shop'] as $key => $val){
+				$data['shop'][$key]['di'] = powc(I('post.latitude'),I('post.longitude'), $val['latitude'], $val['longitude']);
+				if ($data['shop'][$key]['di'] >= 1000){
+					$data['shop'][$key]['distance'] = ceil($data['shop'][$key]['di']/1000).'km';
+				}else {
+					$data['shop'][$key]['distance'] = $data['shop'][$key]['di'].'m';
+				}
+			}
+			foreach ($data['shop'] as $arrys) {
+				$di[] = $arrys['di'];
+			}
+			array_multisort($di,SORT_ASC,$data['shop']);
+			json('200','成功',$data);
+		}
+		json('404');
+	}
 	
-	
-	
+	//banner web
+	public function bannerweb(){
+		$id = I('request.id');
+		$table = M('banner');
+		$data = $table->find($id);
+		$this->assign('content',$data['content']);
+		$this->display();
+	}
 	
 	
 	
@@ -710,7 +749,7 @@ class IndexController extends Controller {
 		$shop = M('shop');
 		//收藏
 		$collection = M('collection');
-		$rs=$collection->where($data['uid'])->field('bid')->select();
+		$rs=$collection->where("uid='{$data['uid']}'")->field('bid')->select();
 		foreach ($rs as $key=>$val){
 			$rs1[]=$val['bid'];
 		}

@@ -15,7 +15,7 @@ return array(
 	'USER_AUTH_GATEWAY' => '/Public/login', //认证网关,执行$rbac::checkLogin()函数(检查是否登录),如果没有登录，去到这个设置的网址(当前url直接加上这个设置的值)
 	'NOT_AUTH_MODULE' => 'Public,Index', // 默认无需认证模块
 	'REQUIRE_AUTH_MODULE' => '', // 默认需要认证模块
-	'NOT_AUTH_ACTION' => 'nav,editpass', // 默认无需认证操作
+	'NOT_AUTH_ACTION' => 'nav,editpass,ajaxstate,ajax,selectajax,passajax,selectajax1,selectajax3', // 默认无需认证操作
 	'REQUIRE_AUTH_ACTION' => '', // 默认需要认证操作
 	'GUEST_AUTH_ON' => false, // 是否开启游客授权访问
 	'GUEST_AUTH_ID' => 0, // 游客的用户ID
